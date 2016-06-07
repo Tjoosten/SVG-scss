@@ -1,0 +1,16 @@
+@media screen and (max-width:767px) {
+  .term main.region [id^="node-"] .content p {
+    width: 61%;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .term main.region [id^="node-"] .content p {
+    width: 100%;
+  }
+
+  .term main.region .contact-body #foto {
+    float: initial;
+    max-width: 100%;
+  }
+}

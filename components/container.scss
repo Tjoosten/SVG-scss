@@ -1,0 +1,49 @@
+.container-inline-date {
+  width: auto;
+  clear: both;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+
+.container-inline-date .form-item {
+  float: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-inline-date .form-item .form-item {
+  float: left;
+}
+
+.container-inline-date .form-item, .container-inline-date .form-item input {
+  width: auto;
+}
+
+.container-inline-date .description {
+  clear: both;
+}
+
+.container-inline-date .form-item input, .container-inline-date .form-item select,
+.container-inline-date .form-item option {
+  margin-right: 5px;
+}
+
+.container-inline-date .date-spacer {
+  margin-left: -5px;
+}
+
+.views-right-60 .container-inline-date div {
+  padding: 0;
+  margin: 0;
+}
+
+.container-inline div, .container-inline label {
+  display: inline;
+}
+
+.container-inline-date .date-timezone .form-item {
+  float: none;
+  width: auto;
+  clear: both;
+}

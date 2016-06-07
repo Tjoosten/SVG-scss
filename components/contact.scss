@@ -1,0 +1,248 @@
+#contactinfo {
+  float: left;
+  margin-bottom: 2rem;
+}
+
+#contactinfo .flip, #contactinfo .panel {
+  width: 585px;
+}
+
+#contactinfo .flip {
+  height: 28px;
+  background-color: #BDD732;
+  background-position: 565px 11px;
+  padding-left: 10px;
+  padding-top: 2px;
+  margin-top: 10px;
+  color: #572600;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#contactinfo .flip img {
+  float: right;
+  margin-right: 10px;
+  margin-top: 2px;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+#contactinfo .flip:hover {
+  background-color: rgba(189, 215, 50, 0.57);
+  color: #572600;
+  cursor: pointer
+}
+
+#contactinfo .panel {
+  display: none;
+  padding: 30px;
+  padding-top: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #BDD732;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-style: none;
+  position: relative;
+  top: -5px;
+}
+
+#contactinfo .panel h1 {
+  margin-bottom: 0px;
+}
+
+#contactinfo .secundair, #contact-dienst .secundair {
+  color: #48454B;
+}
+
+#contactinfo .panel#bellen #col1 {
+  width: 50%;
+  float: left;
+  padding-right: 1rem;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #BDD732;
+}
+
+#contactinfo .panel#bellen #col2 {
+  margin-left: 30rem;
+}
+
+#contactinfo .panel#bellen .noodnummer a {
+  color: #ED1C23;
+}
+
+#contactinfo .panel#mailen {
+  clear: both;
+}
+
+#contactinfo select {
+  width: 300px;
+}
+
+#contactinfo .panel#locatie #col1 {
+  width: 50%;
+  float: left;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #bdd732;
+}
+
+#contactinfo .panel#locatie #col2 {
+  margin-left: 30rem;
+}
+
+#contactinfo .panel#locatie {
+  padding-bottom: 0.5rem;
+}
+
+#contactinfo #zoekveld {
+  position: relative;
+  top: 0.1rem;
+  display: inline-block;
+}
+
+.node-type-contact {
+  position: relative;
+}
+
+.node-type-contact .content p {
+  width: 75%;
+  float: left;
+}
+
+.node-type-contact #foto {
+  float: right;
+}
+
+.node-type-contact hr, .greenHR {
+  background-color: #BDD732;
+  color: #BDD732;
+  border: none;
+  height: 1px;
+  margin-top: 0;
+  clear: both;
+}
+
+
+.node-type-contact #contactgegevens span {
+  line-height: 2.5rem;
+}
+
+.node-type-contact #contactgegevens span:nth-child(1) img {
+  padding-bottom: 0rem;
+}
+
+.node-type-contact #contactgegevens span:nth-child(2) img {
+  padding-bottom: 0.2rem;
+}
+
+.node-type-contact #contactgegevens span:nth-child(3) img {
+  padding-bottom: 0.4rem;
+}
+
+.node-type-contact #contactgegevens img {
+  display: inline-block;
+  max-width: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+.node-type-contact #contactgegevens-social {
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+}
+
+.node-type-contact #contactgegevens-social #totem, .node-type-contact #contactgegevens-social #linkedin,
+.node-type-contact #contactgegevens-social #twitter {
+  float: left;
+  margin-right: 15px;
+}
+
+.node-type-contact #contactgegevens-social img {
+  margin-right: 3px;
+  position: relative;
+  top: 3px;
+}
+
+.contact-persoonlijk {
+  background-color: #48454B;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.contact-persoonlijk #foto {
+  float: right;
+}
+
+.contact-persoonlijk p {
+  width: 79%;
+  float: left;
+}
+
+#contact-dienst p {
+  width: 395px;
+  float: left;
+}
+
+#dienstFoto {
+  float: right;
+  margin-right: 20px;
+}
+
+#contact-hoofd {
+  clear: left;
+  float: left;
+  margin-top: 10px;
+}
+
+#contact-dienst #contact-hoofd img, .views-field-field-contact-foto-hoofd-fid img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #BDD732;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+#contact-dienst #contact-hoofd img:hover, .views-field-field-contact-foto-hoofd-fid img:hover {
+  opacity: 0.8;
+}
+
+#contact-dienst .views-field-field-contact-foto-hoofd-fid, #contact-dienst .views-field-field-contact-foto-hoofd-fid img {
+  width: 130px;
+  height: 80px;
+}
+
+#contact-dienst .views-field-title {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+#contact-dienst .views-field-title, #contact-dienst .views-field-tid {
+  width: 125px;
+  margin-left: 5px;
+}
+
+#contact-dienst #contact-hoofd p {
+  margin-left: 5px;
+}
+
+#contact-dienst .views-field-tid .secundair {
+  font-size: 95%;
+}
+
+#contact-dienst td {
+  padding-bottom: 15px;
+}
+
+.contact-body::after {
+  content: '';
+  display: block;
+  clear: both;
+}

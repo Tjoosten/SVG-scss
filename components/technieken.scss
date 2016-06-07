@@ -1,0 +1,78 @@
+.node-type-technieken-boek .content ul.childnodes {
+  list-style: none;
+  margin: 0;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.technieken_boek {
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.technieken_boek .child-title {
+  background-color: #BDD732;
+  display: inline-block;
+  min-width: 23rem;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.technieken_boek .child-title:hover {
+  background-color: #572600;
+  cursor: pointer;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.technieken_boek .child-children {
+  display: inline;
+  font-size: 0.9em;
+  color: #748D26;
+  display: inline;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.technieken_boek .child-title a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1.4em;
+  color: #572600;
+  display: inline-block;
+  width: 100%;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.technieken_boek .child-title:hover a {
+  color: #FFF;
+  transition-property: none;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.techniek {
+  background-color: #E7E0DE;
+  padding: 1em;
+  margin: 1em 0;
+  overflow: hidden;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.techniek .child-title {
+  padding: 5px 20px 5px 0px;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.techniek .child-title a {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #748D26;
+}
+
+.node-type-technieken-boek .content ul.childnodes li.childnode.techniek .child-field-preview {
+  float: left;
+  padding: 0 2rem 0 0;
+}
+
+.node-type-technieken-boek .links.inline {
+  display: none;
+}
+
+.node-type-techniek .book-navigation {
+  display: none;
+}
+
+.node-type-techniek img.field-icon-application-pdf {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  padding-right: 4px;
+}

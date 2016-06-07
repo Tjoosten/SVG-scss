@@ -1,0 +1,165 @@
+@media screen and (min-width:768px) and (max-width:1209px) {
+  .view-inschrijvingen.dynamic .views-field-groep, .view-inschrijvingen.dynamic .views-field-functie,
+  .view-inschrijvingen.dynamic .views-field-created, .view-inschrijvingen.dynamic .views-field-aanwezig,
+  .view-inschrijvingen.dynamic .views-field-brevet {
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .inschrijving-werkwinkelsblokken-tabel td {}
+
+  .inschrijving-werkwinkelsblokken-tabel td:first-child {
+    float: left;
+    z-index: 1;
+    padding-left: 1rem;
+    overflow: hidden;
+  }
+
+  .inschrijving-werkwinkelsblokken-tabel td:nth-child(2) {
+    padding-left: 5rem;
+    padding-bottom: 0;
+  }
+
+  .inschrijving-werkwinkelsblokken-tabel td:nth-child(2) h5 .form-item {
+    white-space: initial;
+  }
+
+  .inschrijving-werkwinkelsblokken-tabel td:last-child {
+    padding-left: 5rem;
+  }
+
+  .inschrijving-werkwinkelsblokken-tabel-inschrijvingen {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:767px) {
+  div.vertical-tabs {
+    margin: 0 !important;
+  }
+
+  div.vertical-tabs ul.vertical-tabs-list {
+    display: none;
+  }
+
+  div.vertical-tabs .vertical-tabs-pane {
+    display: block !important;
+  }
+
+  div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
+    margin: 2rem 0px !important;
+  }
+
+  .view-inschrijvingen.dynamic tr {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .view-inschrijvingen.dynamic td {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  .view-inschrijvingen.dynamic .views-field-field-sgv-voornaam-value,
+  .view-inschrijvingen.dynamic .views-field-field-sgv-naam-value {
+    display: inline;
+  }
+
+  .view-inschrijvingen.dynamic .views-field-field-sgv-voornaam-value {
+    padding-right: 0;
+  }
+
+  .view-inschrijvingen.dynamic .views-field-field-sgv-naam-value {
+    padding-left: 0.4rem;
+  }
+
+  .view-inschrijvingen.dynamic .views-field-created {
+    margin: 0;
+  }
+
+  .view-inschrijvingen.dynamic .views-field-brevet {
+    display: none;
+  }
+
+  .view-inschrijvingen.dynamic .views-field {
+    width: 100%;
+    text-align: left;
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(1)::before {
+    content: "Selecteren";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(2)::before {
+    content: "Aanvrager";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(4)::before {
+    content: "Groepsnummer";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(5)::before {
+    content: "Functie";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(6)::before {
+    content: "Type";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(7)::before {
+    content: "Inschrijvingsdatum";
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(8)::before {
+    content: "Wachtlijst";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(9)::before {
+    content: "Betaald";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(10)::before {
+    content: "Geannuleerd";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(11)::before {
+    content: "Aanwezig";
+  }
+
+  .view-inschrijvingen.dynamic td:nth-of-type(13)::before {
+    content: "Details";
+  }
+}
+
+@media screen and (min-width:768px) {
+  .inschrijving-werkwinkelsblokken-tabel-naam, .inschrijving-werkwinkelsblokken-tabel-beschrijving {
+    width: 48rem;
+  }
+}
+
+@media screen and (min-width:940px) {
+  .inschrijving-werkwinkelsblokken-tabel-naam, .inschrijving-werkwinkelsblokken-tabel-beschrijving {
+    width: 63rem;
+  }
+}
+
+@media screen and (min-width:1210px) {
+  .inschrijving-werkwinkelsblokken-tabel-naam, .inschrijving-werkwinkelsblokken-tabel-beschrijving {
+    width: 86rem;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .view-inschrijvingen #views-bulk-operations-select input:nth-child(2) {
+    margin-top: 1rem !important;
+    margin-left: 22rem !important;
+  }
+}

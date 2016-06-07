@@ -1,0 +1,41 @@
+@media screen and (min-width:940px) {
+  .view-evenementen-kalender .views-table td.views-field-title {
+    width: 52rem;
+  }
+}
+
+@media screen and (min-width:1210px) {
+  .view-evenementen-kalender .views-table td.views-field-title {
+    width: 65rem;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .view-evenementen-kalender .views-table .odd, .view-evenementen-kalender .views-table .even {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .view-evenementen-kalender .views-table td {
+    display: block;
+  }
+
+  .view-evenementen-kalender .views-table .views-field-evenement-van .sgvid {
+    display: inline;
+    margin-left: 2rem;
+  }
+
+  .view-evenementen-kalender .views-table td.views-field-title {
+    padding-top: 3rem !important;
+  }
+
+  .view-evenementen-kalender .views-table .views-field-groep {
+    clear: both;
+    padding-top: 1rem !important;
+  }
+
+  .view-evenementen-kalender .views-table .views-field-groep div {
+    float: none;
+    padding-left: 2rem;
+  }
+}

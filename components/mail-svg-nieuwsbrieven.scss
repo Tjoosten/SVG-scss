@@ -1,0 +1,49 @@
+.mail-sgv-nieuwsbrieven-nieuwsbrief {
+  font-family: "Tahoma", "Kalimati", "Arial", "Helvetica", "Bitstream Vera Sans", sans-serif;
+  font-size: 0.75em;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100%;
+  background-color: #BDD732;
+  width: 100%;
+}
+
+.mail-sgv-nieuwsbrieven-nieuwsbrief #heading-wrapper {
+  width: 100%;
+  background-color: #572600;
+  box-shadow: 0 -5px 5px -6px #000000 inset;
+}
+
+.mail-sgv-nieuwsbrieven-nieuwsbrief #heading {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  height: 110px;
+}
+
+.mail-sgv-nieuwsbrieven-nieuwsbrief #heading h1 {
+  color: #BDD732;
+  line-height: 90px;
+}
+
+.mail-sgv-nieuwsbrieven-nieuwsbrief #main-wrapper {
+  background-attachment: fixed;
+  background-image: url(https://www.scoutsengidsenvlaanderen.be/sites/all/themes/theme2014/images/background.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.mail-sgv-nieuwsbrieven-nieuwsbrief #my-main {
+  width: 920px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  padding: 20px;
+  overflow: auto;
+}
+
+.mail-sgv-nieuwsbrieven-nieuwsbrief #footer {
+  border-top: 1px dashed #572600;
+  border-bottom: 1px dashed #572600;
+  padding: 20px 0;
+  margin: 20px 0;
+}

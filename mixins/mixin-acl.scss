@@ -1,0 +1,26 @@
+@media screen and (min-width:480px) {
+  #login-form {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width:939px) {
+  #admin-menu {
+    padding: 0 1.2rem;
+  }
+}
+
+@media screen and (max-width:479px) {
+  #admin-menu {
+    padding: 0 0.8rem;
+  }
+
+  .globale_menubalk {
+    height: initial;
+    padding: 0 1.6rem;
+  }
+
+  .globale_menubalk #account #item_aanmelden {
+    top: 0;
+  }
+}

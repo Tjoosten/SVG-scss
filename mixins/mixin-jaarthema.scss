@@ -1,0 +1,53 @@
+@media screen and (max-width:767px) {
+  .view-jaarthemas td {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .view-jaarthemas td {
+    height: 9rem;
+  }
+
+  .view-jaarthemas .views-field-field-jaarthema-scoutsjaar-value {
+    width: 8%;
+  }
+
+  .view-jaarthemas .views-field-title {
+    width: 30%;
+  }
+
+  .view-jaarthemas .views-field-field-jaarthema-kenteken-fid {
+    width: 10%;
+  }
+
+  .view-jaarthemas .views-field-field-jaarthema-brochure-url, .view-jaarthemas .views-field-field-jaarthema-lied-fid {
+    width: 20%;
+  }
+
+  .view-jaarthemas table:nth-last-child(3) .views-field-field-jaarthema-scoutsjaar-value {
+    width: 18%;
+  }
+
+  .view-jaarthemas table:nth-last-child(-2n + 3) .views-field-title {
+    width: 85%;
+  }
+
+  .view-jaarthemas table:nth-last-child(3) {
+    float: left;
+    width: 45.4%;
+  }
+
+  .view-jaarthemas table:nth-last-child(1) {
+    float: left;
+    width: 37.4%;
+    margin-left: 12.6%;
+  }
+
+  .view-jaarthemas table:nth-last-child(-2n + 3) .views-field-field-jaarthema-brochure-url,
+  .view-jaarthemas table:nth-last-child(-2n + 3) .views-field-field-jaarthema-lied-fid,
+  .view-jaarthemas table:nth-last-child(-2n + 3) .views-field-field-jaarthema-dans-fid,
+  .view-jaarthemas table:last-child .views-field-field-jaarthema-scoutsjaar-value {
+    display: none;
+  }
+}

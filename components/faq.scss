@@ -1,0 +1,56 @@
+.view-FAQ-short .views-row {
+  padding: 0;
+  margin-left: 2rem;
+  overflow: inherit;
+  list-style-type: disc !important;
+}
+
+.view-FAQ-short .views-field-title a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+}
+
+.page-faq .view-content .item-list .views-row {
+  padding: 0;
+}
+
+.view-FAQ .view-content .item-list .views-row .views-field-title a,
+.page-faq .view-content .item-list .views-row .views-field-title a {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.page-faq p, .page-faq a {
+  font-size: 1.4rem;
+}
+
+.page-faq p:first-child {
+  margin-top: 0;
+}
+
+.view-FAQ h3 {
+  padding-bottom: 0.5em;
+}
+
+h2.faq {
+  clear: both;
+  display: block;
+}
+
+.view-FAQ-short {
+  width: 45%;
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 5%;
+}
+
+.view-FAQ-short h3 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #bdd732;
+}
+
+.view-FAQ-short .item-list {
+  margin-bottom: 3rem;
+}
