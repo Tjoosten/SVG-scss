@@ -1,4 +1,4 @@
-# Scouts en Gidsen vlaanderen - SCSS port (.be website)
+# SvG - SCSS port (.be website)
 
 ## Welke files worden meegeleverd. 
 
