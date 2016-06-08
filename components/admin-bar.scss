@@ -1,0 +1,73 @@
+/* -------------------------------------------------------------------------
+ Admin bar
+---------------------------------------------------------------------------- */
+a.context-block-region {
+  display: none;
+}
+
+#global-menu, /* nodig bij hoge resoluties */
+.globale_menubalk, /* om de login-form te verbergen */
+#login-form::before, /* komt buiten de global menubalk */
+#admin-menu /* default overschrijven */ {
+  background: #572600;
+  font-weight: normal;
+}
+
+#admin-menu li {
+  font-size: 1rem;
+}
+
+.admin-menu-users img {
+  display: none;
+}
+
+#admin-menu ul a,
+#admin-menu li.admin-menu-action a {
+  border: medium none;
+}
+
+#admin-menu li.admin-menu-icon a {
+  padding: 4px 8px 0 8px;
+}
+
+#login-form {
+  width: auto;
+  height: 70px;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+#login-form::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1rem;
+  bottom: 0;
+  z-index: -1;
+  transform: skew(0deg, -1.2deg); /* valt nog net achter de globale menubalk */
+}
+
+.globale_menubalk a,
+#login-form input[type="submit"] {
+  font-weight: normal;
+}
+
+body.no-sidebar #sidebar {
+  display: none;
+}
+
+/* klein scherm */
+@media screen and (max-width:479px) {
+  #login-form {
+    width: 160px;
+    height: 170px;
+  }
+
+  #login-form form input[type=submit] {
+    height: 30px;
+    width: 154px;
+    margin-top: 10px;
+  }
+}

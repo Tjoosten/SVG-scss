@@ -1,0 +1,74 @@
+/* Activiteiten */
+#block-views-evenementen_home-block_1 .title::before,
+.floating-title .title::before {
+  width: 240px;
+  height: 53px;
+}
+
+#block-views-evenementen_home-block_1 .content,
+.floating-title .content {
+  position: relative;
+  margin-top: 5px;
+}
+
+#block-views-evenementen_home-block_1 .content::before,
+.floating-title .content::before {
+  content: '';
+  position: absolute;
+  top: -21px;
+  right: 0;
+  height: 45px;
+  width: 97%;
+  background: #E7E0DE;
+  -webkit-transform: skew(0deg, -1deg);
+  transform: skew(0deg, -1deg);
+  z-index: 0;
+}
+
+#block-views-evenementen_home-block_1 .content::after,
+.floating-title .content::after {
+  content: '';
+  position: absolute;
+  top: -27px;
+  width: 20%;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 17px solid #E7E0DE;
+  left: 0;
+}
+
+#block-views-evenementen_home-block_1 .view-content,
+.floating-title .view-content {
+  background-color: #E7E0DE;
+  padding-bottom: 2em;
+}
+
+#block-views-evenementen_home-block_1 .view-content .item-list .views-row,
+.floating-title .view-content .item-list .views-row {
+  padding: 1em 15px;
+}
+
+#block-views-evenementen_home-block_1 .views-field-title,
+.floating-title .views-field-title {
+  float: right;
+  width: 76%;
+}
+
+#block-views-evenementen_home-block_1 .views-field-body,
+.floating-title .views-field-body {
+  float: right;
+  width: 76%;
+}
+
+#block-views-evenementen_home-block_1 .view-footer,
+.floating-title .view-footer {
+  margin-top: -17px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+#block-views-evenementen_home-block_1 .view-footer p,
+.floating-title .view-footer p {
+  margin: 0;
+}

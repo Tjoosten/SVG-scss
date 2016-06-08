@@ -1,0 +1,37 @@
+/* Virtueel boekenrek */
+.view-publicatie-list td {
+  vertical-align: middle;
+}
+
+.view-publicatie-list td a {
+  display: inline;
+}
+
+.view-publicatie-list th,
+.view-publicatie-list td:not(:first-child) {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.view-publicatie-list th:nth-child(2),
+.view-publicatie-list th:nth-child(3),
+.view-publicatie-list th:nth-child(4) {
+  min-width: 14rem;
+}
+
+.group-publicatie-inhoud,
+.group-publicatie-verkrijgbaar,
+.group-media {
+  padding-top: 1em;
+}
+
+/* Niet getoond in het virtueel boekenrek, maar wel op de detailpagina */
+/* Hoge specificity is nodig */
+.page-node main.region .view-publicatie-list .views-field-field-publicatie-file-computed-value img {
+  display: none;
+}
+
+.view-publicatie-list .view-content table tbody tr td a > img {
+  vertical-align: middle;
+  margin: 4px;
+}

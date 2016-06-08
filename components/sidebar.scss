@@ -1,0 +1,87 @@
+// Sidebar
+// ----------------------------------------------------------------------------
+.page-node #sidebar,
+.page-admin #sidebar {
+  margin: 1em 0;
+}
+
+.page-node #sidebar [id^="block-"],
+.page-admin #sidebar [id^="block-"] {
+  background: #E7E0DE;
+  padding: 25px 35px 15px;
+}
+
+#sidebar .view-children .view-content .item-list .views-row {
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+
+.page-node #sidebar [id^="block-"]::after,
+.page-admin #sidebar [id^="block-"]::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 15px;
+  background: url(../img/sprite.png) no-repeat right -100px top -243px transparent;
+  position: relative;
+  top: 22px;
+}
+
+.page-node #sidebar [id^="block-"] .title,
+.page-admin #sidebar [id^="block-"] .title {
+  text-align: left;
+  color: #748D26;
+  font-family: DCCAsh, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  height: auto;
+  padding: 0;
+}
+
+.page-node #sidebar [id^="block-"] .content a,
+.page-admin #sidebar [id^="block-"] .content a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.page-node #sidebar [id^="block-"] .content .field-content-title,
+.page-admin #sidebar [id^="block-"] .content .field-content-title {
+  background: url(../img/btn-70.png) no-repeat transparent 0 3px;
+  background-size: 100% 100%;
+}
+
+.page-node #sidebar [id^="block-"] .content h1::before,
+.page-admin #sidebar [id^="block-"] .content h1::before {
+  font-family: scouts;
+  content: "\f002";
+  font-size: 1.4em;
+  padding-right: 0.3em;
+  position: relative;
+  top: 0.1em;
+}
+
+.page-node #sidebar [id^="block-"] .content h1,
+.page-admin #sidebar [id^="block-"] .content h1 {
+  color: #748D26;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #748D26;
+  margin-top: 0;
+  font-weight: normal;
+  padding-left: 1em;
+  padding-top: 6px;
+}
+
+.page-node #sidebar [id^="block-"] .field-content-nothing,
+.page-admin #sidebar [id^="block-"] .field-content-nothing {
+  display: none;
+}

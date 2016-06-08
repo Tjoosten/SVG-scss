@@ -1,0 +1,11 @@
+/* Evenement overzicht */
+.content .info h3 {
+  margin-bottom: 5px;
+}
+
+.content .info .subscribe tr.even,
+.content .info .subscribe  tr.odd {
+  background-color: transparent;
+  border-bottom: none;
+  height: 30px;
+}

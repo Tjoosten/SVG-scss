@@ -1,0 +1,209 @@
+/* -------------------------------------------------------------------------
+ Form elements
+---------------------------------------------------------------------------- */
+select {
+  min-height: 3rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='search'],
+input[type='date'],
+input[type='time'],
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='search'],
+input[type='date'],
+input[type='time'],
+input[type='password'] {
+  height: 3rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
+
+textarea {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 1.7rem;
+  width: 1.7rem;
+  position: relative;
+  top: 0.23em;
+}
+
+input[type="color"] {
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+}
+
+.container-inline-date .form-item input {
+  min-width: 11rem;
+}
+
+/* Forms */
+#node-form .collapsible {
+  margin-top: 1em;
+}
+
+fieldset,
+fieldset fieldset fieldset,
+fieldset fieldset fieldset fieldset fieldset {
+  position: relative;
+  margin: 2rem 0;
+  background-color: #E7E0DE;
+}
+
+fieldset fieldset,
+fieldset fieldset fieldset fieldset,
+fieldset fieldset fieldset fieldset fieldset fieldset {
+  background-color: #BDD732;
+}
+
+fieldset > * {
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+
+fieldset > :last-child {
+  margin-bottom: 2rem;
+}
+
+/* Hack om in Safari 8 de grootte van fieldsets te fixen. */
+/* http://stackoverflow.com/a/1828940 */
+fieldset::before,
+fieldset::after {
+  content: "\00a0";
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+legend {
+  position: absolute;
+  top: 1em;
+  max-width: calc(100% - 4rem);
+  font-size: 2.2rem;
+  font-family: 'Fjalla One', sans-serif;
+  color: #572600;
+}
+
+legend,
+legend * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+legend + *,
+legend + #edit-operation-wrapper > :first-child,
+legend + input[type=hidden] + *,
+legend + input[type=hidden] + input[type=hidden] + *,
+legend + input[type=hidden] + input[type=hidden] + input[type=hidden] + * {
+  margin-top: 7.5rem !important;
+}
+
+fieldset tr.even,
+fieldset tr.odd {
+  background-color: #BDD732;
+  border-bottom: 1px solid #E7E0DE;
+}
+
+fieldset thead th {
+  border-bottom: 1px solid #E7E0DE;
+}
+
+fieldset .content-add-more {
+  margin: 2rem 0;
+}
+
+fieldset.collapsed {
+  height: 7.5rem !important;
+  margin-bottom: 2rem !important;
+}
+
+fieldset table {
+  width: calc(100% - 4rem);
+  margin-bottom: 2rem;
+}
+
+fieldset textarea {
+  width: 100% !important;
+}
+
+fieldset input[type="text"] {
+  /* Komt ongeveer overeen met de standaardbreedte (size=60) bij een desktop-resolutie. */
+  width: calc(100px + 50%);
+}
+
+.description fieldset {
+  margin: 1rem 0 !important;
+}
+
+#views-bulk-operations-select legend,
+.description legend {
+  font-size: 1.6rem;
+}
+
+#views-bulk-operations-select legend + *,
+.description legend + * {
+  margin-top: 5rem !important;
+}
+
+.description fieldset.collapsed {
+  height: 5rem !important;
+}
+
+.form-item {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resizable-textarea {
+  width: initial !important;
+}
+
+.form-checkboxes.error,
+.form-radios.error {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid red;
+}
+
+.form-required {
+  display: inline;
+}
+
+/* Custom checkboxen voor werkwinkels */
+.inschrijving-werkwinkelsblokken-tabel-check {
+  width:30px;
+}
+
+.inschrijving-werkwinkelsblokken-tabel tr.odd .form-item,
+.inschrijving-werkwinkelsblokken-tabel tr.even .form-item {
+  white-space: nowrap;
+}
+
+.inschrijving-werkwinkelsblokken-tabel tr.odd .inschrijving-werkwinkelsblokken-tabel-beschrijving .form-item,
+.inschrijving-werkwinkelsblokken-tabel tr.even .inschrijving-werkwinkelsblokken-tabel-beschrijving .form-item {
+  white-space: normal;
+}

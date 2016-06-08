@@ -1,0 +1,270 @@
+/* In de kijker - accordeon */
+.accordeon {
+  overflow: hidden;
+  margin-bottom: 1.5em;
+}
+
+.accordeon .item-list ul {
+  margin: 0;
+}
+
+.accordeon .item-list ul li.views-row {
+  float: none;
+  width: 100%;
+  padding: 0;
+  width: 97%;
+  float: right;
+}
+
+.accordeon .item-list ul li.views-row .views-field-title {
+  clear: both;
+  padding: 15px 15px 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.accordeon .item-list ul li.views-row .views-field-title i {
+  font-size: 3.1rem;
+  padding-right: 15px;
+  font-weight: 100;
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  float: left;
+  line-height: 1;
+}
+
+.accordeon .item-list ul li.views-row .views-field-title span {
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.accordeon .item-list ul li.views-row div:nth-child(2),
+.accordeon .item-list ul li.views-row div:nth-child(3) {
+  display: none;
+}
+
+.accordeon .item-list ul li.views-row .views-field-field-indekijker-afbeelding-fid {
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.accordeon .item-list ul li.views-row .views-field-field-indekijker-afbeelding-fid img {
+  width: 100%;
+  height: auto;
+}
+
+.accordeon .item-list ul li.views-row .views-field-nothing a {
+  margin: 5px 15px 10px;
+}
+
+.accordeon .item-list ul li.views-row .views-field-nothing a::after {
+  content: ' ';
+  border-left-color: #DBE68E;
+}
+
+.accordeon .item-list ul li.views-row-odd .views-field-title {
+  background-color: #BDD732;
+}
+
+.accordeon .item-list ul li.views-row-odd .views-field-title span {
+  color: #748D26;
+  line-height: 1;
+}
+
+.accordeon .item-list ul li.views-row-odd div:nth-child(2),
+.accordeon .item-list ul li.views-row-odd div:nth-child(3) {
+  background-color: #BDD732;
+}
+
+.accordeon .item-list ul li.views-row-even .views-field-title {
+  background-color: #572600;
+}
+
+.accordeon .item-list ul li.views-row-even .views-field-title span {
+  color: #FFF;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.accordeon .item-list ul li.views-row-even div:nth-child(2),
+.accordeon .item-list ul li.views-row-even div:nth-child(3) {
+  background-color: #572600;
+}
+
+.accordeon .item-list ul li.views-row-first {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.accordeon .item-list ul li.views-row-first .views-field-title {
+  background-color: transparent;
+  position: relative;
+  text-align: left;
+  padding: 15px 0px 0 10px;
+  height: auto;
+  overflow: hidden;
+  float: none;
+  width: 100%;
+}
+
+.accordeon .item-list ul li.views-row-first .views-field-title::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 100%;
+  width: 97%;
+  background: #BDD732;
+  -webkit-transform: skew(0deg, 1deg);
+  transform: skew(0deg, 1deg);
+}
+
+.accordeon .item-list ul li.views-row-first .views-field-title::after {
+  content: '';
+  position: absolute;
+  /*
+    0px ziet er beter uit op desktop (firefox)
+    -1px ziet er beter uit op android (firefox)
+  */
+  top: -1px;
+  width: 3%;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom: 10px solid #BDD732;
+  right: 0;
+}
+
+.accordeon .item-list ul li.views-row-first .views-field-title i {
+  display: none;
+}
+
+.accordeon .item-list ul li.views-row-first .views-field-title span {
+  color: #572600;
+  position: relative;
+  display: block;
+  background-color: #BDD732;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.accordeon .item-list ul li.views-row-first .views-field-nothing::before {
+  content: '';
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #BDD732;
+  -webkit-transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
+  z-index: 1;
+}
+
+.accordeon .item-list ul li.views-row-first div:nth-child(2),
+.accordeon .item-list ul li.views-row-first div:nth-child(3) {
+  display: block;
+  background-color: transparent;
+  position: relative;
+  z-index: 3;
+}
+
+.accordeon .item-list ul li.views-row-first div:nth-child(2) {
+  z-index: 4;
+}
+
+.accordeon .item-list ul li.views-row:nth-child(2) {
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+.accordeon .item-list ul li.views-row:nth-child(2) .views-field-title {
+  padding-top: 40px;
+}
+
+.accordeon .item-list ul li.views-row:nth-child(2) .views-field-title span {
+  top: 2px;
+  position: relative;
+}
+
+.accordeon .item-list ul li.views-row:nth-child(2) .views-field-title i {
+  color: #FFF;
+}
+
+/* In de Kijker bottom */
+.full-width-block {
+  margin-bottom: 4em;
+}
+
+.full-width-block .view-content .item-list .views-row {
+  width: 100%;
+  float: none;
+  padding: 0;
+}
+
+.full-width-block .view-content .item-list .views-row a {
+  width: 100%;
+}
+
+.full-width-block img {
+  width: 100%;
+}
+
+.full-width-block .view-content {
+  position: relative;
+  text-align: left;
+  padding-top: 20px;
+  height: auto;
+  overflow: hidden;
+  float: none;
+  width: 100%;
+}
+
+.full-width-block .view-content .item-list li {
+  width: 100%;
+  float: none;
+  padding: 0;
+}
+
+.full-width-block .view-content::before {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  height: 100%;
+  width: 97%;
+  background: #BDD732;
+  -webkit-transform: skew(0deg, 0.5deg);
+  transform: skew(0deg, 0.5deg);
+}
+
+.full-width-block .view-content::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 50%;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom: 7px solid #BDD732;
+  right: -2px;
+  z-index: -1;
+}
+
+.full-width-block .view-content  .views-field-nothing a {
+  padding: 0em 0.9em 0.3em;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.full-width-block .view-content span {
+  position: relative;
+  display: block;
+  background-color: #BDD732;
+  line-height: 1.2;
+}
