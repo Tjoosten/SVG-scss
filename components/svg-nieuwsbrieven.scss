@@ -1,0 +1,33 @@
+/* nieuwsbrieven */
+#sgv-nieuwsbrieven-user-nieuwsbrieven input.form-submit,
+#sgv-nieuwsbrieven-abonneer-categorie input.form-submit {
+  background-color: #BDD732;
+  border: 0;
+  border-radius: 5px;
+  color: #572600;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#sgv-nieuwsbrieven-user-nieuwsbrieven input.form-submit:hover,
+#sgv-nieuwsbrieven-abonneer-categorie input.form-submit:hover {
+  color: #48454B;
+}
+
+.description p {
+  margin-bottom: 3px;
+}
+
+.node > .node-inner > ul.links {
+  margin: 10px 0 20px 0;
+  display: block !important;
+}
+
+.node > .node-inner > ul.links > li {
+  float: left;
+  margin: 0;
+}
+
+.node > .node-inner > ul.links > li.fb-social-like-fb_linteraction iframe {
+  max-width: none !important;
+}

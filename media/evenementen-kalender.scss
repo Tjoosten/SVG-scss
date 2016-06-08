@@ -1,0 +1,152 @@
+@media screen and (max-width: 767px) {
+  .view-evenementen-kalender .views-table .odd,
+  .view-evenementen-kalender .views-table .even {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .view-evenementen-kalender .views-table td {
+    display: block;
+  }
+  .view-evenementen-kalender .views-table .views-field-evenement-van .sgvid {
+    display: inline;
+    margin-left: 2rem;
+  }
+  .view-evenementen-kalender .views-table td.views-field-title {
+    padding-top: 3rem !important;
+  }
+  .view-evenementen-kalender .views-table .views-field-groep {
+    clear: both;
+    padding-top: 1rem !important;
+  }
+  .view-evenementen-kalender .views-table .views-field-groep div {
+    float: none;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .view-evenementen-kalender .views-table td.views-field-title {
+    width: 52rem;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .view-evenementen-kalender .views-table td.views-field-title {
+    width: 65rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Force table to not be like tables anymore */
+  .dynamic table,
+  .dynamic thead,
+  .dynamic tbody,
+  .dynamic th,
+  .dynamic td,
+  .dynamic tr {
+    display: block;
+  }
+
+  .dynamic tr {
+    height: auto !important;
+    border-top: 1px solid #E7E0DE;
+  }
+
+  .dynamic thead tr {
+    display: none;
+  }
+
+  .dynamic td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 12em;
+  }
+
+  .dynamic td::before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    left: 6px;
+    white-space: nowrap;
+    color: #256F91;
+    font-weight: bold;
+    bottom: 3px;
+  }
+
+  /* Evenementen: kalender */
+  .view-evenementen .item-list li:nth-child(n+9){
+    display:none;
+  }
+
+  .view-evenementen .dynamic caption{
+    width: 100%;
+    display: block;
+  }
+
+  .view-evenementen-kalender .views-field-evenement-van,
+  .view-evenementen-kalender .views-field-groep {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .view-evenementen-kalender .views-table tr{
+    padding: 10px;
+  }
+
+  .view-evenementen-kalender .views-table tr .views-field-title p{
+    margin-top: 5px;
+  }
+
+  .view-evenementen-kalender .views-table tr .views-field-title{
+    border-left: none !important;
+    border-right: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .view-evenementen-kalender .views-table tr .views-field-title .evenementen-type {
+    float: right;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .view-evenementen-kalender .views-field-groep div{
+    margin: 0;
+    padding: 0;
+  }
+
+  .view-evenementen-kalender .views-field-groep .evenement-groep{
+    float: left;
+  }
+
+  .view-evenementen-kalender .views-field-groep .evenement-locatie{
+    float: right;
+  }
+
+  .view-evenementen-kalender .views-field-groep::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+    min-width: 320px;
+    -webkit-text-size-adjust: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* Evenementen: kalender */
+  main.region .view-evenementen .item-list ul {
+    display: none;
+  }
+
+  main.region .view-evenementen-kalender .views-table tr .views-field-title .evenementen-type {
+    width: 100%;
+  }
+}

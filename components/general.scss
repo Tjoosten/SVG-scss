@@ -1,0 +1,35 @@
+/* -------------------------------------------------------------------------
+ General
+---------------------------------------------------------------------------- */
+body,
+body.mceContentBody /* wysiwyg */ {
+  background: url(../img/grunge-tile-beige.png) repeat center top #FFF;
+}
+
+.media-query {
+  display: none;
+  width: 0px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+html {
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #48454B;
+  height: 100%;
+  position: relative;
+}

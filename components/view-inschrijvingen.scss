@@ -1,0 +1,102 @@
+/* Inschrijving view */
+.form_evenement_inschrijving h3,
+.form_evenement_inschrijving h4 {
+  margin-bottom:5px;
+}
+
+#annuleer_inschrijving,
+.greenbutton,
+.orangebutton,
+.bluebutton,
+.redbutton {
+  display: inline-block;
+  min-width: 8rem;
+  margin: 0 0 5px 0;
+  padding: 0.5rem 1rem !important;
+  text-align: center;
+  color: #48454B;
+  text-decoration: none;
+}
+
+.greenbutton {
+  background-color: #BDD732;
+}
+
+.orangebutton {
+  background-color: #F5821F;
+}
+
+.bluebutton {
+  background-color: #256F91;
+  color: #FFF;
+}
+
+.redbutton {
+  background-color: #ED1C23;
+  color: #FFF;
+}
+
+#annuleer_inschrijving:hover,
+.greenbutton:hover,
+.orangebutton:hover,
+.bluebutton:hover,
+.redbutton:hover,
+.brownbutton,
+.brownbutton:hover {
+  color: #FFF;
+  background-color: #572600;
+  text-decoration: none;
+}
+
+.inschrijving-werkwinkelsblokken-tabel tr.even,
+.inschrijving-werkwinkelsblokken-tabel tr.odd {
+  background-color: #BDD732;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form_evenement_inschrijving tr.even,
+.form_evenement_inschrijving tr.odd {
+  padding: 0 1rem;
+  border-bottom: none;
+}
+
+.inschrijving-werkwinkelsblokken-tabel .form-item label.option {
+  color: transparent;
+}
+
+.inschrijving-werkwinkelsblokken-tabel thead {
+  display:none;
+}
+
+.inschrijving-werkwinkelsblokken-tabel {
+  width: 100%;
+}
+
+.inschrijving-werkwinkelsblokken-tabel td {
+  vertical-align: middle;
+}
+
+.inschrijving-werkwinkelsblokken-tabel-naam {
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 3px;
+  font-size: 1.2rem;
+}
+
+.inschrijving-werkwinkelsblokken-tabel-beschrijving {
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.inschrijving-werkwinkelsblokken-tabel-inschrijvingen {
+  font-size: 1.5rem;
+  color: #748D26;
+  margin-left: 10px;
+  text-align: right;
+  width: 85px;
+}
+
+.inschrijving-werkwinkelsblokken-tabel .ui-progress-bar {
+  margin-left:100px;
+}

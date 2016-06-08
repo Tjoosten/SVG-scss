@@ -1,0 +1,32 @@
+/* groepensite */
+.prijscategorie {
+  width:197px;
+  float:left;
+  margin-right:15px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #572600;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-align:center;
+}
+
+.prijscategorie tr {
+  height:30px;
+}
+
+.prijscategorie td {
+  vertical-align: middle;
+}
+
+.prijscategorie .header,
+.prijscategorie .prijs {
+  background-color: #572600;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.prijscategorie .prijs {
+  font-size: 1.4rem;
+}

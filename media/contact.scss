@@ -1,0 +1,64 @@
+@media screen and (max-width: 939px) {
+  .contact-body p {
+    width: 70%
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-body p {
+    width: 52%
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .contact-body p {
+    width: 100%
+  }
+
+  .contact-body #foto {
+    float: initial;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contactinfo .flip, #contactinfo .panel {
+    width: 100%;
+  }
+
+  #contactinfo {
+    width: 100%;
+  }
+
+  #node-10128 #contactinfo .panel #col2 {
+    margin-left: 5%;
+    width: 45%;
+    display: inline-block;
+  }
+
+  #contactinfo .noodnummer {
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  /* Contactpagina */
+  #qr-code {
+    float: none;
+    clear: left;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #qr-code img {
+    float: left;
+    margin-right: 2rem
+  }
+
+  h2.faq {
+    margin-top: 14rem;
+  }
+
+  .view-FAQ-short {
+    width: 100%;
+  }
+}

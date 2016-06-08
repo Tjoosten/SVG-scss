@@ -1,0 +1,106 @@
+/* zoekresultaten */
+dl.search-results.node-results {
+  max-width: 50em;
+}
+
+dl.search-results.node-results dt.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+dl.search-results.node-results dt.title:first-letter {
+  text-transform: uppercase;
+}
+
+#search-form fieldset.search-advanced .criterion {
+  padding: 0;
+  margin: 0;
+}
+
+#search-form fieldset.search-advanced .criterion:nth-child(1) {
+  float: left;
+  width: 225px;
+}
+
+#search-form fieldset.search-advanced .criterion:nth-child(2) {
+  float: left;
+}
+
+#search-form fieldset.search-advanced .criterion:nth-child(3) {
+  float: none;
+}
+
+#search-form fieldset.search-advanced .criterion:nth-child(3) .form-checkboxes {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+
+dl.search-results dt {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+dl.search-results dd {
+  margin-bottom: 2rem;
+}
+
+dl.search-results a {
+  font-weight: normal;
+}
+
+/* Zoekresultaten */
+.search-results dt a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.search-results dd > a:first-child {
+  text-decoration: none;
+}
+
+.description h3 {
+  font-size: 1.5rem;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+.description p {
+  font-size: 1.3rem;
+  margin-bottom: 0.8em;
+}
+
+/* override de default layout van drupal */
+.form-checkboxes,
+.form-radios {
+  margin: 0;
+}
+
+div.vertical-tabs,
+div.vertical-tabs ul.vertical-tabs-list {
+  border: none !important;
+}
+
+div.vertical-tabs ul.vertical-tabs-list {
+  margin: 0 -100% 0 0 !important;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li {
+  border: none !important;
+  border-bottom: 1px solid #E7E0DE !important;
+  background-color: rgba(231, 224, 222, 0.5) !important;
+  overflow: hidden;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li:last-child {
+  border-bottom: none !important;
+}
+
+div.vertical-tabs ul.vertical-tabs-list li.selected {
+  background-color: #E7E0DE !important;
+}
+
+div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
+  padding: 0 !important;
+}

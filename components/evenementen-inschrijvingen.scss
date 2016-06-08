@@ -1,0 +1,74 @@
+/* Evenementen: alle inschrijvingen */
+.view-inschrijvingen fieldset {
+  margin: 0;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.view-inschrijvingen legend {
+  top: 1.25rem;
+  left: 0;
+}
+
+.view-inschrijvingen label {
+  font-size: 1.3rem;
+}
+
+.view-inschrijvingen #edit-field-sgv-voornaam-value {
+  width: 12rem;
+}
+
+.view-inschrijvingen #edit-field-sgv-naam-value {
+  width: 12rem;
+}
+
+.view-inschrijvingen #edit-groep {
+  width: 14rem;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 1.7em;
+}
+
+.view-inschrijvingen #views-bulk-operations-select input {
+  margin: 0rem !important;
+  margin-top: 1rem !important;
+  margin-left: 1rem !important;
+}
+
+.view-inschrijvingen #views-bulk-operations-select input:nth-child(2) {
+  margin-top: 4rem !important;
+}
+
+@media screen and (min-width: 480px) {
+  .view-inschrijvingen #views-bulk-operations-select input:nth-child(2) {
+    margin-top: 1rem !important;
+    margin-left: 22rem !important;
+  }
+}
+
+.view-inschrijvingen .views-field-created{
+  float: initial;
+}
+
+.view-inschrijvingen .views-field-evenement-van::before,
+.view-inschrijvingen .views-field-created::before {
+  content: "";
+}
+
+thead th {
+  font-weight: bold;
+}
+
+thead th a {
+  text-decoration: none;
+}
+
+.view-inschrijvingen tr{
+  background-color: #FFF;
+}
+
+.view-inschrijvingen input[type='checkbox']{
+  position: relative;
+  top: 3px;
+}

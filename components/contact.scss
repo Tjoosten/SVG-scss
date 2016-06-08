@@ -1,9 +1,11 @@
+/* Contactpagina */
 #contactinfo {
   float: left;
   margin-bottom: 2rem;
 }
 
-#contactinfo .flip, #contactinfo .panel {
+#contactinfo .flip,
+#contactinfo .panel {
   width: 585px;
 }
 
@@ -21,17 +23,17 @@
 }
 
 #contactinfo .flip img {
-  float: right;
-  margin-right: 10px;
-  margin-top: 2px;
+  float:right;
+  margin-right:10px;
+  margin-top:2px;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
 
 #contactinfo .flip:hover {
-  background-color: rgba(189, 215, 50, 0.57);
+  background-color:rgba(189, 215, 50, 0.57);
   color: #572600;
-  cursor: pointer
+  cursor:pointer
 }
 
 #contactinfo .panel {
@@ -53,10 +55,11 @@
 }
 
 #contactinfo .panel h1 {
-  margin-bottom: 0px;
+  margin-bottom:0px;
 }
 
-#contactinfo .secundair, #contact-dienst .secundair {
+#contactinfo .secundair,
+#contact-dienst .secundair {
   color: #48454B;
 }
 
@@ -64,6 +67,7 @@
   width: 50%;
   float: left;
   padding-right: 1rem;
+
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: #BDD732;
@@ -107,69 +111,7 @@
   display: inline-block;
 }
 
-.node-type-contact {
-  position: relative;
-}
-
-.node-type-contact .content p {
-  width: 75%;
-  float: left;
-}
-
-.node-type-contact #foto {
-  float: right;
-}
-
-.node-type-contact hr, .greenHR {
-  background-color: #BDD732;
-  color: #BDD732;
-  border: none;
-  height: 1px;
-  margin-top: 0;
-  clear: both;
-}
-
-
-.node-type-contact #contactgegevens span {
-  line-height: 2.5rem;
-}
-
-.node-type-contact #contactgegevens span:nth-child(1) img {
-  padding-bottom: 0rem;
-}
-
-.node-type-contact #contactgegevens span:nth-child(2) img {
-  padding-bottom: 0.2rem;
-}
-
-.node-type-contact #contactgegevens span:nth-child(3) img {
-  padding-bottom: 0.4rem;
-}
-
-.node-type-contact #contactgegevens img {
-  display: inline-block;
-  max-width: 1.6rem;
-  margin-right: 0.5rem;
-}
-
-.node-type-contact #contactgegevens-social {
-  position: absolute;
-  bottom: 70px;
-  left: 10px;
-}
-
-.node-type-contact #contactgegevens-social #totem, .node-type-contact #contactgegevens-social #linkedin,
-.node-type-contact #contactgegevens-social #twitter {
-  float: left;
-  margin-right: 15px;
-}
-
-.node-type-contact #contactgegevens-social img {
-  margin-right: 3px;
-  position: relative;
-  top: 3px;
-}
-
+/* Contactpages: Dienst */
 .contact-persoonlijk {
   background-color: #48454B;
   margin-top: -1rem;
@@ -178,7 +120,7 @@
 }
 
 .contact-persoonlijk #foto {
-  float: right;
+  float:right;
 }
 
 .contact-persoonlijk p {
@@ -187,34 +129,38 @@
 }
 
 #contact-dienst p {
-  width: 395px;
-  float: left;
+  width:395px;
+  float:left;
 }
 
 #dienstFoto {
-  float: right;
-  margin-right: 20px;
+  float:right;
+  /*margin-top: -100px;*/
+  margin-right:20px;
 }
 
 #contact-hoofd {
-  clear: left;
-  float: left;
+  clear:left;
+  float:left;
   margin-top: 10px;
 }
 
-#contact-dienst #contact-hoofd img, .views-field-field-contact-foto-hoofd-fid img {
-  border-style: solid;
-  border-width: 1px;
+#contact-dienst #contact-hoofd img,
+.views-field-field-contact-foto-hoofd-fid img {
+  border-style:solid;
+  border-width:1px;
   border-color: #BDD732;
   transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s; /* (iOs) Safari, Android en Blackberry browser */
 }
 
-#contact-dienst #contact-hoofd img:hover, .views-field-field-contact-foto-hoofd-fid img:hover {
+#contact-dienst #contact-hoofd img:hover,
+.views-field-field-contact-foto-hoofd-fid img:hover {
   opacity: 0.8;
 }
 
-#contact-dienst .views-field-field-contact-foto-hoofd-fid, #contact-dienst .views-field-field-contact-foto-hoofd-fid img {
+#contact-dienst .views-field-field-contact-foto-hoofd-fid,
+#contact-dienst .views-field-field-contact-foto-hoofd-fid img {
   width: 130px;
   height: 80px;
 }
@@ -224,7 +170,8 @@
   font-weight: bold;
 }
 
-#contact-dienst .views-field-title, #contact-dienst .views-field-tid {
+#contact-dienst .views-field-title,
+#contact-dienst .views-field-tid {
   width: 125px;
   margin-left: 5px;
 }
@@ -241,8 +188,91 @@
   padding-bottom: 15px;
 }
 
+.term main.region [id^="node-"] .content {
+  background-color: #E7E0DE;
+  padding: 2rem;
+  min-height: 14rem;
+}
+
+.term main.region [id^="node-"] h2 {
+  margin-top: 0;
+}
+
+.term main.region .contact-body #foto {
+  float: right;
+  max-width: 14rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.term main.region [id^="node-"] #contactgegevens,
+.term main.region [id^="node-"] #contactgegevens-social {
+  display: none;
+}
+
+.term main.region .content .field-field-contact-email div{
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* contactpagina's */
+.node-type-contact .content p {
+  width: 75%;
+  float: left;
+}
+
+.node-type-contact #foto {
+  float: right;
+}
+
+.node-type-contact hr,
+.greenHR {
+  background-color: #BDD732;
+  color: #BDD732;
+  border: none;
+  height: 1px;
+  margin-top: 0;
+  clear: both;
+}
+
 .contact-body::after {
   content: '';
   display: block;
   clear: both;
+}
+
+.node-type-contact {
+  position: relative;
+}
+
+.node-type-contact #contactgegevens span {
+  line-height: 2.5rem;
+}
+
+.node-type-contact #contactgegevens span:nth-child(1) img { padding-bottom: 0rem;}
+.node-type-contact #contactgegevens span:nth-child(2) img { padding-bottom: 0.2rem;}
+.node-type-contact #contactgegevens span:nth-child(3) img { padding-bottom: 0.4rem;}
+.node-type-contact #contactgegevens img {
+  display: inline-block;
+  max-width: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+.node-type-contact #contactgegevens-social {
+  position:absolute;
+  bottom:70px;
+  left:10px;
+}
+
+.node-type-contact #contactgegevens-social #totem,
+.node-type-contact #contactgegevens-social #linkedin,
+.node-type-contact #contactgegevens-social #twitter {
+  float:left;
+  margin-right:15px;
+}
+
+.node-type-contact #contactgegevens-social img {
+  margin-right:3px;
+  position:relative;
+  top:3px;
 }

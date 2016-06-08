@@ -1,0 +1,29 @@
+/* wysisyg */
+body.mceContentBody::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mceContentBody [_mce_style] {
+  font-size: initial;
+}
+
+/*
+  Floatende afbeeldingen moeten de content hoger maken.
+  'main > div > .content::after' wordt al gebruikt voor een schuine zijde.
+*/
+main > div > .content > :last-child::after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  width: 100%;
+  clear: both;
+}
+
+body[no-sidebar] #sidebar {
+  display: none;
+}

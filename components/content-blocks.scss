@@ -1,0 +1,187 @@
+/* -------------------------------------------------------------------------
+ Content blocks
+---------------------------------------------------------------------------- */
+/* Reset drupal menu styles */
+.region .item-list > ul,
+.region .item-list > ul > li {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+}
+
+.view-content .item-list .views-row {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Date blocks */
+.views-field-evenement-van,
+.views-field-created {
+  float: left;
+  width: 48px;
+  text-align: center;
+  padding-top: 9px;
+  position: relative;
+}
+
+.views-field-evenement-van a,
+.views-field-created a {
+  text-decoration: none;
+}
+
+.views-field-evenement-van a p,
+.views-field-created a p {
+  font-family: DCCAsh, sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1;
+  color: #748D26;
+}
+
+.views-field-evenement-van a :last-child,
+.views-field-created a :last-child {
+  font-size: 1.4rem;
+}
+
+.views-field-evenement-van::before,
+.views-field-created::before {
+  font-family: scouts;
+  content: "\f004";
+  font-size: 7.2rem;
+  position: absolute;
+  line-height: 0.8;
+  left: 0;
+  top: 0;
+}
+
+/* Titles */
+.title {
+  display: inline-block;
+  position: relative;
+  height: 45px;
+  max-width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 1em;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  font-family: DCCAsh, sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #572600;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  position: relative;
+  left: -2rem;
+  width: calc(200% + 4em);
+  top: 4px;
+  height: 50px;
+  min-width: 200px;
+  margin: 0 auto;
+  margin-bottom: -37px;
+  padding: 0 1em;
+  z-index: -1;
+  background: #BDD732;
+  -webkit-transform: skew(0deg, 1deg);
+  transform: skew(0deg, 1deg);
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.views-field-title a {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  line-height: 1.3;
+  font-size: 1.8rem;
+  color: #748D26;
+  text-decoration: none;
+  margin-bottom: 0.4em;
+}
+
+.views-field-body a {
+  text-decoration: none;
+  color: #748D26;
+  font-size: 1.2rem;
+}
+
+.views-field-title a:hover,
+.views-field-body a:hover {
+  color: #572600;
+  transition: 0.3s;
+}
+
+.view-evenementen-home .views-field-body a,
+.view-nieuws .views-field-body a {
+  color: #48454B;
+  font-weight: normal;
+}
+
+/* Intro */
+.has-children [id^="node-"] .content {
+  background-color: #BDD732;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.has-children [id^="node-"] .content::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  left: 0;
+  top: -7px;
+  width: 100%;
+  background: #BDD732;
+  -webkit-transform: skew(0deg, 0.5deg);
+  transform: skew(0deg, 0.5deg);
+}
+
+.has-children [id^="node-"] .content::after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  left: 0;
+  bottom: -1.5rem;
+  width: 100%;
+  background: #BDD732;
+  -webkit-transform: skew(0deg, -0.5deg);
+  transform: skew(0deg, -0.5deg);
+}
+
+.has-children [id^="node-"] .content p {
+  font-size: 1.3rem;
+}
+
+.sticky-header {
+  display: none;
+}
+
+main.region > h1:first-child, /* views */
+main.region > [id^='node-'] > .content > h1:first-child,
+main.region > [id^='node-'] > .content > h2:first-child,
+.vacature-title {
+  /* zoals een ondertitel */
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.vacature-duur {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#node-10128 p.footer{
+  clear: both;
+}
