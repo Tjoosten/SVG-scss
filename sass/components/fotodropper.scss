@@ -8,10 +8,10 @@
   margin-right: 2rem;
   margin-bottom: 2rem;
   padding-top: 2.2rem
-}
 
-.view-fotodropper .views-field-created::before {
-  font-size: 11rem;
+  &::before {
+    font-size: 11rem;
+  }
 }
 
 .view-fotodropper .views-label-created {
