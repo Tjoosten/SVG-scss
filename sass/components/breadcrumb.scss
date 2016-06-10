@@ -3,12 +3,13 @@
 #breadcrumb {
   margin-left: -10px;
   margin-bottom: 0.5em;
-}
 
-#breadcrumb a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.3rem;
-  padding: 0 10px;
-  color: #48454B;
+  // #breadcrumb a
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 0 10px;
+    color: #48454B;
+  }
 }
