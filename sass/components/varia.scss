@@ -137,7 +137,7 @@ main.has-children #node-form {
   text-transform: lowercase;
 }
 
-.tags span::before{
+.tags span::before {
   content: "";
   float: left;
   position: absolute;
@@ -150,7 +150,7 @@ main.has-children #node-form {
   border-width: 1.5rem 1.5rem 1.5rem 0;
 }
 
-.tags span::after{
+.tags span::after {
   content:"";
 
   position: absolute;
