@@ -1,6 +1,6 @@
-/* -------------------------------------------------------------------------
- Buttons
----------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------
+// Buttons
+// -------------------------------------------------------------------------
 #children .field-content-nothing,
 .view-footer a {
   font-family: DCCAsh, sans-serif;
@@ -44,7 +44,7 @@
   z-index: -1;
 }
 
-/* add this class to put an arrow in front of a link */
+// add this class to put an arrow in front of a link
 a.arrow-link,
 .views-field-nothing a {
   font-family: DCCAsh, sans-serif;
@@ -65,7 +65,7 @@ a.arrow-link::before,
   top: 0.1em;
 }
 
-/* add this class to put a shape around a link */
+// add this class to put a shape around a link
 a.shape-link,
 a.long-shape-link,
 .views-field-nothing a {
@@ -81,7 +81,7 @@ a.long-shape-link,
   background-size: 100%;
 }
 
-/* Bvb. 'Lees meer' */
+// Bvb. 'Lees meer'
 a.shape-link {
   background: url(../img/btn-green.png) no-repeat 0 3px;
 }
