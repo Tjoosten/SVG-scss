@@ -47,25 +47,29 @@
       z-index: -1;
       left: 0;
     }
+
+    // #block-block-14 li:first-child
+    &:first-child {
+      border-right: 1px solid #FFF;
+    }
+
+    // #block-block-14 li:last-child
+    &:last-child {
+      border-left: 1px solid #FFF;
+
+      // #block-block-14 li:last-child::before
+      &::before {
+        -webkit-transform: skew(0deg, 1deg);
+        transform: skew(0deg, 1deg);
+      }
+
+      // #block-block-14 li:last-child::after
+      &::after {
+        -webkit-transform: skew(0deg, -1deg);
+        transform: skew(0deg, -1deg);
+      }
+    }
   }
-}
-
-#block-block-14 li:first-child {
-  border-right: 1px solid #FFF;
-}
-
-#block-block-14 li:last-child {
-  border-left: 1px solid #FFF;
-}
-
-#block-block-14 li:last-child::before {
-  -webkit-transform: skew(0deg, 1deg);
-  transform: skew(0deg, 1deg);
-}
-
-#block-block-14 li:last-child::after {
-  -webkit-transform: skew(0deg, -1deg);
-  transform: skew(0deg, -1deg);
 }
 
 #block-block-14 a.hopper-winkel,
