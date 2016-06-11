@@ -2,12 +2,15 @@
 .views-field-field-kmpreg-tak-value div {
   display: inline-block;
 }
+
 .views-field-field-kmpreg-tak-value div::after {
   content: ",\00a0";
 }
+
 .views-field-field-kmpreg-tak-value div:nth-last-child(2)::after {
   content: "\00a0 en\00a0";
 }
+
 .views-field-field-kmpreg-tak-value div:last-child::after {
   content: "";
 }
