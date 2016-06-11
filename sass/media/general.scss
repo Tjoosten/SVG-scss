@@ -301,14 +301,14 @@
     top: 182px;
     left: 58.5%;
     margin-left: 325px;
-    transform: scale(0.9999);
+    transform: scale(.9999);
   }
 
   #block-menu_block-4::before {
     border-top: 7px solid #572600;
     border-left: 6px solid rgba(0, 0, 0, 0);
     border-right: 6px solid rgba(0, 0, 0, 0);
-    margin: 9px 9px 0px 39px;
+    margin: 9px 9px 0 39px;
   }
 
   #block-menu-menu-menu-2014-top ul li a,
@@ -718,7 +718,7 @@
     z-index: 101;
     text-align: right;
     cursor: pointer;
-    -moz-transform: scale(0.9999);
+    -moz-transform: scale(.9999);
   }
 
   #block-menu_block-4::before {
@@ -918,7 +918,7 @@
 
   #block-views-evenementen_home-block_1 .view-content .views-row,
   .floating-title .view-content .views-row {
-    padding: 0.5em 15px 2em;
+    padding: .5em 15px 2em;
   }
 
   #block-views-evenementen_home-block_1 .views-field-title,
@@ -978,7 +978,7 @@
   .view-nieuws .field-field-nieuws-afbeelding,
   .node-type-nieuws .field-field-nieuws-afbeelding {
     float: right;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     margin-left: 1.5rem;
   }
 
@@ -1020,7 +1020,7 @@
   }
 
   .full-width-block .content .views-field-nothing a {
-    padding: 0em 0em 0.3em;
+    padding: 0em 0em .3em;
     margin-left: 45px;
     text-align: left;
   }
@@ -1195,7 +1195,7 @@
   }
 
   #block-menu_block-2 ul li a {
-    line-height: 0.95;
+    line-height: .95;
     display: block;
     padding: 0 1rem 2.5rem;
     background: url(../img/sprite.png) no-repeat transparent;
@@ -1523,7 +1523,7 @@
 
   .full-width-block .view-content .item-list .views-row .views-field-nothing a::after {
     border-left-color: #E7E0DE;
-    margin-left: -0.8em;
+    margin-left: -.8em;
   }
 
   .full-width-block .view-content .item-list .views-row .views-field-nothing span.field-content {
@@ -1630,8 +1630,8 @@
 
   .accordeon .item-list ul li.views-row-first .views-field-title::before {
     top: 6px;
-    -webkit-transform: skew(0deg, 0.5deg);
-    transform: skew(0deg, 0.5deg);
+    -webkit-transform: skew(0deg, .5deg);
+    transform: skew(0deg, .5deg);
   }
 
   .accordeon .item-list ul li.views-row-first .views-field-title::after {
