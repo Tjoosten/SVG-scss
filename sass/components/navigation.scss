@@ -37,7 +37,7 @@
 }
 
 .tab.menu-tab:hover {
-  color: #FFF;
+  color: $wit;
 }
 
 .tab.menu-tab::after {
@@ -188,7 +188,7 @@ div[id*="block-menu"] {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: normal;
-  color: #FFF;
+  color: $wit;
 }
 
 #block-menu_block-3 h2::before {
@@ -230,7 +230,7 @@ div[id*="block-menu"] {
 }
 
 #block-menu_block-3 ul.menu li[class*="menu-mlid"] a:hover {
-  color: #FFF;
+  color: $wit;
 }
 
 #block-menu_block-3 ul.menu li[class*="menu-mlid"]::before {
@@ -261,7 +261,7 @@ div[id*="block-menu"] {
   text-align: center;
   font-size: 2.2rem;
   line-height: 1.2;
-  color: #FFF;
+  color: $wit;
   background-color: #572600;
   cursor: pointer;
 }

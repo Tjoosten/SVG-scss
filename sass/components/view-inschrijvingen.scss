@@ -28,12 +28,12 @@
 
 .bluebutton {
   background-color: #256F91;
-  color: #FFF;
+  color: $wit;
 }
 
 .redbutton {
   background-color: #ED1C23;
-  color: #FFF;
+  color: $wit;
 }
 
 #annuleer_inschrijving:hover,
@@ -43,7 +43,7 @@
 .redbutton:hover,
 .brownbutton,
 .brownbutton:hover {
-  color: #FFF;
+  color: $wit;
   background-color: #572600;
   text-decoration: none;
 }
