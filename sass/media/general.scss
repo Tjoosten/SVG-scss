@@ -5,17 +5,17 @@
     width: 5px;
   }
 
-  /* -------------------------------------------------------------------------
-   Layout Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Layout Styles
+  // -------------------------------------------------------------------------
   .container {
     width: 1320px;
     padding: 0 120px;
   }
 
-  /* -------------------------------------------------------------------------
-   Header Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Header Styles
+  // -------------------------------------------------------------------------
   .front header.region,
   .page-home header.region {
     height: 719px;
@@ -42,9 +42,9 @@
     margin-left: 40px;
   }
 
-  /* -------------------------------------------------------------------------
-   Navigation Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Navigation Styles
+  // -------------------------------------------------------------------------
   #block-menu-menu-menu-2014-top {
     width: 1320px;
     margin: 0 auto;
@@ -55,11 +55,13 @@
     overflow: visible;
     z-index: 105;
   }
+
   #block-menu-menu-menu-2014-top ul {
     float: right;
     margin-right: 90px;
     margin-top: -33px;
   }
+
   #block-menu_block-4 {
     width: 1320px;
     margin: 0 auto;
@@ -68,48 +70,59 @@
     padding: 0 60px;
     top: 187px;
   }
+
   #block-menu_block-4::before {
     margin-left: 1129px;
   }
+
   #block-menu_block-4 .content::before {
     float: right;
   }
+
   #block-menu_block-4 .content ul.menu {
     margin-top: 13px;
     margin-right: -50px;
   }
+
   #block-menu_block-3 {
     width: 90%;
     z-index: 102;
     top: -4px;
   }
+
   #block-menu_block-3 h2 {
     margin-left: 23.4%;
     display: inline-block;
     margin-top: -20px;
   }
+
   #block-menu_block-3 .content {
     margin-top: -10px;
   }
+
   #block-menu_block-2 ul li a {
     font-size: 2.2rem;
   }
+
   #block-menu-menu-menu-2014-top ul li a,
   #block-menu_block-4 .content::before {
     font-size: 1.7rem;
   }
-  /* -------------------------------------------------------------------------
-   Footer Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Footer Styles
+  // -------------------------------------------------------------------------
   footer.region .container {
     width: 1320px;
     padding: 0 120px;
   }
-  /* Children blocks */
+
+  // Children blocks
   main.has-children #children .item-list > ul li.views-row {
     width: 348px;
   }
-  /* Sidebar blocks */
+
+  // Sidebar blocks
   .page-home #sidebar {
     right: 120px;
     width: 31%;
@@ -121,48 +134,58 @@
     display: none;
     width: 4px;
   }
-  /* -------------------------------------------------------------------------
-   Layout Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Layout Styles
+  // ----------------------------------------------------------------------------
   .container {
     width: 1210px;
     padding: 0 65px; /* Zo is de content 1080px breed. */
   }
+
   .front main .content {
     width: 100%;
   }
-  /* -------------------------------------------------------------------------
-   Header Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Header Styles
+  // -------------------------------------------------------------------------
   header.region {
     background: url(../img/header_ribbon-2550.png) no-repeat center top transparent;
     height: 260px;
   }
+
   .front header.region,
   .page-home header.region {
     height: 584px;
   }
+
   #global-menu .container {
     width: 1120px;
   }
+
   .fotoheader-wrapper {
     height: 580px;
   }
+
   header.region .logo {
     width: 82px;
     padding-top: 80px;
     margin-left: 0px;
   }
+
   header.region .logo a {
     width: 82px;
   }
-  /* -------------------------------------------------------------------------
-   Navigation Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Navigation Styles
+  // -------------------------------------------------------------------------
   #block-menu-menu-menu-2014-top {
     top: 210px;
     left: 58.5%;
   }
+
   #block-menu-menu-menu-2014-top ul li::before {
     width: 9px;
     border-top: 6px solid transparent;
@@ -170,66 +193,85 @@
     border-bottom: 6px solid transparent;
     margin-bottom: 0px;
   }
+
   #block-menu_block-2 {
     margin-top: 75px;
     margin-right: -15px;
   }
+
   #block-menu_block-2 ul {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
   #block-menu_block-2 ul li {
     max-width: 17rem;
     box-sizing: border-box;
   }
+
   #block-menu_block-2 ul li a {
     font-size: 2.1rem;
     display: table-cell;
     vertical-align: middle;
     background-size: 990px;
   }
+
   #block-menu_block-2 ul li a:hover {
     color: #48454B;
   }
+
   #block-menu_block-2 ul li:nth-child(1) a {
     background-position: 10px 26px;
   }
+
   #block-menu_block-2 ul li:nth-child(1) a:hover {
     background-position: 10px -55px;
   }
+
   #block-menu_block-2 ul li:nth-child(2) a {
     background-position: -135px 26px;
   }
+
   #block-menu_block-2 ul li:nth-child(2) a:hover {
     background-position: -135px -55px;
   }
+
   #block-menu_block-2 ul li:nth-child(3) a {
     background-position: -111px 26px;
   }
+
   #block-menu_block-2 ul li:nth-child(3) a:hover {
     background-position: -111px -55px;
   }
+
   #block-menu_block-2 ul li:nth-child(4) a {
     background-position: -420px 50px;
   }
+
   #block-menu_block-2 ul li:nth-child(4) a:hover {
     background-position: -420px -31px;
   }
+
   #block-menu_block-2 ul li:nth-child(5) a {
     background-position: -583px 50px;
   }
+
   #block-menu_block-2 ul li:nth-child(5) a:hover {
     background-position: -583px -31px;
   }
+
   #block-menu_block-2 ul li:nth-child(6) a {
     background-position: -718px 26px;
   }
+
   #block-menu_block-2 ul li:nth-child(6) a:hover {
     background-position: -718px -55px;
   }
+
   #block-menu_block-2 ul li:nth-child(7) a {
     background-position: -889px 50px;
   }
+
   #block-menu_block-2 ul li:nth-child(7) a:hover {
     background-position: -889px -31px;
     color: #572600;
@@ -259,14 +301,14 @@
     top: 182px;
     left: 58.5%;
     margin-left: 325px;
-    transform: scale(0.9999);
+    transform: scale(.9999);
   }
 
   #block-menu_block-4::before {
     border-top: 7px solid #572600;
     border-left: 6px solid rgba(0, 0, 0, 0);
     border-right: 6px solid rgba(0, 0, 0, 0);
-    margin: 9px 9px 0px 39px;
+    margin: 9px 9px 0 39px;
   }
 
   #block-menu-menu-menu-2014-top ul li a,
@@ -286,9 +328,9 @@
     background-size: 100%;
   }
 
-  /* -------------------------------------------------------------------------
-   Footer Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Footer Styles
+  // -------------------------------------------------------------------------
   footer.region {
     background: url(../img/footer_ribbon.png) no-repeat center top transparent;
     height: 450px;
@@ -331,35 +373,42 @@
     float: right;
   }
 
-  /* In de Kijker bottom */
+  // In de Kijker bottom
   .full-width-block .content .view-content::before {
     top: 5px;
   }
+
   .full-width-block .content .view-content::after {
     top: 0;
     border-width: 8px;
     border-bottom-width: 16px;
   }
-  /* Children blocks */
+
+  // Children blocks
   main.has-children #children .item-list > ul li.views-row {
     width: 351px;
   }
-  /* Sidebar blocks */
+
+  // Sidebar blocks
   .page-home #sidebar {
     right: 65px;
     top: 15px;
     width: 34%;
   }
+
   #block-block-14 ul {
     height: 16rem;
   }
+
   #block-block-14 .hopper-winkel a,
   #block-block-14 .hopper-jeugdverblijf a {
     height: 14rem;
   }
+
   #block-block-14 .hopper-winkel a {
     width: 70%;
   }
+
   #block-block-14 .hopper-jeugdverblijf a {
     width: 80%;
   }
@@ -371,9 +420,9 @@
     width: 2px;
   }
 
-  /* -------------------------------------------------------------------------
-   Layout Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Layout Styles
+  // -------------------------------------------------------------------------
   .container {
     width: 100%;
     padding: 0 38px;
@@ -440,56 +489,67 @@
     width: 33.3333%;
   }
 
-  /* -------------------------------------------------------------------------
-   Base Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Base Styles
+  // -------------------------------------------------------------------------
   ::-webkit-input-placeholder {
-    /* WebKit browsers */
+    // WebKit browsers
     color: #572600;
   }
+
   :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
+    // Mozilla Firefox 4 to 18
     color: #572600;
   }
+
   ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
+    // Mozilla Firefox 19+
     color: #572600;
   }
+
   :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
+    // Internet Explorer 10+
     color: #572600;
   }
-  /* -------------------------------------------------------------------------
-   Header Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Header Styles
+  // --------------------------------------------------------------------------
   header.region {
     background: url(../img/header_ribbon-768.png) no-repeat center top transparent;
     height: 160px;
   }
+
   .front header.region,
   .page-home header.region {
     height: 274px;
     margin-bottom: 36px;
   }
+
   .fotoheader-wrapper {
     height: 270px;
   }
+
   header.region #block-views-fotoheader-block_1 .views-field-title {
     background-color: #BDD732;
     text-align: center;
     margin: 0 auto;
   }
+
   header.region .logo {
     width: 70%;
     padding-top: 53px;
   }
+
   header.region .logo a {
     width: 54px;
     display: block;
   }
+
   header.region .logo a img {
     width: 100%;
   }
+
   header.region #block-search-0 {
     border: none;
     background-color: #DBE68E;
@@ -500,15 +560,18 @@
     width: 305px;
     margin-top: -20px;
   }
+
   header.region #block-search-0::before {
     display: none;
   }
+
   header.region #block-search-0 #search-block-form ::-webkit-input-placeholder,
   header.region #block-search-0 #search-block-form :-moz-placeholder,
   header.region #block-search-0 #search-block-form ::-moz-placeholder,
   header.region #block-search-0 #search-block-form :-ms-input-placeholder {
     color: #572600;
   }
+
   #edit-search-block-form-1 {
     background-color: transparent;
     color: #572600;
@@ -516,16 +579,19 @@
     padding: 2px 5px 5px;
   }
 
-  /* Change color of searchbox placeholder text on click */
+  // Change color of searchbox placeholder text on click
   #edit-search-block-form-1:focus:-ms-input-placeholder {
     color: #748D26;
   }
+
   #edit-search-block-form-1:focus::-webkit-input-placeholder {
     color: #748D26;
   }
+
   #edit-search-block-form-1:focus::-moz-placeholder {
     color: #748D26;
   }
+
   #edit-search-block-form-1:focus:-moz-placeholder {
     color: #748D26;
   }
@@ -538,28 +604,34 @@
     font-size: 1.8rem;
     height: 20px;
   }
-  /* -------------------------------------------------------------------------
-   Navigation Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Navigation Styles
+  // -------------------------------------------------------------------------
   .mobile-tabs {
     width: 220px;
     margin-top: -42px;
   }
+
   .mobile-tabs .search-tab {
     display: none;
   }
+
   .mobile-tabs .menu-tab {
     float: none;
   }
+
   div[id*="block-menu"] {
     width: 430px;
     margin: 0 17%;
     display: none;
     position: absolute;
   }
+
   #block-menu-menu-menu-2014-top::after {
     display: none;
   }
+
   .close {
     position: absolute;
     left: calc(17% + 395px);
@@ -570,6 +642,7 @@
     color: #572600;
     background-color: transparent;
   }
+
   #block-menu-menu-menu-2014-top {
     display: block;
     float: right;
@@ -579,16 +652,20 @@
     margin: -30px 0 0;
     background-color: transparent;
   }
+
   #block-menu-menu-menu-2014-top::before {
     display: none;
   }
+
   #block-menu-menu-menu-2014-top ul {
     padding: 0;
   }
+
   #block-menu-menu-menu-2014-top ul li {
     float: left;
     padding: 0 0 0 1rem;
   }
+
   #block-menu-menu-menu-2014-top ul li::before {
     content: " ";
     display: inline-block;
@@ -599,6 +676,7 @@
     border-left: 6px solid #BDD732;
     border-bottom: 5px solid transparent;
   }
+
   #block-menu-menu-menu-2014-top ul li a {
     font-family: DCCAsh, sans-serif;
     font-weight: normal;
@@ -607,12 +685,14 @@
     font-size: 1.4rem;
     text-decoration: none;
   }
+
   #block-menu_block-2 {
     position: relative;
     z-index: 5555;
     margin-top: initial;
     padding: 0;
   }
+
   #block-menu_block-2::before {
     content: " ";
     height: 5px;
@@ -622,10 +702,12 @@
     display: block;
     cursor: pointer;
   }
+
   #block-menu_block-3 {
     top: initial;
     border-bottom: 3px solid #572600;
   }
+
   #block-menu_block-4 {
     display: block;
     float: right;
@@ -636,8 +718,9 @@
     z-index: 101;
     text-align: right;
     cursor: pointer;
-    -moz-transform: scale(0.9999);
+    -moz-transform: scale(.9999);
   }
+
   #block-menu_block-4::before {
     content: " ";
     display: inline-block;
@@ -651,6 +734,7 @@
     position: relative;
     margin: 7px 4px 0 0;
   }
+
   #block-menu_block-4 .content::before {
     content: "Hopper";
     font-family: DCCAsh, sans-serif;
@@ -663,6 +747,7 @@
     display: block;
     cursor: pointer;
   }
+
   #block-menu_block-4 .content ul.menu {
     display: none;
     background-color: #E7E0DE;
@@ -672,6 +757,7 @@
     margin-top: 5px;
     box-sizing: border-box;
   }
+
   #block-menu_block-4 .content ul.menu::before {
     content: " ";
     display: inline-block;
@@ -683,6 +769,7 @@
     float: right;
     margin-right: -10px;
   }
+
   #block-menu_block-4 .content ul.menu::after {
     content: '';
     position: absolute;
@@ -694,6 +781,7 @@
     transform: skew(0deg, -3deg);
     z-index: -1;
   }
+
   #block-menu_block-4 .content ul.menu li {
     display: block;
     float: left;
@@ -703,33 +791,41 @@
     box-sizing: border-box;
     padding: 0 0 1rem;
   }
+
   #block-menu_block-4 .content ul.menu li a {
     text-indent: -9999px;
   }
+
   #block-menu_block-4 .content ul.menu li.first,
   #block-menu_block-4 .content ul.menu li.last {
     width: 50%;
   }
+
   #block-menu_block-4 .content ul.menu li.first a,
   #block-menu_block-4 .content ul.menu li.last a {
     width: 9rem;
     height: 15rem;
     background-size: 100%;
   }
+
   #block-menu_block-4 .content ul.menu li.first a {
     background: url(../img/logo-hopper_winkel-alt.png) no-repeat center center;
   }
+
   #block-menu_block-4 .content ul.menu li.last::before {
     -webkit-transform: skew(0deg, 1deg);
     transform: skew(0deg, 1deg);
   }
+
   #block-menu_block-4 .content ul.menu li.last::after {
     -webkit-transform: skew(0deg, -1deg);
     transform: skew(0deg, -1deg);
   }
+
   #block-menu_block-4 .content ul.menu li.last a {
     background: url(../img/logo-hopper_jeugdverblijven-alt.png) no-repeat center center;
   }
+
   #block-menu_block-4 .content ul.menu li a {
     text-decoration: none;
     color: #572600;
@@ -741,12 +837,12 @@
     background-size: 75%;
   }
 
-  /* Titles */
+  // Titles
   .views-field-title a {
     font-size: 2.4rem;
   }
 
-  /* Sidebar blocks */
+  // Sidebar blocks
   .page-node #sidebar,
   .page-admin #sidebar {
     margin-top: 0;
@@ -758,113 +854,139 @@
     float: none;
     border-right: none;
   }
+
   #block-block-11 {
     margin-top: 4em;
   }
+
   #block-block-11::after {
     bottom: -25px;
   }
+
   #block-block-11 iframe {
     height: 150px;
   }
+
   #block-block-14 ul {
     height: 11rem;
   }
+
   #block-block-14 .hopper-winkel a {
     width: 80%;
     height: 80px;
   }
+
   #block-block-14 .hopper-jeugdverblijf a {
     width: 90%;
     height: 80px;
   }
-  /* Activiteiten */
+
+  // Activiteiten
   #block-views-evenementen_home-block_1 .title,
   .floating-title .title {
     text-align: left;
     padding-left: 45px;
   }
+
   #block-views-evenementen_home-block_1 .title::before,
   .floating-title .title::before {
     margin-left: -10px;
   }
+
   #block-views-evenementen_home-block_1 .content,
   .floating-title .content {
     margin-top: 15px;
   }
+
   #block-views-evenementen_home-block_1 .content::after,
   .floating-title .content::after {
     top: -40px;
     border-width: 10px;
     border-bottom-width: 30px;
   }
+
   #block-views-evenementen_home-block_1 .content::before,
   .floating-title .content::before {
     top: -34px;
   }
+
   #block-views-evenementen_home-block_1 .view-content,
   .floating-title .view-content {
     overflow: hidden;
     padding: 0 1.2em 2em;
   }
+
   #block-views-evenementen_home-block_1 .view-content .views-row,
   .floating-title .view-content .views-row {
-    padding: 0.5em 15px 2em;
+    padding: .5em 15px 2em;
   }
+
   #block-views-evenementen_home-block_1 .views-field-title,
   .floating-title .views-field-title {
     width: 70%;
   }
+
   #block-views-evenementen_home-block_1 .views-field-title a,
   .floating-title .views-field-title a {
     font-size: 1.5rem;
     height: 4.5em;
     padding: 8px 0px;
   }
+
   #block-views-evenementen_home-block_1 .views-field-body,
   .floating-title .views-field-body {
     width: 100%;
   }
+
   #block-views-evenementen_home-block_1 .view-footer,
   .floating-title .view-footer {
     text-align: left;
   }
+
   #block-views-evenementen_home-block_1 .view-footer a,
   .floating-title .view-footer a {
     margin-left: 2em;
     padding-left: 15px;
     width: 170px;
   }
+
   #block-views-evenementen_home-block_1 .view-footer a::after,
   .floating-title .view-footer a::after {
     margin-left: -20px;
   }
-  /* Nieuws */
+
+  // Nieuws
   .view-nieuws .title {
     padding-left: 8rem;
   }
+
   .view-nieuws .title::after {
     bottom: 2px;
   }
+
   .view-nieuws .view-content .views-row {
     float: none;
     width: 100%;
     margin: 2rem 0;
     padding: 0 2rem;
   }
+
   .view-nieuws .view-content .views-field-title {
     float: left;
   }
+
   .view-nieuws .field-field-nieuws-afbeelding,
   .node-type-nieuws .field-field-nieuws-afbeelding {
     float: right;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     margin-left: 1.5rem;
   }
+
   .view-nieuws .view-content .views-field-body {
     width: 70%;
     float: left;
   }
+
   .view-nieuws .view-content .views-field-field-nieuws-afbeelding-fid {
     float: right;
     position: absolute;
@@ -873,14 +995,17 @@
     right: 2.5em;
     box-sizing: border-box;
   }
+
   .view-nieuws .view-content .views-field-field-nieuws-afbeelding-fid a {
     display: block;
     border: 4px solid #E7E0DE;
   }
+
   .view-nieuws .view-footer a {
     padding-left: 45px;
     height: 60px;
   }
+
   .view-nieuws .view-footer a::after {
     -webkit-transform: skew(0deg, -1deg);
     transform: skew(0deg, -1deg);
@@ -888,12 +1013,14 @@
     height: 50px;
     top: -50px;
   }
-  /* In de Kijker bottom */
+
+  // In de Kijker bottom
   .full-width-block .content .view-content::after {
     top: 3%;
   }
+
   .full-width-block .content .views-field-nothing a {
-    padding: 0em 0em 0.3em;
+    padding: 0em 0em .3em;
     margin-left: 45px;
     text-align: left;
   }
@@ -904,63 +1031,77 @@
     display: none;
     width: 3px;
   }
-  /* -------------------------------------------------------------------------
-   Layout Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Layout Styles
+  // -------------------------------------------------------------------------
   .container {
     width: 940px;
     padding: 0 47px;
     overflow: hidden;
     clear: both;
   }
+
   .front main .content {
     width: 100%;
   }
-  /* -------------------------------------------------------------------------
-   Base Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Base Styles
+  // -------------------------------------------------------------------------
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 3.2rem;
   }
+
   h3 {
     font-size: 2.4rem;
   }
+
   h4 {
     font-size: 1.6rem;
   }
+
   .views-field-nothing a {
     font-size: 1.6rem;
   }
-  /* -------------------------------------------------------------------------
-   Header Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Header Styles
+  // -------------------------------------------------------------------------
   header.region {
     background: url(../img/header_ribbon-1210.png) no-repeat center top transparent;
     height: 200px;
   }
+
   .front header.region,
   .page-home header.region {
     height: 474px;
   }
+
   #global-menu .container {
     width: 890px;
   }
+
   .fotoheader-wrapper {
     height: 470px;
   }
+
   header.region .logo {
     width: 60px;
     padding-top: 65px;
     margin-left: 10px;
     float: left;
   }
+
   header.region .logo a {
     width: 60px;
     display: block;
   }
+
   header.region #block-search-0 {
     float: right;
     position: relative;
@@ -969,17 +1110,19 @@
     top: 60px;
     height: 4rem;
 
-    /* Om voor het uitvoeren van javascript al een redelijke layout te hebben */
+    // Om voor het uitvoeren van javascript al een redelijke layout te hebben */
     max-height: 4rem;
     overflow: hidden;
   }
   #edit-search-block-form-1 {
     padding: 2px 5px 2px;
   }
+
   header.region #block-search-0 #search-block-form .form-submit {
     margin: 0;
     font-size: 1.8rem;
   }
+
   #block-menu_block-3 {
     text-align: left;
   }
@@ -990,26 +1133,30 @@
     background-size: 82%;
   }
 
-  /* -------------------------------------------------------------------------
-   Navigation Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Navigation Styles
+  // -------------------------------------------------------------------------
   .tab {
     display: none;
   }
+
   div[id*="block-menu"] {
     width: auto;
     margin: 0;
     display: block;
   }
+
   .close {
     display: none !important;
   }
+
   #block-menu-menu-menu-2014-top {
     position: absolute;
     top: 170px;
     left: 54%;
     width: auto;
   }
+
   #block-menu_block-2 {
     background: transparent;
     display: block;
@@ -1019,15 +1166,18 @@
     margin-top: 65px;
     position: relative;
   }
+
   #block-menu_block-2::before {
     display: none;
   }
+
   #block-menu_block-2 ul {
     position: relative;
     padding: 0 -1rem 0 1rem;
     text-align: justify;
-    line-height: 0; /* zo heeft de ::after geen effect op wat er onder staat */
+    line-height: 0; // zo heeft de ::after geen effect op wat er onder staat.
   }
+
   #block-menu_block-2 ul li {
     display: inline-block;
     max-width: 12rem;
@@ -1035,67 +1185,83 @@
     text-align: center;
     vertical-align: top;
   }
+
   #block-menu_block-2 ul:last-child::after {
-    /*
-      'text-align: justify' werkt niet op de laatste regel.
-      Dit zorgt voor een extra laatste regel.
-    */
+    // 'text-align: justify' werkt niet op de laatste regel.
+    // Dit zorgt voor een extra laatste regel.
     content: "";
     display: inline-block;
     width: 100%;
   }
+
   #block-menu_block-2 ul li a {
-    line-height: 0.95;
+    line-height: .95;
     display: block;
     padding: 0 1rem 2.5rem;
     background: url(../img/sprite.png) no-repeat transparent;
   }
+
   #block-menu_block-2 ul li a:hover {
     color: #48454B;
   }
+
   #block-menu_block-2 ul li:nth-child(1) a {
     background-position: 10px 23px;
   }
+
   #block-menu_block-2 ul li:nth-child(1) a:hover {
     background-position: 10px -45px;
   }
+
   #block-menu_block-2 ul li:nth-child(2) a {
     background-position: -110px 23px;
   }
+
   #block-menu_block-2 ul li:nth-child(2) a:hover {
     background-position: -110px -45px;
   }
+
   #block-menu_block-2 ul li:nth-child(3) a {
     background-position: -215px 23px;
   }
+
   #block-menu_block-2 ul li:nth-child(3) a:hover {
     background-position: -215px -45px;
   }
+
   #block-menu_block-2 ul li:nth-child(4) a {
     background-position: -346px 40px;
   }
+
   #block-menu_block-2 ul li:nth-child(4) a:hover {
     background-position: -346px -30px;
   }
+
   #block-menu_block-2 ul li:nth-child(5) a {
     background-position: -611px 40px;
   }
+
   #block-menu_block-2 ul li:nth-child(5) a:hover {
     background-position: -611px -30px;
   }
+
   #block-menu_block-2 ul li:nth-child(6) a {
     background-position: -602px 23px;
   }
+
   #block-menu_block-2 ul li:nth-child(6) a:hover {
     background-position: -602px -45px;
   }
+
   #block-menu_block-2 ul li:nth-child(7) a {
     background-position: -741px 40px;
   }
+
   #block-menu_block-2 ul li:nth-child(7) a:hover {
     background-position: -741px -30px;
     color: #572600;
   }
+
   #block-menu_block-3 {
     display: block;
     clear: both;
@@ -1107,6 +1273,7 @@
     margin-top: 0;
     border: none;
   }
+
   #block-menu_block-3 h2 {
     border: none;
     text-align: left;
@@ -1115,6 +1282,7 @@
     color: #FFF;
     padding-top: 6px;
   }
+
   #block-menu_block-3 h2::after {
     content: " ";
     display: inline-block;
@@ -1128,9 +1296,11 @@
     margin-left: 10px;
     top: -2px;
   }
+
   #block-menu_block-3::after {
     display: none;
   }
+
   #block-menu_block-3 .content {
     display: none;
     position: relative;
@@ -1141,6 +1311,7 @@
     border-bottom: 3px solid #572600;
     padding: 15px;
   }
+
   #block-menu_block-3 .content::before {
     display: block;
     content: "\f005";
@@ -1152,11 +1323,13 @@
     top: 21px;
     cursor: pointer;
   }
+
   #block-menu_block-3 .content .menu {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4;
   }
+
   #block-menu_block-3 .content .menu li[class*="menu-mlid"]::before {
     width: 9px;
     border-top-width: 4px;
@@ -1164,97 +1337,117 @@
     border-bottom-width: 4px;
     margin-top: 6px;
   }
+
   #block-menu_block-3 .content .menu li[class*="menu-mlid"] a {
     font-size: 1.6rem;
   }
+
   #block-menu_block-4 {
     position: absolute;
     top: 143px;
     left: 55%;
     margin-left: 253px;
   }
+
   #block-menu_block-4::before {
     margin-left: 48px;
   }
+
   #block-menu_block-4 .content::before {
     text-align: right;
   }
+
   #block-menu_block-4 .content ul.menu {
     display: none;
   }
-  /* -------------------------------------------------------------------------
-   Footer Styles
-  ---------------------------------------------------------------------------- */
+
+  // -------------------------------------------------------------------------
+  // Footer Styles
+  // -------------------------------------------------------------------------
   footer.region {
     background: url(../img/footer_ribbon.png) no-repeat calc(50% + 88px) top transparent;
     height: 350px;
     padding: 30px 0px;
     text-align: left;
   }
+
   footer.region .container {
     width: 940px;
     padding: 0 47px;
   }
+
   footer.region .footer-top {
     background-color: transparent;
     float: left;
     padding: 15px 15px 0 0;
   }
+
   footer.region .footer-top .logo {
     width: 87px;
   }
+
   footer.region .footer-bottom .contact {
     float: left;
     line-height: 1.4;
     width: 44%;
   }
+
   footer.region .footer-bottom .externe-links {
     float: right;
     width: 53%;
   }
+
   footer.region .footer-bottom ul {
     max-width: none;
     margin: 40px 0;
   }
+
   footer.region .footer-bottom ul li {
     width: 50%;
   }
+
   footer.region .footer-bottom .logo-hopper,
   footer.region .footer-bottom .logo-vlaanderen {
     width: 145px;
   }
+
   footer.region .footer-bottom ul li:nth-child(2) {
     float: left;
     width: 40%;
   }
 
-  /* -------------------------------------------------------------------------
-   Content blocks
-  ---------------------------------------------------------------------------- */
-  /* Date blocks */
+  // -------------------------------------------------------------------------
+  // Content blocks
+  // -------------------------------------------------------------------------
+
+  // Date blocks
   .views-field-evenement-van,
   .views-field-created {
     width: 62px;
     padding-top: 7px;
   }
+
   .views-field-evenement-van a,
   .views-field-created a {
     text-decoration: none;
   }
+
   .views-field-evenement-van a p,
   .views-field-created a p {
     font-size: 3.4rem;
   }
+
   .views-field-evenement-van a p:last-child,
   .views-field-created a p:last-child {
     font-size: 1.8rem;
   }
+
   .views-field-evenement-van::before,
   .views-field-created::before {
     font-size: 9rem;
   }
 
-  /* In de kijker - accordeon */
+  // In de kijker - accordeon
   #block-views-indekijker-block_3 {
     margin-bottom: 1em;
   }
@@ -1268,42 +1461,51 @@
     height: 65px;
   }
 
-  /* Activiteiten */
+  // Activiteiten
   #block-views-evenementen_home-block_1 .view-content,
   .floating-title .view-content {
     padding: 0 2em 2em;
   }
+
   #block-views-evenementen_home-block_1 .views-field-title a,
   .floating-title .views-field-title a {
     height: auto;
     font-size: 2.1rem;
   }
+
   #block-views-evenementen_home-block_1 .views-field-body,
   .floating-title .views-field-body {
     width: 70%;
   }
+
   #block-views-evenementen_home-block_1 .view-footer a,
   .floating-title .view-footer a {
     margin-left: 3em;
   }
-  /* Nieuws */
+
+  // Nieuws
   .view-nieuws .view-content .views-row {
     min-height: 9.5em;
   }
+
   .view-nieuws .view-content .views-field-body {
     width: 75%;
   }
+
   .view-nieuws .view-content .views-field-field-nieuws-afbeelding-fid {
     right: 3.5em;
   }
-  /* In de Kijker bottom */
+
+  // In de Kijker bottom
   .full-width-block {
     margin-bottom: 2em;
   }
+
   .full-width-block .view-content::before {
     top: 15px;
     height: 50px;
   }
+
   .full-width-block .view-content .item-list .views-row .views-field-nothing a {
     width: auto;
     float: right;
@@ -1318,48 +1520,56 @@
     color: #48454B;
     line-height: 1.8;
   }
+
   .full-width-block .view-content .item-list .views-row .views-field-nothing a::after {
     border-left-color: #E7E0DE;
-    margin-left: -0.8em;
+    margin-left: -.8em;
   }
+
   .full-width-block .view-content .item-list .views-row .views-field-nothing span.field-content {
     height: 5px;
   }
-  /* Intro */
+
+  // Intro
   .has-children [id^="node-"] .content {
-    padding-top: 15px;
-    padding-bottom: 7px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 15px 60px 7px;
   }
+
   .has-children [id^="node-"] .content p {
     font-size: 1.6rem;
   }
+
   main.region .field-field-ondertitel {
     font-size: 4rem;
   }
-  /* Children blocks */
+
+  // Children blocks
   main.has-children #children .item-list > ul {
     margin-left: -9px;
     margin-right: -9px;
   }
+
   main.has-children #children .item-list > ul li.views-row {
     width: 270px;
     height: 340px;
     float: left;
     margin: 0 9px 18px;
   }
-  /* Sidebar blocks */
+
+  // Sidebar blocks
   .page-home #sidebar {
     top: 20px;
     right: 47px;
   }
+
   #block-block-11 {
     margin-top: 4em;
   }
+
   #block-block-14 ul {
     height: 13rem;
   }
+
   #block-block-14 .hopper-winkel a,
   #block-block-14 .hopper-jeugdverblijf a {
     height: 90px;
@@ -1377,9 +1587,9 @@
     padding: 0 24px;
   }
 
-  /* -------------------------------------------------------------------------
-   Navigation Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Navigation Styles
+  // -------------------------------------------------------------------------
   #block-search-0 {
     margin-top: 30px;
   }
@@ -1390,9 +1600,9 @@
     background-size: 95%;
   }
 
-  /* -------------------------------------------------------------------------
-   Footer Styles
-  ---------------------------------------------------------------------------- */
+  // -------------------------------------------------------------------------
+  // Footer Styles
+  // -------------------------------------------------------------------------
   footer.region .footer-bottom ul {
     max-width: 435px;
   }
@@ -1409,7 +1619,7 @@
     width: 140px;
   }
 
-  /* In de kijker - accordeon */
+  // In de kijker - accordeon
   .accordeon .item-list ul li.views-row .views-field-field-indekijker-afbeelding-fid a {
     width: 100%;
   }
@@ -1420,8 +1630,8 @@
 
   .accordeon .item-list ul li.views-row-first .views-field-title::before {
     top: 6px;
-    -webkit-transform: skew(0deg, 0.5deg);
-    transform: skew(0deg, 0.5deg);
+    -webkit-transform: skew(0deg, .5deg);
+    transform: skew(0deg, .5deg);
   }
 
   .accordeon .item-list ul li.views-row-first .views-field-title::after {
@@ -1441,7 +1651,7 @@
     transform: skew(0deg, -2deg);
   }
 
-  /* Activiteiten */
+  // Activiteiten
   #block-views-evenementen_home-block_1 .views-field-title,
   .floating-title .views-field-title,
   #block-views-evenementen_home-block_1 .views-field-body,
@@ -1449,7 +1659,7 @@
     width: 85%;
   }
 
-  /* Nieuws */
+  // Nieuws
   .view-nieuws .views-field-body,
   .view-nieuws .views-field-title {
     float: right;
@@ -1471,7 +1681,7 @@
     height: 40px;
   }
 
-  /* In de Kijker bottom */
+  // In de Kijker bottom
   .full-width-block .content::before {
     bottom: -6px;
   }
@@ -1483,7 +1693,7 @@
     border-bottom-width: 8px;
   }
 
-  /* Hopper blocks */
+  // Hopper blocks
   #block-block-14 {
     margin-top: 1em;
     width: calc(100% - 270px);
@@ -1506,7 +1716,7 @@
     height: 100px;
   }
 
-  /* Facebook like box */
+  // Facebook like box.
   #block-block-11 {
     width: 270px;
     float: right;
@@ -1518,7 +1728,7 @@
     bottom: -15px;
   }
 
-  /* Children blocks */
+  // Children blocks.
   main.has-children #children .item-list > ul {
     margin-left: -9px;
     margin-right: -9px;
