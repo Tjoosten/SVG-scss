@@ -12,18 +12,18 @@
   }
 
   div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
-    margin: 2rem 0px !important;
+    margin: 2rem 0 !important;
   }
 
-  /* Evenementen: Alle inschrijvingen */
+  // Evenementen: Alle inschrijvingen
   .view-inschrijvingen.dynamic tr {
-    padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   .view-inschrijvingen.dynamic td {
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   .view-inschrijvingen.dynamic td:nth-of-type(1) {
@@ -40,7 +40,7 @@
   }
 
   .view-inschrijvingen.dynamic .views-field-field-sgv-naam-value {
-    padding-left: 0.4rem;
+    padding-left: .4rem;
   }
 
   .view-inschrijvingen.dynamic .views-field-created {
@@ -52,8 +52,8 @@
   }
 
   .view-inschrijvingen.dynamic .views-field {
-    width: 100%;
     text-align: left;
+    width: 100%;
   }
 
   .view-inschrijvingen.dynamic td:nth-of-type(1)::before {
@@ -119,14 +119,14 @@
 
   .inschrijving-werkwinkelsblokken-tabel td:first-child {
     float: left;
-    z-index: 1;
-    padding-left: 1rem;
     overflow: hidden;
+    padding-left: 1rem;
+    z-index: 1;
   }
 
   .inschrijving-werkwinkelsblokken-tabel td:nth-child(2) {
-    padding-left: 5rem;
     padding-bottom: 0;
+    padding-left: 5rem;
   }
 
   .inschrijving-werkwinkelsblokken-tabel td:nth-child(2) h5 .form-item {

@@ -1,7 +1,8 @@
-/* -------------------------------------------------------------------------
- Content blocks
----------------------------------------------------------------------------- */
-/* Reset drupal menu styles */
+// -------------------------------------------------------------------------
+// Content blocks
+// -------------------------------------------------------------------------
+
+// Reset drupal menu styles
 .region .item-list > ul,
 .region .item-list > ul > li {
   margin: 0;
@@ -14,7 +15,7 @@
   overflow: hidden;
 }
 
-/* Date blocks */
+// Date blocks
 .views-field-evenement-van,
 .views-field-created {
   float: left;
@@ -57,7 +58,7 @@
   top: 0;
 }
 
-/* Titles */
+// Titles
 .title {
   display: inline-block;
   position: relative;
@@ -127,7 +128,7 @@
   font-weight: normal;
 }
 
-/* Intro */
+// Intro
 .has-children [id^="node-"] .content {
   background-color: #BDD732;
   padding: 15px 25px;
@@ -168,11 +169,11 @@
   display: none;
 }
 
-main.region > h1:first-child, /* views */
+main.region > h1:first-child, // views
 main.region > [id^='node-'] > .content > h1:first-child,
 main.region > [id^='node-'] > .content > h2:first-child,
 .vacature-title {
-  /* zoals een ondertitel */
+  // zoals een ondertitel
   margin-top: 0.8rem;
   margin-bottom: 1.2rem;
 }

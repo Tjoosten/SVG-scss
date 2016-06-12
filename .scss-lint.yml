@@ -1,0 +1,16 @@
+linters:
+
+  IdSelector:
+    enabled: false
+
+  SelectorDepth:
+    enabled: false
+
+  QualifyingElement:
+    enabled: false
+
+  SelectorFormat:
+    enabled: false
+
+  ImportantRule:
+    enabled: false

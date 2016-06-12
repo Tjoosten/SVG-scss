@@ -1,4 +1,4 @@
-/* zoekresultaten */
+// zoekresultaten
 dl.search-results.node-results {
   max-width: 50em;
 }
@@ -49,7 +49,7 @@ dl.search-results a {
   font-weight: normal;
 }
 
-/* Zoekresultaten */
+// Zoekresultaten
 .search-results dt a {
   width: 100%;
   height: 100%;
@@ -71,7 +71,7 @@ dl.search-results a {
   margin-bottom: 0.8em;
 }
 
-/* override de default layout van drupal */
+// override de default layout van drupal
 .form-checkboxes,
 .form-radios {
   margin: 0;

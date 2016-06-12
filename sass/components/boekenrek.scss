@@ -1,4 +1,4 @@
-/* Virtueel boekenrek */
+// Virtueel boekenrek
 .view-publicatie-list td {
   vertical-align: middle;
 }
@@ -25,8 +25,8 @@
   padding-top: 1em;
 }
 
-/* Niet getoond in het virtueel boekenrek, maar wel op de detailpagina */
-/* Hoge specificity is nodig */
+// Niet getoond in het virtueel boekenrek, maar wel op de detailpagina
+// Hoge specificity is nodig
 .page-node main.region .view-publicatie-list .views-field-field-publicatie-file-computed-value img {
   display: none;
 }

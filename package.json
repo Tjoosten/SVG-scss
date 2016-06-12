@@ -1,0 +1,25 @@
+{
+  "name": "svg-theme",
+  "version": "1.0.0",
+  "description": "SCSS port voor de scouts en gidsen .be website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tjoosten/SVG-scss.git"
+  },
+  "keywords": [
+    "SCSS"
+  ],
+  "author": "Tim Joosten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tjoosten/SVG-scss/issues"
+  },
+  "homepage": "https://github.com/Tjoosten/SVG-scss#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -3,25 +3,30 @@
     overflow: hidden;
     padding: 0;
   }
+
   .view-publicatie-list td.views-field-field-publicatie-afbeelding-fid {
     float: left;
-    z-index: 1;
     padding-left: 0;
     padding-right: 1em;
+    z-index: 1;
   }
+
   .view-publicatie-list td.views-field-title {
-    margin-top: 0.5em;
+    margin-top: .5em;
   }
+
   .view-publicatie-list td.views-field-field-publicatie-datum-value {
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
   }
+
   .view-publicatie-list .views-field-field-publicatie-file-computed-value,
   .view-publicatie-list .views-field-field-publicatie-verkrijgbaar-c-value {
     display: none;
   }
 
-  /* Evenementen: kalender */
-  main.region .view-evenementen .item-list li:nth-child(n+11){
-    display:none;
+  // Evenementen: kalender
+  main.region .view-evenementen .item-list li:nth-child(n+11) {
+    display: none;
   }
+
 }

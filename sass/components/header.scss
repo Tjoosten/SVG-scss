@@ -1,6 +1,6 @@
-/* -------------------------------------------------------------------------
- Header Styles
----------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------
+// Header Styles
+// -------------------------------------------------------------------------
 header.region {
   position: relative;
   width: 100%;
@@ -10,21 +10,21 @@ header.region {
 
 .front header.region,
 .page-home header.region {
-  /* met fotoheader */
+  // met fotoheader
   height: 219px;
   margin-bottom: 20px;
 }
 
 header.region #block-views-fotoheader-block_1 {
-  /* nodig voor firefox mobile, ander wordt de 'rechter-overflow' getoond */
+  // nodig voor firefox mobile, ander wordt de 'rechter-overflow' getoond
   position: absolute;
   left: 0px;
   right: 0px;
   top: 0px;
   bottom: 0px;
-  /* achter de andere header-items */
+  // achter de andere header-items
   z-index: -1;
-  /* De foto is breder dan de pagina, maar mag de pagina niet breder maken. */
+  // De foto is breder dan de pagina, maar mag de pagina niet breder maken.
   overflow: hidden;
 }
 
@@ -101,7 +101,7 @@ header.region #block-search-0 .content {
 
 header.region #block-search-0 #search-block-form {
   overflow: hidden;
-  margin-bottom: 0; /* override de default layout van drupal */
+  margin-bottom: 0; // override de default layout van drupal
 }
 
 header.region #block-search-0 #search-block-form ::-webkit-input-placeholder,
@@ -139,7 +139,7 @@ header.region #block-search-0 #search-block-form .form-submit {
   border: none;
   float: right;
   width: 20%;
-  min-width: 0; /* override de standaardwaarde, nodig voor IE */
+  min-width: 0; // override de standaardwaarde, nodig voor IE
   font-family: scouts;
   line-height: 1;
   background: transparent;
