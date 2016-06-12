@@ -9,15 +9,23 @@
   border-radius: 5px;
   -moz-border-radius: 5px;
   text-align:center;
+
+  // .prijscategorie tr
+  tr {
+    height:30px;
+  }
+
+  // .prijscategorie td
+  td {
+    vertical-align: middle;
+  }
+
+  // prijscategorie .prijs
+  .prijs {
+    font-size: 1.4rem;
+  }
 }
 
-.prijscategorie tr {
-  height:30px;
-}
-
-.prijscategorie td {
-  vertical-align: middle;
-}
 
 .prijscategorie .header,
 .prijscategorie .prijs {
@@ -25,8 +33,4 @@
   color: #FFF;
   font-weight: bold;
   font-size: 1.6rem;
-}
-
-.prijscategorie .prijs {
-  font-size: 1.4rem;
 }
