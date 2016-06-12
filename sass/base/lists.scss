@@ -4,16 +4,17 @@ ul {
   /* gelijk met de linkerrand van de gewone tekst */
   margin-left: 16px;
   list-style: disc;
-}
 
-ul.menu,
-ul.menu li {
-  list-style: none;
-  margin: 0;
-}
+  &.menu,
+  &.menu li {
+    list-style: none;
+    margin: 0;
+  }
 
-ul.pager {
-  margin-top: 2rem;
+  // ul.pager
+  &.pager {
+    margin-top: 2rem;
+  }
 }
 
 ol {

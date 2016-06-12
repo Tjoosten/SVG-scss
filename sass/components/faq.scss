@@ -5,8 +5,8 @@
 
 .view-FAQ .view-content .item-list .views-row .views-field-title a,
 .page-faq .view-content .item-list .views-row .views-field-title a {
-  font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -29,17 +29,16 @@ h2.faq {
 }
 
 .view-FAQ-short {
-  width: 45%;
   float: left;
   margin-bottom: 1rem;
   margin-right: 5%;
+  width: 45%;
 }
 
 .view-FAQ-short h3 {
+  border-bottom-color: #bdd732;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #bdd732;
-
 }
 
 .view-FAQ-short .item-list {
@@ -48,10 +47,10 @@ h2.faq {
 
 .view-FAQ-short .views-row {
   padding: 0;
-  margin-left: 2rem;
-
-  overflow: inherit;
   list-style-type: disc !important;
+  margin-left: 2rem;
+  overflow: inherit;
+  padding: 0;
 }
 
 .view-FAQ-short .views-field-title a {
