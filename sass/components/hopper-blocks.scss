@@ -50,12 +50,12 @@
 
     // #block-block-14 li:first-child
     &:first-child {
-      border-right: 1px solid #FFF;
+      border-right: 1px solid $wit;
     }
 
     // #block-block-14 li:last-child
     &:last-child {
-      border-left: 1px solid #FFF;
+      border-left: 1px solid $wit;
 
       // #block-block-14 li:last-child::before
       &::before {

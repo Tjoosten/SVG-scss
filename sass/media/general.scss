@@ -287,7 +287,7 @@
 
   #block-menu_block-3 h2::after {
     margin-bottom: 1px;
-    border-top: 8px solid #FFF;
+    border-top: 8px solid $wit;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     margin-left: 14px;
@@ -1279,7 +1279,7 @@
     text-align: left;
     margin-left: 18.5%;
     cursor: pointer;
-    color: #FFF;
+    color: $wit;
     padding-top: 6px;
   }
 
@@ -1289,7 +1289,7 @@
     width: 0;
     height: 0;
     margin-bottom: 1px;
-    border-top: 6px solid #FFF;
+    border-top: 6px solid $wit;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     position: relative;
@@ -1698,7 +1698,7 @@
     margin-top: 1em;
     width: calc(100% - 270px);
     float: left;
-    border-right: 5px solid #FFF;
+    border-right: 5px solid $wit;
     box-sizing: border-box;
   }
 
