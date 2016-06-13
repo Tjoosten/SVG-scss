@@ -19,6 +19,11 @@ a.context-block-region {
 
 #admin-menu li {
   font-size: 1rem;
+
+  // #admin-menu li.admin-menu-icon a
+  &.admin-menu-icon a {
+    padding: 4px 8px 0;
+  }
 }
 
 .admin-menu-users img {
@@ -30,27 +35,23 @@ a.context-block-region {
   border: medium none;
 }
 
-#admin-menu li.admin-menu-icon a {
-  padding: 4px 8px 0 8px;
-}
-
 #login-form {
-  width: auto;
-  height: 70px;
-  border-radius: 0;
   background: none;
+  border-radius: 0;
   box-shadow: none;
+  height: 70px;
+  width: auto;
 }
 
 #login-form::before {
-  content: "";
-  position: absolute;
+  bottom: 0;
+  content: '';
   left: 0;
+  position: absolute;
   right: 0;
   top: -1rem;
-  bottom: 0;
+  transform: skew(0deg, -1.2deg); // Valt nog net achter de globale menubalk
   z-index: -1;
-  transform: skew(0deg, -1.2deg); /* valt nog net achter de globale menubalk */
 }
 
 .globale_menubalk a,
@@ -65,13 +66,13 @@ body.no-sidebar #sidebar {
 // klein scherm
 @media screen and (max-width:479px) {
   #login-form {
-    width: 160px;
     height: 170px;
+    width: 160px;
   }
 
   #login-form form input[type=submit] {
     height: 30px;
-    width: 154px;
     margin-top: 10px;
+    width: 154px;
   }
 }
