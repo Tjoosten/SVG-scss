@@ -1,45 +1,192 @@
-/* In de kijker - accordeon */
+// In de kijker - accordeon
 .accordeon {
-  overflow: hidden;
   margin-bottom: 1.5em;
-}
-
-.accordeon .item-list ul {
-  margin: 0;
-}
-
-.accordeon .item-list ul li.views-row {
-  float: none;
-  width: 100%;
-  padding: 0;
-  width: 97%;
-  float: right;
-}
-
-.accordeon .item-list ul li.views-row .views-field-title {
-  clear: both;
-  padding: 15px 15px 5px;
-  cursor: pointer;
   overflow: hidden;
-}
 
-.accordeon .item-list ul li.views-row .views-field-title i {
-  font-size: 3.1rem;
-  padding-right: 15px;
-  font-weight: 100;
-  display: inline-block;
-  position: relative;
-  top: -4px;
-  float: left;
-  line-height: 1;
-}
+  // .accordeon ul
+  .item-list ul {
+    margin: 0;
 
-.accordeon .item-list ul li.views-row .views-field-title span {
-  font-family: 'Fjalla One', sans-serif;
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: normal;
-  cursor: pointer;
+    // .accordeon .item-list ul li.views-row-odd .views-field-title
+    li.views-row-odd .views-field-title {
+      background-color: $svg-lichtgroen;
+
+      // .accordeon .item-list ul li.views-row-odd .views-field-title span
+      span {
+        color: $svg-donkergroen;
+        line-height: 1;
+      }
+    }
+
+    // .accordeon .item-list ul li.views-row-even .views-field-title
+    li.views-row-even .views-field-title {
+      background-color: $svg-bruin;
+
+      // .accordeon .item-list ul li.views-row-even .views-field-title span
+      span {
+        color: $wit;
+        font-weight: normal;
+        line-height: 1;
+      }
+    }
+
+
+    // .accordeon .item-list ul li.views-row-first
+    li.views-row-first {
+      position: relative;
+      width: 100%;
+      z-index: 2;
+
+      // .accordeon .item-list ul li.views-row-first div:nth-child(2)
+      div:nth-child(2) {
+        z-index: 4;
+      }
+
+      // .accordeon .item-list ul li.views-row-first .views-field-title
+      .views-field-title {
+        background-color: transparent;
+        float: none;
+        height: auto;
+        overflow: hidden;
+        padding: 15px 0 0 10px;
+        position: relative;
+        text-align: left;
+        width: 100%;
+
+        // .accordeon .item-list ul li.views-row-first .views-field-title::before
+        &::before {
+          background: $svg-lichtgroen;
+          bottom: -3px;
+          content: '';
+          height: 100%;
+          left: 0;
+          position: absolute;
+          -webkit-transform: skew(0deg, 1deg);
+          transform: skew(0deg, 1deg);
+          width: 97%;
+        }
+
+        // .accordeon .item-list ul li.views-row-first .views-field-title::after
+        &::after {
+          border: 7px solid transparent;
+          border-bottom: 10px solid $svg-lichtgroen;
+          content: '';
+          height: 0;
+          position: absolute;
+          right: 0;
+          // 0px ziet er beter uit op desktop (firefox)
+          // -1px ziet er beter uit op android (firefox)
+          top: -1px;
+          width: 3%;
+        }
+
+        // .accordeon .item-list ul li.views-row-first .views-field-title i
+        i {
+          display: none;
+        }
+
+        // .accordeon .item-list ul li.views-row-first .views-field-title span
+        span {
+          background-color: $svg-lichtgroen;
+          color: $svg-bruin;
+          display: block;
+          font-size: 1.8rem;
+          padding-bottom: 10px;
+          position: relative;
+        }
+      }
+    }
+
+    // .accordeon .item-list ul li.views-row-first .views-field-nothing::before
+    .views-field-nothing::before {
+      background: $svg-lichtgroen;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: -13px;
+      -webkit-transform: skew(0deg, -3deg);
+      transform: skew(0deg, -3deg);
+      width: 100%;
+      z-index: 1;
+    }
+
+    // .accordeon .item-list ul li.views-row:nth-child(2)
+    li.views-row:nth-child(2) {
+      margin-top: -30px;
+      position: relative;
+      z-index: 1;
+
+      // .accordeon .item-list ul li.views-row:nth-child(2) .views-field-title
+      .views-field-title {
+        padding-top: 40px;
+
+        // .accordeon .item-list ul li.views-row:nth-child(2) .views-field-title span
+        span {
+          position: relative;
+          top: 2px;
+        }
+
+        // .accordeon .item-list ul li.views-row:nth-child(2) .views-field-title i
+        i {
+          color: $wit;
+        }
+      }
+    }
+
+    // .accordeon .item-list ul li.views-row
+    // TODO: need to check this.
+    // scss-lint:disable DuplicateProperty
+    li.views-row {
+      float: none;
+      float: right;
+      padding: 0;
+      width: 97%;
+      width: 100%;
+
+      // .accordeon .item-list ul li.views-row .views-field-field-indekijker-afbeelding-fid
+      .views-field-field-indekijker-afbeelding-fid {
+        overflow: hidden;
+        position: relative;
+        z-index: 5;
+
+        // .accordeon .item-list ul li.views-row .views-field-field-indekijker-afbeelding-fid img
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      // .accordeon .item-list ul li.views-row .views-field-title
+      .views-field-title {
+        clear: both;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 15px 15px 5px;
+
+        // .accordeon .item-list ul li.views-row .views-field-title i
+        i {
+          display: inline-block;
+          float: left;
+          font-size: 3.1rem;
+          font-weight: 100;
+          line-height: 1;
+          padding-right: 15px;
+          position: relative;
+          top: -4px;
+        }
+
+        // .accordeon .item-list ul li.views-row .views-field-title span
+        span {
+          cursor: pointer;
+          font-family: 'Fjalla One', sans-serif;
+          font-size: 1.6rem;
+          font-weight: normal;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 .accordeon .item-list ul li.views-row div:nth-child(2),
@@ -47,224 +194,101 @@
   display: none;
 }
 
-.accordeon .item-list ul li.views-row .views-field-field-indekijker-afbeelding-fid {
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
-}
-
-.accordeon .item-list ul li.views-row .views-field-field-indekijker-afbeelding-fid img {
-  width: 100%;
-  height: auto;
-}
-
-.accordeon .item-list ul li.views-row .views-field-nothing a {
-  margin: 5px 15px 10px;
-}
-
-.accordeon .item-list ul li.views-row .views-field-nothing a::after {
-  content: ' ';
-  border-left-color: #DBE68E;
-}
-
-.accordeon .item-list ul li.views-row-odd .views-field-title {
-  background-color: #BDD732;
-}
-
-.accordeon .item-list ul li.views-row-odd .views-field-title span {
-  color: #748D26;
-  line-height: 1;
-}
-
 .accordeon .item-list ul li.views-row-odd div:nth-child(2),
 .accordeon .item-list ul li.views-row-odd div:nth-child(3) {
-  background-color: #BDD732;
-}
-
-.accordeon .item-list ul li.views-row-even .views-field-title {
-  background-color: #572600;
-}
-
-.accordeon .item-list ul li.views-row-even .views-field-title span {
-  color: $wit;
-  line-height: 1;
-  font-weight: normal;
+  background-color: $svg-lichtgroen;
 }
 
 .accordeon .item-list ul li.views-row-even div:nth-child(2),
 .accordeon .item-list ul li.views-row-even div:nth-child(3) {
-  background-color: #572600;
-}
-
-.accordeon .item-list ul li.views-row-first {
-  width: 100%;
-  position: relative;
-  z-index: 2;
-}
-
-.accordeon .item-list ul li.views-row-first .views-field-title {
-  background-color: transparent;
-  position: relative;
-  text-align: left;
-  padding: 15px 0px 0 10px;
-  height: auto;
-  overflow: hidden;
-  float: none;
-  width: 100%;
-}
-
-.accordeon .item-list ul li.views-row-first .views-field-title::before {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  height: 100%;
-  width: 97%;
-  background: #BDD732;
-  -webkit-transform: skew(0deg, 1deg);
-  transform: skew(0deg, 1deg);
-}
-
-.accordeon .item-list ul li.views-row-first .views-field-title::after {
-  content: '';
-  position: absolute;
-  /*
-    0px ziet er beter uit op desktop (firefox)
-    -1px ziet er beter uit op android (firefox)
-  */
-  top: -1px;
-  width: 3%;
-  height: 0;
-  border: 7px solid transparent;
-  border-bottom: 10px solid #BDD732;
-  right: 0;
-}
-
-.accordeon .item-list ul li.views-row-first .views-field-title i {
-  display: none;
-}
-
-.accordeon .item-list ul li.views-row-first .views-field-title span {
-  color: #572600;
-  position: relative;
-  display: block;
-  background-color: #BDD732;
-  padding-bottom: 10px;
-  font-size: 1.8rem;
-}
-
-.accordeon .item-list ul li.views-row-first .views-field-nothing::before {
-  content: '';
-  position: absolute;
-  top: -13px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #BDD732;
-  -webkit-transform: skew(0deg, -3deg);
-  transform: skew(0deg, -3deg);
-  z-index: 1;
+  background-color: $svg-bruin;
 }
 
 .accordeon .item-list ul li.views-row-first div:nth-child(2),
 .accordeon .item-list ul li.views-row-first div:nth-child(3) {
-  display: block;
   background-color: transparent;
+  display: block;
   position: relative;
   z-index: 3;
 }
 
-.accordeon .item-list ul li.views-row-first div:nth-child(2) {
-  z-index: 4;
-}
-
-.accordeon .item-list ul li.views-row:nth-child(2) {
-  margin-top: -30px;
-  position: relative;
-  z-index: 1;
-}
-
-.accordeon .item-list ul li.views-row:nth-child(2) .views-field-title {
-  padding-top: 40px;
-}
-
-.accordeon .item-list ul li.views-row:nth-child(2) .views-field-title span {
-  top: 2px;
-  position: relative;
-}
-
-.accordeon .item-list ul li.views-row:nth-child(2) .views-field-title i {
-  color: $wit;
-}
-
-/* In de Kijker bottom */
+// In de Kijker bottom
 .full-width-block {
   margin-bottom: 4em;
-}
 
-.full-width-block .view-content .item-list .views-row {
-  width: 100%;
-  float: none;
-  padding: 0;
-}
+  // .full-width-block img
+  img {
+    width: 100%;
+  }
 
-.full-width-block .view-content .item-list .views-row a {
-  width: 100%;
-}
+  // .full-width-block .view-content
+  .view-content {
+    float: none;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    position: relative;
+    text-align: left;
+    width: 100%;
 
-.full-width-block img {
-  width: 100%;
-}
+    // .full-width-block .view-content .item-list li
+    .item-list li {
+      float: none;
+      padding: 0;
+      width: 100%;
+    }
 
-.full-width-block .view-content {
-  position: relative;
-  text-align: left;
-  padding-top: 20px;
-  height: auto;
-  overflow: hidden;
-  float: none;
-  width: 100%;
-}
+    // .full-width-block .view-content .item-list .views-row
+    .item-list .views-row {
+      float: none;
+      padding: 0;
+      width: 100%;
 
-.full-width-block .view-content .item-list li {
-  width: 100%;
-  float: none;
-  padding: 0;
-}
+      // .full-width-block .view-content .item-list .views-row a
+      a {
+        width: 100%;
+      }
 
-.full-width-block .view-content::before {
-  content: '';
-  position: absolute;
-  bottom: -12px;
-  left: 0;
-  height: 100%;
-  width: 97%;
-  background: #BDD732;
-  -webkit-transform: skew(0deg, 0.5deg);
-  transform: skew(0deg, 0.5deg);
-}
+      // .full-width-block .view-content .views-field-nothing a
+      .views-field-nothing a {
+        font-size: 1.5rem;
+        padding: 0 .9em .3em;
+        text-align: left;
+      }
+    }
 
-.full-width-block .view-content::after {
-  content: '';
-  position: absolute;
-  top: 8px;
-  width: 50%;
-  height: 0;
-  border: 5px solid transparent;
-  border-bottom: 7px solid #BDD732;
-  right: -2px;
-  z-index: -1;
-}
+    // .full-width-block .view-content span
+    span {
+      background-color: $svg-lichtgroen;
+      display: block;
+      line-height: 1.2;
+      position: relative;
+    }
 
-.full-width-block .view-content  .views-field-nothing a {
-  padding: 0em 0.9em 0.3em;
-  font-size: 1.5rem;
-  text-align: left;
-}
+    // .full-width-block .view-content::before
+    &::before {
+      background: $svg-lichtgroen;
+      bottom: -12px;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      -webkit-transform: skew(0deg, .5deg);
+      transform: skew(0deg, .5deg);
+      width: 97%;
+    }
 
-.full-width-block .view-content span {
-  position: relative;
-  display: block;
-  background-color: #BDD732;
-  line-height: 1.2;
+    // .full-width-block .view-content::after
+    &::after {
+      border: 5px solid transparent;
+      border-bottom: 7px solid $svg-lichtgroen;
+      content: '';
+      height: 0;
+      position: absolute;
+      right: -2px;
+      top: 8px;
+      width: 50%;
+      z-index: -1;
+    }
+  }
 }
