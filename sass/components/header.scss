@@ -1,12 +1,117 @@
 // -------------------------------------------------------------------------
 // Header Styles
 // -------------------------------------------------------------------------
+// TODO: Implement better nesting.
+
 header.region {
+  background: url('../img/header_ribbon.png') no-repeat center top transparent;
+  height: 140px;
   position: relative;
   width: 100%;
-  height: 140px;
-  background: url(../img/header_ribbon.png) no-repeat center top transparent;
+
+  // header.region #block-views-fotoheader-block_1 .views-field-title
+  #block-views-fotoheader-block_1 .views-field-title {
+    background-color: $svg-lichtgroen;
+    padding: 2px 0;
+
+    // header.region #block-views-fotoheader-block_1 .views-field-title span
+    span {
+      display: none;
+    }
+  }
+
+  // header.region .logo
+  .logo {
+    display: block;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-top: 46px;
+    width: 284px;
+
+    // header.region .logo a
+    a {
+      display: block;
+      width: 47px;
+    }
+  }
+
+  // header.region #block-search-0
+  #block-search-0 {
+    background-color: $svg-donkergroen;
+    border-bottom: 2px solid $licht-geel;
+    display: none;
+    margin: 30px auto 0;
+    overflow: hidden;
+    position: relative;
+    width: 288px;
+    z-index: 99;
+
+    // header.region #block-search-0 #search-block-form
+    #search-block-form {
+      margin-bottom: 0; // override de default layout van drupal
+      overflow: hidden;
+
+      // header.region #block-search-0 #search-block-form label
+      label {
+        display: none;
+      }
+
+      // header.region #block-search-0 #search-block-form .form-submit
+      .form-submit {
+        -moz-appearace: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        color: $ebb;
+        cursor: pointer;
+        float: right;
+        font-family: scouts;
+        font-size: 2.1rem;
+        font-weight: 100;
+        line-height: 1;
+        min-width: 0; // override de standaardwaarde, nodig voor IE
+        outline: none;
+        position: relative;
+        width: 20%;
+      }
+    }
+
+    // header.region #block-search-0 .content
+    .content {
+      padding: 5px 15px;
+    }
+  }
+
+  // header.region #block-search-0::before
+  #block-search-0::before {
+    background-color: $svg-donkergroen;
+    border-bottom: 6px solid transparent;
+    border-left: 300px solid $licht-geel;
+    border-top: 0 solid transparent;
+    content: ' ';
+    cursor: pointer;
+    display: block;
+    height: 5px;
+    -moz-transform: scale(.9999);
+  }
+
+  // header.region #block-views-fotoheader-block_1
+  // scss-lint:disable MergeableSelector
+  #block-views-fotoheader-block_1 {
+    bottom: 0;
+    left: 0;
+    // De foto is breder dan de pagina, maar mag de pagina niet breder maken.
+    overflow: hidden;
+    // nodig voor firefox mobile, ander wordt de 'rechter-overflow' getoond
+    position: absolute;
+    right: 0;
+    top: 0;
+    // achter de andere header-items
+    z-index: -1;
+  }
 }
+
 
 .front header.region,
 .page-home header.region {
@@ -15,31 +120,18 @@ header.region {
   margin-bottom: 20px;
 }
 
-header.region #block-views-fotoheader-block_1 {
-  // nodig voor firefox mobile, ander wordt de 'rechter-overflow' getoond
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  // achter de andere header-items
-  z-index: -1;
-  // De foto is breder dan de pagina, maar mag de pagina niet breder maken.
-  overflow: hidden;
-}
-
 .view-fotoheader .views-field-php {
-  position: relative;
-  top: 0px;
   bottom: 4px;
+  position: relative;
+  top: 0;
 }
 
 .fotoheader-wrapper,
 .fotoheader {
-  width: auto;
-  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: auto;
 }
 
 .fotoheader-wrapper {
@@ -50,102 +142,25 @@ header.region #block-views-fotoheader-block_1 {
   height: 100%;
 }
 
-header.region #block-views-fotoheader-block_1 .views-field-title {
-  background-color: #BDD732;
-  padding: 2px 0;
-}
-
-header.region #block-views-fotoheader-block_1 .views-field-title span {
-  display: none;
-}
-
-header.region .logo {
-  width: 284px;
-  padding-left: 5px;
-  padding-top: 46px;
-  display: block;
-  margin: 0 auto;
-}
-
-header.region .logo a {
-  width: 47px;
-  display: block;
-}
-
-header.region #block-search-0 {
-  background-color: #748D26;
-  width: 288px;
-  overflow: hidden;
-  margin: 30px auto 0;
-  z-index: 99;
-  position: relative;
-  border-bottom: 2px solid #DBE68E;
-  display: none;
-}
-
-header.region #block-search-0::before {
-  content: " ";
-  height: 5px;
-  border-top: 0px solid transparent;
-  border-left: 300px solid #DBE68E;
-  border-bottom: 6px solid transparent;
-  display: block;
-  background-color: #748D26;
-  cursor: pointer;
-  -moz-transform: scale(0.9999);
-}
-
-header.region #block-search-0 .content {
-  padding: 5px 15px;
-}
-
-header.region #block-search-0 #search-block-form {
-  overflow: hidden;
-  margin-bottom: 0; // override de default layout van drupal
-}
-
 header.region #block-search-0 #search-block-form ::-webkit-input-placeholder,
 header.region #block-search-0 #search-block-form :-moz-placeholder,
 header.region #block-search-0 #search-block-form ::-moz-placeholder,
 header.region #block-search-0 #search-block-form :-ms-input-placeholder {
-  color: #E7E0DE;
+  color: $ebb;
   font-size: 1.3rem;
 }
 
-header.region #block-search-0 #search-block-form label {
-  display: none;
-}
-
 #edit-search-block-form-1 {
-  -webkit-appearance: none;
   -moz-appearace: none;
+  -webkit-appearance: none;
   appearance: none;
-  outline: none;
-  border: none;
-  width: 80%;
-  padding: 5px 15px;
-  font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #748D26;
+  background-color: $svg-donkergroen;
+  border: 0;
   color: $wit;
   float: left;
-}
-
-header.region #block-search-0 #search-block-form .form-submit {
-  -webkit-appearance: none;
-  -moz-appearace: none;
-  appearance: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
   outline: none;
-  border: none;
-  float: right;
-  width: 20%;
-  min-width: 0; // override de standaardwaarde, nodig voor IE
-  font-family: scouts;
-  line-height: 1;
-  background: transparent;
-  color: #E7E0DE;
-  font-size: 2.1rem;
-  font-weight: 100;
-  position: relative;
-  cursor: pointer;
+  padding: 5px 15px;
+  width: 80%;
 }
