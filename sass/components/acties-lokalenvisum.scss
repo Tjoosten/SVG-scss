@@ -3,19 +3,19 @@
 .acties h2,
 .acties h3 {
   color: $wit;
-  margin-bottom: 0.4em;
+  margin-bottom: .4em;
   margin-top: 1em;
   padding-left: 1em;
 }
 
 .acties h2 {
-  background-color: #256F91;
+  background-color: $svg-blauw;
   height: 2.5em;
   line-height: 2.5em;
 }
 
 .acties h3 {
-  background-color: #BDD732;
+  background-color: $svg-lichtgroen;
   height: 2em;
   line-height: 2em;
 }
@@ -31,6 +31,6 @@
 
 .acties ol li,
 .acties ul li {
+  margin-bottom: .4em;
   margin-left: 0;
-  margin-bottom: 0.4em;
 }
