@@ -174,14 +174,14 @@
 }
 
 .view-evenementen-kalender .views-view-grid {
+  margin-bottom: 0;
+  margin-top: 10px;
   width: 940px;
-  margin-top:10px;
-  margin-bottom:0;
 }
 
 .views-view-grid .views-field-evenement-van-1 {
-  margin-top: 5px;
-  margin-bottom: -5px;
   font-size: 2rem;
+  margin-bottom: -5px;
+  margin-top: 5px;
   text-transform: uppercase;
 }

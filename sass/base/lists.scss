@@ -1,9 +1,9 @@
 // Lists
 // ----------------------------------------------------------------------------
 ul {
-  /* gelijk met de linkerrand van de gewone tekst */
-  margin-left: 16px;
+  // gelijk met de linkerrand van de gewone tekst
   list-style: disc;
+  margin-left: 16px;
 
   &.menu,
   &.menu li {
