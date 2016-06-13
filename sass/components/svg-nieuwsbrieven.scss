@@ -5,13 +5,13 @@
   border: 0;
   border-radius: 5px;
   color: $svg-bruin;
-  padding: 5px;
   cursor: pointer;
+  padding: 5px;
 }
 
 #sgv-nieuwsbrieven-user-nieuwsbrieven input.form-submit:hover,
 #sgv-nieuwsbrieven-abonneer-categorie input.form-submit:hover {
-  color: #48454B;
+  color: $grijs-zwart;
 }
 
 .description p {
@@ -21,13 +21,15 @@
 .node > .node-inner > ul.links {
   display: block !important;
   margin: 10px 0 20px;
-}
 
-.node > .node-inner > ul.links > li {
-  float: left;
-  margin: 0;
-}
+  // .node > .node-inner > ul.links > li
+  > li {
+    float: left;
+    margin: 0;
+  }
 
-.node > .node-inner > ul.links > li.fb-social-like-fb_linteraction iframe {
-  max-width: none !important;
+  // .node > .node-inner > ul.links > li.fb-social-like-fb_linteraction iframe
+  &.fb-social-like-fb_linteraction iframe {
+    max-width: none !important;
+  }
 }
