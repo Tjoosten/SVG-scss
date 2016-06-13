@@ -1,8 +1,8 @@
 @media screen and (max-width: 767px) {
   .view-evenementen-kalender .views-table .odd,
   .view-evenementen-kalender .views-table .even {
-    padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 
   .view-evenementen-kalender .views-table td {
@@ -53,8 +53,8 @@
   }
 
   .dynamic tr {
+    border-top: 1px solid $ebb;
     height: auto !important;
-    border-top: 1px solid #E7E0DE;
   }
 
   .dynamic thead tr {
@@ -63,37 +63,37 @@
 
   .dynamic td {
     // Behave like a "row"
-    border: none;
-    position: relative;
+    border: 0;
     padding-left: 12em;
+    position: relative;
   }
 
   .dynamic td::before {
     // Now like a table header
-    position: absolute;
     // Top/left values mimic padding
-    left: 6px;
-    white-space: nowrap;
-    color: #256F91;
-    font-weight: bold;
     bottom: 3px;
+    color: $svg-blauw;
+    font-weight: bold;
+    left: 6px;
+    position: absolute;
+    white-space: nowrap;
   }
 
   // Evenementen: kalender
   .view-evenementen .item-list li:nth-child(n+9) {
-    display:none;
+    display: none;
   }
 
   .view-evenementen .dynamic caption {
-    width: 100%;
     display: block;
+    width: 100%;
   }
 
   .view-evenementen-kalender .views-field-evenement-van,
   .view-evenementen-kalender .views-field-groep {
-    width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    width: 100% !important;
   }
 
   .view-evenementen-kalender .views-table tr {
@@ -107,15 +107,15 @@
   .view-evenementen-kalender .views-table tr .views-field-title {
     border-left: none !important;
     border-right: none !important;
-    width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    width: 100% !important;
   }
 
   .view-evenementen-kalender .views-table tr .views-field-title .evenementen-type {
     float: right;
-    margin-top: 0;
     margin-right: 0;
+    margin-top: 0;
   }
 
   .view-evenementen-kalender .views-field-groep div {
@@ -132,9 +132,9 @@
   }
 
   .view-evenementen-kalender .views-field-groep::after {
-    content: "";
-    display: table;
     clear: both;
+    display: table;
+    content: '';
   }
 }
 
