@@ -4,10 +4,10 @@
 }
 
 .view-fotodropper .views-field-created {
-  width: 7.5rem;
-  margin-right: 2rem;
   margin-bottom: 2rem;
-  padding-top: 2.2rem
+  margin-right: 2rem;
+  padding-top: 2.2rem;
+  width: 7.5rem;
 }
 
 .view-fotodropper .views-field-created::before {
@@ -19,18 +19,19 @@
 }
 
 .view-fotodropper .view-content div ul li {
+  background-color: $ebb;
   clear: both;
   list-style: none;
   margin: 2rem 0;
   padding: 2rem;
-  background-color: #E7E0DE;
-}
 
-.view-fotodropper .view-content div ul li label {
-  float: left;
-  width: 150px;
-  margin-bottom: 0;
-  font-weight: bold;
+  // .view-fotodropper .view-content div ul li label
+  label {
+    float: left;
+    font-weight: bold;
+    margin-bottom: 0;
+    width: 150px;
+  }
 }
 
 .view-fotodropper .view-content .views-field-body {
@@ -53,14 +54,14 @@
 }
 
 .view-fotodropper p {
-  margin: 0;
   font-size: 1.4rem;
+  margin: 0;
 }
 
 .view-fotodropper #foto-toegevoegd {
+  background: url('../images/message-ok.png') no-repeat left center;
+  font-weight: bold;
+  line-height: 32px;
   margin: 20px 20px 20px 40px;
   padding: 0 0 0 50px;
-  line-height: 32px;
-  font-weight: bold;
-  background: url(../images/message-ok.png) no-repeat left center;
 }
