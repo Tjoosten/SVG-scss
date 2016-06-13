@@ -1,7 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0b1 | 201101
-NOTE: WORK IN PROGRESS
-USE WITH CAUTION AND TEST WITH ABANDON */
+// http://meyerweb.com/eric/tools/css/reset/
+// v2.0b1 | 201101
+// NOTE: WORK IN PROGRESS
+// USE WITH CAUTION AND TEST WITH ABANDON
+
 html,
 body,
 div,
@@ -80,16 +81,16 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
   border: 0;
-  outline: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
+// HTML5 display-role reset for older browsers
 article,
 aside,
 details,
@@ -113,6 +114,8 @@ q {
   quotes: none;
 }
 
+// Ik ben niet zeker of ik zonder probleem een content attri. kan verwijderen - Tjoosten
+// scss-lint:disable DuplicateProperty
 blockquote::before,
 blockquote::after,
 q::before,
@@ -139,12 +142,10 @@ table {
 }
 
 code {
-  font-family: monospace;
-
-  background: #efefef;
-  border: 1px solid #dde7ea;
-  border-left: 3px solid #BED630;
-
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: $reset-wit-2;
+  border: 1px solid $reset-wit;
+  border-left: 3px solid $svg-lichtgroen-2;
   display: block;
+  font-family: monospace;
+  padding: .5rem 1rem;
 }

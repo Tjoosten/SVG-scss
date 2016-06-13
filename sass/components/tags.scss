@@ -1,32 +1,36 @@
-/* Tags */
+// Tags
 .node .meta {
-  clear:both;
+  clear: both;
   margin-top: 20px;
 }
 
 .terms.terms-inline {
-}
+  // .terms.terms-inline ul
+  ul {
+    // .terms.terms-inline ul li
+    li {
+      background-color: $svg-lichtgroen;
+      padding: 5px !important;
 
-.terms.terms-inline ul {
-}
+      // .terms.terms-inline ul li a
+      a {
+        color: $svg-bruin;
 
-.terms.terms-inline ul li {
-  background-color: #BDD732;
-  padding: 5px !important;
-}
+        // .terms.terms-inline ul li a:hover
+        &:hover {
+          text-decoration: none;
+        }
+      }
 
-.terms.terms-inline ul li:hover {
-  background-color: #572600;
-}
+      // .terms.terms-inline ul li:hover
+      &:hover {
+        background-color: $svg-bruin;
 
-.terms.terms-inline ul li a {
-  color: #572600;
-}
-
-.terms.terms-inline ul li a:hover {
-  text-decoration: none;
-}
-
-.terms.terms-inline ul li:hover a {
-  color: $wit;
+        // .terms.terms-inline ul li:hover a
+        a {
+          color: $wit;
+        }
+      }
+    }
+  }
 }

@@ -2,56 +2,62 @@
 .view-totem-zoeker .view-content .item-list ul {
   margin: 0;
   padding: 0;
-}
 
-.view-totem-zoeker .view-content .item-list ul li {
-  float: left;
-  position: relative;
-  display: block;
-  box-sizing: content-box;
-  width: 150px;
-  padding: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  background-color: #E7E0DE;
-}
+  // .view-totem-zoeker .view-content .item-list ul li
+  li {
+    background-color: $ebb;
+    box-sizing: content-box;
+    display: block;
+    float: left;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    position: relative;
+    width: 150px;
 
-.view-totem-zoeker .view-content .item-list ul li .views-field-field-totem-afbeelding-fid {
-  width: 150px;
-  height: 150px;
-}
+    // .view-totem-zoeker .view-content .item-list ul li .views-field-tid .field-content
+    .views-field-tid .field-content {
+      display: block;
+      font-size: 1rem;
+      height: 30px;
+      overflow: hidden;
+      width: 150px;
 
-.view-totem-zoeker .view-content .item-list ul li.views-row h3 {
-  margin: 0;
-  margin-top: 3px;
-  padding: 1rem 0;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 1.3rem;
-  font-family: 'Open Sans', sans-serif;
-  text-overflow: '..';
-}
+      // .view-totem-zoeker .view-content .item-list ul li .views-field-tid .field-content a
+      a {
+        text-decoration: none;
+      }
+    }
 
-.view-totem-zoeker .view-content .item-list ul li .views-field-tid .field-content {
-  overflow: hidden;
-  width: 150px;
-  height: 30px;
-  display: block;
-  font-size: 1rem;
-}
+    // .view-totem-zoeker .view-content .item-list ul li.views-row h3
+    &.views-row h3 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.3rem;
+      margin: 0;
+      margin-top: 3px;
+      overflow: hidden;
+      padding: 1rem 0;
+      text-overflow: '..';
+      white-space: nowrap;
+    }
 
-.view-totem-zoeker .view-content .item-list ul li .views-field-tid .field-content a {
-  text-decoration: none;
-}
+    // .view-totem-zoeker .view-content .item-list ul li .views-field-field-totem-afbeelding-fid
+    .views-field-field-totem-afbeelding-fid {
+      height: 150px;
+      width: 150px;
+    }
 
-.view-totem-zoeker .view-content .item-list ul li .views-field-php {
-  float: left;
-  margin: 14px 5px 0 0;
-  font-size: 1rem;
-  color: #F5821F;
+    // .view-totem-zoeker .view-content .item-list ul li .views-field-php
+    .views-field-php {
+      color: $svg-oranje;
+      float: left;
+      font-size: 1rem;
+      margin: 14px 5px 0 0;
+    }
+  }
 }
 
 // Totem Zoeker Lijsten
 div.totem-lijst ul li h3 {
-  margin: 20px 0 0 0;
+  margin: 20px 0 0;
 }

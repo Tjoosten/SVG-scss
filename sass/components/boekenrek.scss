@@ -1,10 +1,11 @@
 // Virtueel boekenrek
 .view-publicatie-list td {
   vertical-align: middle;
-}
 
-.view-publicatie-list td a {
-  display: inline;
+  // .view-publicatie-list td a
+  a {
+    display: inline;
+  }
 }
 
 .view-publicatie-list th,
@@ -32,6 +33,6 @@
 }
 
 .view-publicatie-list .view-content table tbody tr td a > img {
-  vertical-align: middle;
   margin: 4px;
+  vertical-align: middle;
 }

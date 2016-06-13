@@ -1,4 +1,4 @@
-/* Evenementen module */
+// Evenementen module
 .node-type-sgv-evenement h1 {
   margin-top: 1rem;
 }
@@ -8,8 +8,8 @@
 }
 
 .node-type-sgv-evenement .periode {
-  margin-top: 2rem;
   font-style: italic;
+  margin-top: 2rem;
 }
 
 .node-type-sgv-evenement .globalinfo {
@@ -19,7 +19,7 @@
 }
 
 .node-type-sgv-evenement .sgvid {
-  color: #748D26;
+  color: $svg-donkergroen;
 }
 
 .node-type-sgv-evenement .mapinfo {
@@ -27,24 +27,25 @@
 }
 
 .node-type-sgv-evenement .inschrijven h3 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .node-type-sgv-evenement .inschrijven td {
-  vertical-align: central;
   padding-bottom: 5px;
   padding-top: 5px;
+  vertical-align: central;
+
+  // .node-type-sgv-evenement .inschrijvingen td a
+  a {
+    font-weight: bold;
+  }
 }
 
 .node-type-sgv-evenement .inschrijven td:first-child {
   padding-left: 5px;
 }
 
-.node-type-sgv-evenement .inschrijven td a {
-  font-weight:bold;
-}
-
-/* ugly fix for ugly table */
+// ugly fix for ugly table
 #sgv-evenementen-werkwinkels label.option {
   font-size: 0;
 }
@@ -59,9 +60,9 @@ tr.even .form-item {
   white-space: normal;
 }
 
-/* Totem */
+// Totem
 .node-type-totem .field-field-totem-synoniemen {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 .node-type-totem .field-field-totem-afbeelding img.imagefield-field_totem_afbeelding {

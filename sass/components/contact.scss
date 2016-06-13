@@ -23,17 +23,17 @@
 }
 
 #contactinfo .flip img {
-  float:right;
-  margin-right:10px;
-  margin-top:2px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 2px;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
 
 #contactinfo .flip:hover {
-  background-color:rgba(189, 215, 50, 0.57);
+  background-color: rgba(189, 215, 50, .57);
   color: #572600;
-  cursor:pointer
+  cursor: pointer;
 }
 
 #contactinfo .panel {
@@ -42,7 +42,7 @@
   padding-top: 15px;
   border-style: solid;
   border-width: 1px;
-  border-color: #BDD732;
+  border-color: $svg-lichtgroen;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomright: 5px;
@@ -55,22 +55,21 @@
 }
 
 #contactinfo .panel h1 {
-  margin-bottom:0px;
+  margin-bottom: 0;
 }
 
 #contactinfo .secundair,
 #contact-dienst .secundair {
-  color: #48454B;
+  color: $grijs-zwart;
 }
 
 #contactinfo .panel#bellen #col1 {
-  width: 50%;
-  float: left;
-  padding-right: 1rem;
-
+  border-right-color: $svg-lichtgroen;
   border-right-style: solid;
   border-right-width: 1px;
-  border-right-color: #BDD732;
+  float: left;
+  padding-right: 1rem;
+  width: 50%;
 }
 
 #contactinfo .panel#bellen #col2 {
@@ -78,7 +77,7 @@
 }
 
 #contactinfo .panel#bellen .noodnummer a {
-  color: #ED1C23;
+  color: $svg-rood;
 }
 
 #contactinfo .panel#mailen {
@@ -90,11 +89,11 @@
 }
 
 #contactinfo .panel#locatie #col1 {
-  width: 50%;
-  float: left;
+  border-right-color: $svg-lichtgroen;
   border-right-style: solid;
   border-right-width: 1px;
-  border-right-color: #bdd732;
+  float: left;
+  width: 50%;
 }
 
 #contactinfo .panel#locatie #col2 {
@@ -102,78 +101,78 @@
 }
 
 #contactinfo .panel#locatie {
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
 }
 
 #contactinfo #zoekveld {
-  position: relative;
-  top: 0.1rem;
   display: inline-block;
+  position: relative;
+  top: .1rem;
 }
 
 // Contactpages: Dienst
 .contact-persoonlijk {
-  background-color: #48454B;
-  margin-top: -1rem;
+  background-color: $grijs-zwart;
   margin-bottom: 1rem;
+  margin-top: -1rem;
   padding: 2rem;
 }
 
 .contact-persoonlijk #foto {
-  float:right;
+  float: right;
 }
 
 .contact-persoonlijk p {
-  width: 79%;
   float: left;
+  width: 79%;
 }
 
 #contact-dienst p {
-  width:395px;
-  float:left;
+  float: left;
+  width: 395px;
 }
 
 #dienstFoto {
-  float:right;
-  /*margin-top: -100px;*/
-  margin-right:20px;
+  float: right;
+  // margin-top: -100px;
+  margin-right: 20px;
 }
 
 #contact-hoofd {
-  clear:left;
-  float:left;
+  clear: left;
+  float: left;
   margin-top: 10px;
 }
 
 #contact-dienst #contact-hoofd img,
 .views-field-field-contact-foto-hoofd-fid img {
-  border-style:solid;
-  border-width:1px;
-  border-color: #BDD732;
-  transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s; /* (iOs) Safari, Android en Blackberry browser */
+  border-color: $svg-lichtgroen;
+  border-style: solid;
+  border-width: 1px;
+  -webkit-transition: opacity .5s; // (iOs) Safari, Android en Blackberry browser
+  transition: opacity .5s;
 }
 
 #contact-dienst #contact-hoofd img:hover,
 .views-field-field-contact-foto-hoofd-fid img:hover {
-  opacity: 0.8;
+  opacity: .8;
 }
 
 #contact-dienst .views-field-field-contact-foto-hoofd-fid,
 #contact-dienst .views-field-field-contact-foto-hoofd-fid img {
-  width: 130px;
   height: 80px;
+  width: 130px;
 }
 
 #contact-dienst .views-field-title {
-  margin-top: 5px;
   font-weight: bold;
+  margin-top: 5px;
 }
 
 #contact-dienst .views-field-title,
 #contact-dienst .views-field-tid {
-  width: 125px;
   margin-left: 5px;
+  width: 125px;
 }
 
 #contact-dienst #contact-hoofd p {
@@ -189,9 +188,9 @@
 }
 
 .term main.region [id^="node-"] .content {
-  background-color: #E7E0DE;
-  padding: 2rem;
+  background-color: $ebb;
   min-height: 14rem;
+  padding: 2rem;
 }
 
 .term main.region [id^="node-"] h2 {
@@ -200,9 +199,9 @@
 
 .term main.region .contact-body #foto {
   float: right;
-  max-width: 14rem;
-  margin-left: 2rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+  max-width: 14rem;
 }
 
 .term main.region [id^="node-"] #contactgegevens,
@@ -210,15 +209,15 @@
   display: none;
 }
 
-.term main.region .content .field-field-contact-email div{
+.term main.region .content .field-field-contact-email div {
   display: inline-block;
   margin-top: 1rem;
 }
 
-/* contactpagina's */
+// contactpagina's
 .node-type-contact .content p {
-  width: 75%;
   float: left;
+  width: 75%;
 }
 
 .node-type-contact #foto {
@@ -227,18 +226,18 @@
 
 .node-type-contact hr,
 .greenHR {
-  background-color: #BDD732;
-  color: #BDD732;
-  border: none;
+  background-color: $svg-lichtgroen;
+  border: 0;
+  clear: both;
+  color: $svg-lichtgroen;
   height: 1px;
   margin-top: 0;
-  clear: both;
 }
 
 .contact-body::after {
+  clear: both;
   content: '';
   display: block;
-  clear: both;
 }
 
 .node-type-contact {
@@ -249,30 +248,39 @@
   line-height: 2.5rem;
 }
 
-.node-type-contact #contactgegevens span:nth-child(1) img { padding-bottom: 0rem;}
-.node-type-contact #contactgegevens span:nth-child(2) img { padding-bottom: 0.2rem;}
-.node-type-contact #contactgegevens span:nth-child(3) img { padding-bottom: 0.4rem;}
+.node-type-contact #contactgegevens span:nth-child(1) img {
+  padding-bottom: 0;
+}
+
+.node-type-contact #contactgegevens span:nth-child(2) img {
+  padding-bottom: .2rem;
+}
+
+.node-type-contact #contactgegevens span:nth-child(3) img {
+  padding-bottom: .4rem;
+}
+
 .node-type-contact #contactgegevens img {
   display: inline-block;
+  margin-right: .5rem;
   max-width: 1.6rem;
-  margin-right: 0.5rem;
 }
 
 .node-type-contact #contactgegevens-social {
-  position:absolute;
-  bottom:70px;
-  left:10px;
+  bottom: 70px;
+  left: 10px;
+  position: absolute;
 }
 
 .node-type-contact #contactgegevens-social #totem,
 .node-type-contact #contactgegevens-social #linkedin,
 .node-type-contact #contactgegevens-social #twitter {
-  float:left;
-  margin-right:15px;
+  float: left;
+  margin-right: 15px;
 }
 
 .node-type-contact #contactgegevens-social img {
-  margin-right:3px;
-  position:relative;
-  top:3px;
+  margin-right: 3px;
+  position: relative;
+  top: 3px;
 }

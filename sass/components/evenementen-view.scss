@@ -1,8 +1,8 @@
-/* Aangemaakt via View: Global Text */
+// Aangemaakt via View: Global Text
 .evenementen-background-paper {
-  margin-top:-147px;
-  width:156px;
-  height:164px;
+  height: 164px;
+  margin-top: -147px;
+  width: 156px;
 }
 
 .evenementen-background-paper-ingeschreven {
@@ -25,7 +25,7 @@
   text-indent: -99999px;
   z-index: 99;
   position: absolute;
-  left: -0.7rem;
+  left: -.7rem;
   top: 8.5rem;
 }
 
@@ -65,24 +65,26 @@
   background: url('../img/view-kalender-item-background-onzichtbaar-small.png') no-repeat left center;
   text-indent: -99999px;
   float: left;
-  margin: 0.6rem 0.6rem 0 0;
+  margin: .6rem .6rem 0 0;
   cursor: help;
 }
 
 .view-evenementen .item-list {
   margin-top: 2rem;
   text-align: justify;
-}
 
-.view-evenementen .item-list ul {
-  max-height: 38rem;
-  overflow: hidden;
-}
+  // .view-evenementen .item-list ul
+  ul {
+    max-height: 38rem;
+    overflow: hidden;
 
-.view-evenementen .item-list ul::after {
-  content: '';
-  display: inline-block;
-  width: 100%;
+    // .view-evenementen .item-list ul::after
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  }
 }
 
 .view-evenementen .item-list li.filler {
@@ -95,7 +97,7 @@
   width: 15.6rem;
   height: 17rem;
   margin-bottom: 1.8rem;
-  padding: 0.75rem;
+  padding: .75rem;
 
   background-color: #E7E0DE;
   display: inline-block;

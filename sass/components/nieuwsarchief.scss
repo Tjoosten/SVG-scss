@@ -1,4 +1,4 @@
-/* Nieuwsarchief */
+// Nieuwsarchief
 .node-type-nieuws .node-inner {
   overflow: hidden;
 }
@@ -7,7 +7,7 @@
 .view-display-id-page_4 .views-field-php-1,
 .view-display-id-page_4 .views-field-php-2 {
   position: relative;
-  top:25px;
+  top: 25px;
 }
 
 .views-view-grid .views-field-evenement-van h1 {
@@ -16,7 +16,7 @@
 }
 
 .views-view-grid .views-field-evenement-van a:hover {
-  text-decoration:none;
-  opacity:0.75;
-  text-shadow: 1px 1px 10px #FDFFEF, -1px -1px 1px #343434;
+  opacity: .75;
+  text-decoration: none;
+  text-shadow: 1px 1px 10px $wit-1, -1px -1px 1px $black;
 }

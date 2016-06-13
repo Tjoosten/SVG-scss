@@ -4,9 +4,24 @@
 main.region {
   // http://stackoverflow.com/questions/21116957/main-element-doesnt-show-padding-in-opera-safari-ie
   display: block;
-
   margin: 10px 0 60px;
   overflow: hidden;
+
+  // main.region .field-field-ondertitel
+  .field-field-ondertitel {
+    color: $svg-bruin;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: .8rem 0 1.2rem;
+  }
+
+  // main.region #content-bottom
+  #content-bottom {
+    clear: both;
+    margin-top: 2rem;
+  }
 }
 
 .page-home main.region {
@@ -17,15 +32,6 @@ main .content {
   font-size: 1.4rem;
 }
 
-main.region .field-field-ondertitel {
-  font-size: 2.8rem;
-  line-height: 1.1;
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-  color: #572600;
-  margin: 0.8rem 0 1.2rem;
-}
-
 main.region #children {
   clear: both;
   overflow: hidden;
@@ -33,7 +39,7 @@ main.region #children {
 
 main.region #children .title {
   text-align: left;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 .5em;
   box-sizing: border-box;
   padding: 0 15px;
 }
@@ -51,10 +57,11 @@ main.region #children .title::before {
 
 main.region #children {
   width: 100%;
-}
 
-main.region #children h1 {
-  margin-top: 1rem;
+  // main.region #children h1
+  h1 {
+    margin-top: 1rem;
+  }
 }
 
 main.region #children .field-content-body p,
@@ -90,11 +97,11 @@ main.region #children .item-list > ul li.views-row .child-block-wrapper * {
 }
 
 main.region #children .item-list > ul li.views-row::after {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 15px;
-  background: url(../img/sprite.png) no-repeat right -55px top -243px transparent;
+  background: url('../img/sprite.png') no-repeat right -55px top -243px transparent;
   position: absolute;
   bottom: -7px;
   left: 25px;
@@ -116,7 +123,7 @@ main.region #children .item-list > ul li.views-row h1 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
   margin-bottom: 0;
-  padding-bottom: 0.5em;
+  padding-bottom: .5em;
   overflow: hidden;
 }
 
@@ -138,9 +145,9 @@ main.region #children [class*="field-content-field-afbeelding-fid"] {
 main.region #children .field-content-field-menu-link-afbeelding-fid img,
 main.region #children [class*="field-content-field-afbeelding-fid"] img {
   position: relative;
-  top: 50%; /* halverwege de parent */
-  -webkit-transform: translateY(-50%); /* safari, android */
-  transform: translateY(-50%); /* halverwege de afbeelding */
+  top: 50%;                              // halverwege de parent
+  -webkit-transform: translateY(-50%);   // safari, android
+  transform: translateY(-50%);           // halverwege de afbeelding
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -154,7 +161,7 @@ main.region #children [class*="field-content-field-verwijzing-link"] a {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.1;
-  margin: 0.4em 0 0.2em;
+  margin: .4em 0 .2em;
 }
 
 main.region #children [class*="field-content-field-verwijzing-omschr"] a {
@@ -185,8 +192,8 @@ main.region #children .field-content-body::after {
   pointer-events: none;
   position: absolute;
   width: 100%;
-  height: 80px; /* 22 fade + 58 volledig - gelijk met de onderrand van afbeeldingen */
-  bottom: 0; /* tov. het blok */
+  height: 80px; // 22 fade + 58 volledig - gelijk met de onderrand van afbeeldingen
+  bottom: 0;    // tov. het blok
   left: 0;
   background-image: -webkit-linear-gradient(bottom, rgba(231, 224, 222, 1), rgba(231, 224, 222, 0));
   background-image: linear-gradient(to bottom, rgba(231, 224, 222, 0), rgba(231, 224, 222, 1) 27.5%, rgba(231, 224, 222, 1));
@@ -212,22 +219,22 @@ main.region #children .field-content-nothing {
 
 main.region #children .field-content-nothing::before {
   font-family: scouts;
-  content: "\f002";
+  content: '\f002';
   font-size: 1.4em;
-  padding-right: 0.3em;
+  padding-right: .3em;
   position: relative;
-  top: 0.1em;
+  top: .1em;
 }
 
 main.region #children .field-content-nothing::after {
   content: ' ';
   display: block;
-  border-left: 7em solid #BDD732;
-  border-top: 0.2em solid transparent;
-  border-bottom: 0.4em solid transparent;
+  border-left: 7em solid $svg-lichtgroen;
+  border-top: .2em solid transparent;
+  border-bottom: .4em solid transparent;
   height: 1.5em;
-  top: 0.15em;
-  margin-left: -0.15em;
+  top: .15em;
+  margin-left: -.15em;
   position: absolute;
   z-index: -1;
   -webkit-transform: skew(-8deg, 0deg);
@@ -235,18 +242,13 @@ main.region #children .field-content-nothing::after {
 }
 
 main.has-children #children .field-content-nothing {
-  position: absolute;
   bottom: 15px;
   left: 25px;
+  position: absolute;
 }
 
 main.has-children #children .item-list > ul li.views-row {
   min-height: 100px;
-}
-
-main.region #content-bottom {
-  margin-top: 2rem;
-  clear: both;
 }
 
 .page-node main.region .content a {

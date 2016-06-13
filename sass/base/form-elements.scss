@@ -1,6 +1,6 @@
-/* -------------------------------------------------------------------------
- Form elements
----------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------
+// Form elements
+// --------------------------------------------------------------------------
 select {
   min-height: 3rem;
 }
@@ -27,41 +27,41 @@ input[type='search'],
 input[type='date'],
 input[type='time'],
 input[type='password'] {
+  font-size: 1.6rem;
   height: 3rem;
   padding-left: 1rem;
-  font-size: 1.6rem;
 }
 
 textarea {
-  padding-left: 1rem;
-  margin-top: 0.5rem;
   font-size: 1.6rem;
+  margin-top: .5rem;
+  padding-left: 1rem;
 }
 
 label {
-  margin-bottom: 0.5rem;
   font-size: 1.6rem;
+  margin-bottom: .5rem;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
   height: 1.7rem;
-  width: 1.7rem;
   position: relative;
-  top: 0.23em;
+  top: .23em;
+  width: 1.7rem;
 }
 
 input[type="color"] {
-  width: 3rem;
-  height: 3rem;
   background-color: $wit;
+  height: 3rem;
+  width: 3rem;
 }
 
 .container-inline-date .form-item input {
   min-width: 11rem;
 }
 
-/* Forms */
+// Forms
 #node-form .collapsible {
   margin-top: 1em;
 }
@@ -69,15 +69,15 @@ input[type="color"] {
 fieldset,
 fieldset fieldset fieldset,
 fieldset fieldset fieldset fieldset fieldset {
-  position: relative;
+  background-color: $ebb;
   margin: 2rem 0;
-  background-color: #E7E0DE;
+  position: relative;
 }
 
 fieldset fieldset,
 fieldset fieldset fieldset fieldset,
 fieldset fieldset fieldset fieldset fieldset fieldset {
-  background-color: #BDD732;
+  background-color: $svg-lichtgroen;
 }
 
 fieldset > * {
@@ -89,30 +89,30 @@ fieldset > :last-child {
   margin-bottom: 2rem;
 }
 
-/* Hack om in Safari 8 de grootte van fieldsets te fixen. */
-/* http://stackoverflow.com/a/1828940 */
+// Hack om in Safari 8 de grootte van fieldsets te fixen.
+// http://stackoverflow.com/a/1828940
 fieldset::before,
 fieldset::after {
-  content: "\00a0";
+  content: '\00a0';
   display: block;
-  overflow: hidden;
   height: 0;
+  overflow: hidden;
 }
 
 legend {
+  color: $svg-bruin;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2.2rem;
+  max-width: calc(100% - 4rem);
   position: absolute;
   top: 1em;
-  max-width: calc(100% - 4rem);
-  font-size: 2.2rem;
-  font-family: 'Fjalla One', sans-serif;
-  color: #572600;
 }
 
 legend,
 legend * {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 legend + *,
@@ -125,12 +125,12 @@ legend + input[type=hidden] + input[type=hidden] + input[type=hidden] + * {
 
 fieldset tr.even,
 fieldset tr.odd {
-  background-color: #BDD732;
-  border-bottom: 1px solid #E7E0DE;
+  background-color: $svg-lichtgroen;
+  border-bottom: 1px solid $ebb;
 }
 
 fieldset thead th {
-  border-bottom: 1px solid #E7E0DE;
+  border-bottom: 1px solid $ebb;
 }
 
 fieldset .content-add-more {
@@ -143,8 +143,8 @@ fieldset.collapsed {
 }
 
 fieldset table {
-  width: calc(100% - 4rem);
   margin-bottom: 2rem;
+  width: calc(100% - 4rem);
 }
 
 fieldset textarea {
@@ -152,12 +152,17 @@ fieldset textarea {
 }
 
 fieldset input[type="text"] {
-  /* Komt ongeveer overeen met de standaardbreedte (size=60) bij een desktop-resolutie. */
+  // Komt ongeveer overeen met de standaardbreedte (size=60) bij een desktop-resolutie.
   width: calc(100px + 50%);
 }
 
 .description fieldset {
   margin: 1rem 0 !important;
+
+  // .description fieldset.collapsed
+  &.collapsed {
+    height: 5rem !important;
+  }
 }
 
 #views-bulk-operations-select legend,
@@ -170,13 +175,9 @@ fieldset input[type="text"] {
   margin-top: 5rem !important;
 }
 
-.description fieldset.collapsed {
-  height: 5rem !important;
-}
-
 .form-item {
-  margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .resizable-textarea {
@@ -185,17 +186,17 @@ fieldset input[type="text"] {
 
 .form-checkboxes.error,
 .form-radios.error {
-  background: rgba(255, 255, 255, 0.5);
-  border: 2px solid red;
+  background: $grijs;
+  border: 2px solid $rood;
 }
 
 .form-required {
   display: inline;
 }
 
-/* Custom checkboxen voor werkwinkels */
+// Custom checkboxen voor werkwinkels
 .inschrijving-werkwinkelsblokken-tabel-check {
-  width:30px;
+  width: 30px;
 }
 
 .inschrijving-werkwinkelsblokken-tabel tr.odd .form-item,

@@ -1,10 +1,19 @@
 // Blokken onderaan
 #block-block-16 {
   padding-top: 1rem;
-}
 
-#block-block-16 ul.links li {
-  padding: 0 1em 0 0;
+  // #block-block-16 .fb-social-like-fb_linteraction span
+  .fb-social-like-fb_linteraction span {
+    // Voor IE
+    display: inline-block;
+    position: relative;
+    top: -2px;
+  }
+
+  // #block-block-16 ul.links li
+  ul.links li {
+    padding: 0 1em 0 0;
+  }
 }
 
 .print_link_do,
@@ -20,13 +29,6 @@
 .tweet_Twitter {
   position: relative;
   top: 1px;
-}
-
-#block-block-16 .fb-social-like-fb_linteraction span {
-  // Voor IE
-  display: inline-block;
-  position: relative;
-  top: -2px;
 }
 
 .fb_iframe_widget {

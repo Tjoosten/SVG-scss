@@ -1,10 +1,10 @@
-/* nieuwsbrieven */
+// nieuwsbrieven
 #sgv-nieuwsbrieven-user-nieuwsbrieven input.form-submit,
 #sgv-nieuwsbrieven-abonneer-categorie input.form-submit {
-  background-color: #BDD732;
+  background-color: $svg-lichtgroen;
   border: 0;
   border-radius: 5px;
-  color: #572600;
+  color: $svg-bruin;
   padding: 5px;
   cursor: pointer;
 }
@@ -19,8 +19,8 @@
 }
 
 .node > .node-inner > ul.links {
-  margin: 10px 0 20px 0;
   display: block !important;
+  margin: 10px 0 20px;
 }
 
 .node > .node-inner > ul.links > li {

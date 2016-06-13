@@ -25,7 +25,7 @@ h2.faq {
 }
 
 .view-FAQ h3 {
-  padding-bottom: 0.5em;
+  padding-bottom: .5em;
 }
 
 .view-FAQ-short {
@@ -33,27 +33,30 @@ h2.faq {
   margin-bottom: 1rem;
   margin-right: 5%;
   width: 45%;
-}
 
-.view-FAQ-short h3 {
-  border-bottom-color: #bdd732;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-}
+  // .view-FAQ-short h3
+  h3 {
+    border-bottom-color: $svg-lichtgroen;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
 
-.view-FAQ-short .item-list {
-  margin-bottom: 3rem;
-}
+  // .view-FAQ-short .item-list
+  .item-list {
+    margin-bottom: 3rem;
+  }
 
-.view-FAQ-short .views-row {
-  padding: 0;
-  list-style-type: disc !important;
-  margin-left: 2rem;
-  overflow: inherit;
-  padding: 0;
-}
+  // .view-FAQ-short .views-row
+  .views-row {
+    list-style-type: disc !important;
+    margin-left: 2rem;
+    overflow: inherit;
+    padding: 0;
+  }
 
-.view-FAQ-short .views-field-title a {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
+  // .view-FAQ-short .views-field-title a
+  .views-field-title a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+  }
 }

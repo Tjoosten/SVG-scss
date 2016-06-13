@@ -14,3 +14,12 @@ linters:
 
   ImportantRule:
     enabled: false
+
+  VendorPrefix:
+    enabled: false
+
+  PseudoElement:
+    enabled: false
+
+  NestingDepth:
+    enabled: false

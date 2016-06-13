@@ -1,20 +1,22 @@
 // zoekresultaten
 dl.search-results.node-results {
   max-width: 50em;
-}
 
-dl.search-results.node-results dt.title {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
+  // dl.search-results.node-results dt.title
+  dt.title {
+    font-size: 1.6rem;
+    font-weight: bold;
 
-dl.search-results.node-results dt.title:first-letter {
-  text-transform: uppercase;
+    // dl.search-results.node-results dt.title:first-letter
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
 }
 
 #search-form fieldset.search-advanced .criterion {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 #search-form fieldset.search-advanced .criterion:nth-child(1) {
@@ -31,8 +33,8 @@ dl.search-results.node-results dt.title:first-letter {
 }
 
 #search-form fieldset.search-advanced .criterion:nth-child(3) .form-checkboxes {
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
+  -webkit-column-count: 3; // Chrome, Safari, Opera
+  -moz-column-count: 3;    // Firefox
   column-count: 3;
 }
 
@@ -68,7 +70,7 @@ dl.search-results a {
 
 .description p {
   font-size: 1.3rem;
-  margin-bottom: 0.8em;
+  margin-bottom: .8em;
 }
 
 // override de default layout van drupal
@@ -89,7 +91,7 @@ div.vertical-tabs ul.vertical-tabs-list {
 div.vertical-tabs ul.vertical-tabs-list li {
   border: none !important;
   border-bottom: 1px solid #E7E0DE !important;
-  background-color: rgba(231, 224, 222, 0.5) !important;
+  background-color: rgba(231, 224, 222, .5) !important;
   overflow: hidden;
 }
 

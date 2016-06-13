@@ -1,15 +1,19 @@
-/* -------------------------------------------------------------------------
- Admin bar
----------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------
+// Admin bar
+//--------------------------------------------------------------------------
 a.context-block-region {
   display: none;
 }
 
-#global-menu, /* nodig bij hoge resoluties */
-.globale_menubalk, /* om de login-form te verbergen */
-#login-form::before, /* komt buiten de global menubalk */
-#admin-menu /* default overschrijven */ {
-  background: #572600;
+// #global-menu        - Nodig bij hoge resoluties
+// .globale_menubalk   - Om de login-form te verbergen
+// #login-form::before - Komt buiten de globale menubalk
+// #admin-menu         - Default overschrijven
+#global-menu,
+.globale_menubalk,
+#login-form::before,
+#admin-menu {
+  background: $svg-bruin;
   font-weight: normal;
 }
 
@@ -58,7 +62,7 @@ body.no-sidebar #sidebar {
   display: none;
 }
 
-/* klein scherm */
+// klein scherm
 @media screen and (max-width:479px) {
   #login-form {
     width: 160px;

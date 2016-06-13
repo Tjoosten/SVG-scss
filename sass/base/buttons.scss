@@ -3,44 +3,45 @@
 // -------------------------------------------------------------------------
 #children .field-content-nothing,
 .view-footer a {
+  display: inline-block;
   font-family: DCCAsh, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: normal;
+  height: 40px;
+  letter-spacing: 1px;
   line-height: 1.5;
-  display: inline-block;
-  text-decoration: none;
-  width: 150px;
   overflow: hidden;
   padding-right: 20px;
-  height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
 }
 
 #children .field-content-nothing::before,
 .view-footer a::before {
+  content: '\f002';
   font-family: scouts;
-  content: "\f002";
-  padding-right: 5px;
   font-size: 1.9rem;
+  padding-right: 5px;
   position: relative;
   top: 2px;
 }
 
+// rgba(0, 0, 0, 0) = wit?
 #children .field-content-nothing::after,
 .view-footer a::after {
+  border-bottom: 4px solid $wit;
+  border-left: 150px solid $svg-lichtgroen;
+  border-top: 0 solid $wit;
   content: '';
   display: block;
-  border-left: 150px solid #BDD732;
-  border-top: 0px solid rgba(0, 0, 0, 0);
-  border-bottom: 4px solid rgba(0, 0, 0, 0);
-  width: 0;
   height: 32px;
+  margin-left: -5px;
   position: relative;
   top: -31px;
   -webkit-transform: skew(-15deg, 0deg);
   transform: skew(-15deg, 0deg);
-  margin-left: -5px;
+  width: 0;
   z-index: -1;
 }
 
@@ -48,85 +49,87 @@
 a.arrow-link,
 .views-field-nothing a {
   font-family: DCCAsh, sans-serif;
+  font-size: 1.3rem;
   font-weight: normal;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 1.3rem;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 a.arrow-link::before,
 .views-field-nothing a::before {
+  content: '\f002';
   font-family: scouts;
-  content: "\f002";
   font-size: 1.4em;
-  padding-right: 0.3em;
+  padding-right: .3em;
   position: relative;
-  top: 0.1em;
+  top: .1em;
 }
 
 // add this class to put a shape around a link
 a.shape-link,
 a.long-shape-link,
 .views-field-nothing a {
+  background-size: 100%;
   display: inline-block !important;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  min-width: 7em;
-  padding-right: 0.6em;
-  text-align: center;
   height: 2.2em;
   line-height: 1.6;
-  background-size: 100%;
+  min-width: 7em;
+  overflow: hidden;
+  padding-right: .6em;
+  position: relative;
+  text-align: center;
+  z-index: 1;
 }
 
 // Bvb. 'Lees meer'
 a.shape-link {
-  background: url(../img/btn-green.png) no-repeat 0 3px;
+  background: url('../img/btn-green.png') no-repeat 0 3px;
 }
 
 a.long-shape-link,
 a.long-grey-link {
   display: inline-block !important;
-
-  width: initial;
-  height: auto !important;
-  min-width: 7em;
-  max-width: 100%;
-  margin: 1rem 0;
-  padding: 0 1em;
   font-size: 2rem;
+  height: auto !important;
+  margin: 1rem 0;
+  max-width: 100%;
+  min-width: 7em;
+  padding: 0 1em;
+  width: initial;
 }
 
 a.long-shape-link {
-  background: url(../img/btn-green.png) no-repeat 0 0 / calc(100% + 2em) auto;
+  background: url('../img/btn-green.png') no-repeat 0 0 / calc(100% + 2em) auto;
 }
 
 a.long-grey-link {
-  color: #572600;
-  background: url("../img/btn-70.png") no-repeat 0 -1px / calc(100% + 2em) auto;
+  background: url('../img/btn-70.png') no-repeat 0 -1px / calc(100% + 2em) auto;
+  color: $svg-bruin;
 }
 
 a.arrow-link {
-  height: 42px;
   background-size: 100% 100%;
-}
+  height: 42px;
 
-a.arrow-link:hover {
-  color: #572600;
-}
+  // a.arrow-link:hover
+  &:hover {
+    color: $svg-bruin;
+  }
 
-a.arrow-link.closed {
-  opacity: 0.5;
-}
+  // a.arrow-link.closed
+  &.closed {
+    opacity: .5;
 
-a.arrow-link.closed:hover {
-  color: #748D26;
+    // a.arrow-link.closed:hover
+    &:hover {
+      color: $svg-donkergroen;
+    }
+  }
 }
 
 .views-field-nothing a {
-  background: url(../img/btn-70.png) no-repeat 0 3px;
+  background: url('../img/btn-70.png') no-repeat 0 3px;
 }
 
 .view-dom-id-5 .views-field-nothing a {
@@ -136,26 +139,24 @@ a.arrow-link.closed:hover {
 button,
 input[type="reset"],
 input[type="submit"] {
-  background-color: #BDD732;
-
-  color: #572600;
+  background-color: $svg-lichtgroen;
+  border: 0;
+  color: $svg-bruin;
+  cursor: pointer;
   font-family: 'Fjalla One', sans-serif;
-
-  border: none;
   min-height: 3rem;
   min-width: 9rem;
-  cursor: pointer;
 }
 
 button:disabled,
 input[type="reset"]:disabled,
 input[type="submit"]:disabled {
-  background-color: #E7E0DE;
-  color: #48454B;
+  background-color: $ebb;
+  color: $grijs-zwart;
 }
 
 button:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  color: #48454B;
+  color: $grijs-zwart;
 }

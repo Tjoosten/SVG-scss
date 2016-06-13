@@ -1,81 +1,94 @@
 // Footer
 // ----------------------------------------------------------------------------
 .sg-logo {
-  width: 54px;
   padding-left: 5px;
+  width: 54px;
 }
 
 footer.region {
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-  font-size: 1.6rem;
-  overflow: hidden;
-  background-color: #572600;
-  text-align: center;
+  background-color: $svg-bruin;
   color: $wit;
-}
-
-footer.region .container {
-  width: 100%;
-  padding: 0;
-}
-
-footer.region .footer-top {
-  background-color: #BDD732;
-  padding: 15px;
-}
-
-footer.region .footer-top .logo {
-  width: 54px;
-  margin: 0 auto;
-}
-
-footer.region .footer-top .logo a {
-  display: block;
-}
-
-footer.region .footer-bottom {
-  margin-bottom: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
   overflow: hidden;
-  padding: 0 15px;
-}
+  text-align: center;
 
-footer.region .footer-bottom .contact {
-  padding: 15px;
+  // footer.region .container
+  .container {
+    padding: 0;
+    width: 100%;
+  }
+
+  // footer.region .footer-top
+  .footer-top {
+    background-color: $svg-lichtgroen;
+    padding: 15px;
+
+    // footer.region .footer-top .logo
+    .logo {
+      margin: 0 auto;
+      width: 54px;
+
+      // footer.region .footer-top .logo .a
+      a {
+        display: block;
+      }
+    }
+  }
+
+  // footer.region .footer-bottem
+  .footer-bottom {
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    padding: 0 15px;
+
+    // footer.region .footer-bottom .logo-hopper,
+    // footer.region .footer-bottom .logo-vlaanderen
+    .logo-hopper,
+    .logo-vlaanderen {
+      width: 115px;
+    }
+
+    // footer.region .footer-bottem ul
+    ul {
+      margin: 0 auto;
+      max-width: 350px;
+      list-style: none;
+
+      // footer.region .footer-bottom ul li
+      li {
+        float: left;
+        padding-right: 15px;
+
+        // footer.region .footer-bottom ul li:nth-child(2)
+        &:nth-child(2) {
+          float: right;
+          padding-right: 0;
+        }
+      }
+
+      // footer.region .footer-buttom ul li a
+      a {
+        display: block;
+      }
+    }
+
+    // footer.region .footer-bottom .contact
+    .contact {
+      padding: 15px;
+
+      // footer.region .footer-bottem .contact .arrow-link
+      .arrow-link {
+        font-size: 1.9rem;
+        margin: 15px 0;
+      }
+    }
+  }
 }
 
 footer.region .footer-bottom .contact a[href^='mailto:'],
 footer.region .footer-bottom .contact a[href^='callto:'],
 footer.region .footer-bottom .contact a[href^='tel:'] {
-  color: #BDD732;
-}
-
-footer.region .footer-bottom .contact .arrow-link {
-  font-size: 1.9rem;
-  margin: 15px 0;
-}
-
-footer.region .footer-bottom ul {
-  max-width: 350px;
-  margin: 0 auto;
-  list-style: none;
-}
-
-footer.region .footer-bottom ul li {
-  float: left;
-  padding-right: 15px;
-}
-
-footer.region .footer-bottom ul li a {
-  display: block;
-}
-
-footer.region .footer-bottom .logo-hopper,
-footer.region .footer-bottom .logo-vlaanderen {
-  width: 115px;
-}
-
-footer.region .footer-bottom ul li:nth-child(2) {
-  float: right;
-  padding-right: 0;
+  color: $svg-lichtgroen;
 }
