@@ -2,6 +2,116 @@
 #contactinfo {
   float: left;
   margin-bottom: 2rem;
+
+  // #contactinfo #zoekveld
+  #zoekveld {
+    display: inline-block;
+    position: relative;
+    top: .1rem;
+  }
+
+  // #contactinfo select
+  select {
+    width: 300px;
+  }
+
+  // #contactinfo .panel
+  .panel {
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-color: $svg-lichtgroen;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-style: solid;
+    border-top-style: none;
+    border-width: 1px;
+    display: none;
+    padding: 30px;
+    padding-top: 15px;
+    position: relative;
+    top: -5px;
+
+    // #contactinfo .panel#locatie
+    &#locatie {
+      padding-bottom: .5rem;
+
+      // #contactinfo .panel#locatie #col1
+      #col1 {
+        border-right-color: $svg-lichtgroen;
+        border-right-style: solid;
+        border-right-width: 1px;
+        float: left;
+        width: 50%;
+      }
+
+      // #contactinfo .panel#locatie #col2
+      #col2 {
+        margin-left: 30rem;
+      }
+    }
+
+    // #contactinfo .panel#bellen #col1
+    &#bellen #col1 {
+      border-right-color: $svg-lichtgroen;
+      border-right-style: solid;
+      border-right-width: 1px;
+      float: left;
+      padding-right: 1rem;
+      width: 50%;
+    }
+
+    // #contactinfo .panel#bellen #col2
+    &#bellen #col2 {
+      margin-left: 30rem;
+    }
+
+    // #contactinfo .panel#bellen .noodnummer a
+    &#bellen .noodnummer a {
+      color: $svg-rood;
+    }
+
+    // #contactinfo .panel#mailen
+    &#mailen {
+      clear: both;
+    }
+
+    // #contactinfo .panel h1
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+
+  // #contactinfo .flip
+  .flip {
+    background-color: $svg-lichtgroen;
+    background-position: 565px 11px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: $svg-bruin;
+    height: 28px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+
+    // #contactinfo .flip:hover
+    &:hover {
+      background-color: $svg-donkergroen-2;
+      color: $svg-bruin;
+      cursor: pointer;
+    }
+
+    // #contactinfo .flip img
+    img {
+      float: right;
+      margin-right: 10px;
+      margin-top: 2px;
+      -webkit-transition: all .5s ease-out;
+      transition: all .5s ease-out;
+    }
+  }
 }
 
 #contactinfo .flip,
@@ -9,105 +119,9 @@
   width: 585px;
 }
 
-#contactinfo .flip {
-  height: 28px;
-  background-color: #BDD732;
-  background-position: 565px 11px;
-  padding-left: 10px;
-  padding-top: 2px;
-  margin-top: 10px;
-  color: #572600;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-#contactinfo .flip img {
-  float: right;
-  margin-right: 10px;
-  margin-top: 2px;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-}
-
-#contactinfo .flip:hover {
-  background-color: rgba(189, 215, 50, .57);
-  color: #572600;
-  cursor: pointer;
-}
-
-#contactinfo .panel {
-  display: none;
-  padding: 30px;
-  padding-top: 15px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: $svg-lichtgroen;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-style: none;
-  position: relative;
-  top: -5px;
-}
-
-#contactinfo .panel h1 {
-  margin-bottom: 0;
-}
-
 #contactinfo .secundair,
 #contact-dienst .secundair {
   color: $grijs-zwart;
-}
-
-#contactinfo .panel#bellen #col1 {
-  border-right-color: $svg-lichtgroen;
-  border-right-style: solid;
-  border-right-width: 1px;
-  float: left;
-  padding-right: 1rem;
-  width: 50%;
-}
-
-#contactinfo .panel#bellen #col2 {
-  margin-left: 30rem;
-}
-
-#contactinfo .panel#bellen .noodnummer a {
-  color: $svg-rood;
-}
-
-#contactinfo .panel#mailen {
-  clear: both;
-}
-
-#contactinfo select {
-  width: 300px;
-}
-
-#contactinfo .panel#locatie #col1 {
-  border-right-color: $svg-lichtgroen;
-  border-right-style: solid;
-  border-right-width: 1px;
-  float: left;
-  width: 50%;
-}
-
-#contactinfo .panel#locatie #col2 {
-  margin-left: 30rem;
-}
-
-#contactinfo .panel#locatie {
-  padding-bottom: .5rem;
-}
-
-#contactinfo #zoekveld {
-  display: inline-block;
-  position: relative;
-  top: .1rem;
 }
 
 // Contactpages: Dienst
@@ -116,15 +130,17 @@
   margin-bottom: 1rem;
   margin-top: -1rem;
   padding: 2rem;
-}
 
-.contact-persoonlijk #foto {
-  float: right;
-}
+  // .contact-persoonlijk #foto
+  #foto {
+    float: right;
+  }
 
-.contact-persoonlijk p {
-  float: left;
-  width: 79%;
+  // .contact-persoonlijk p
+  p {
+    float: left;
+    width: 79%;
+  }
 }
 
 #contact-dienst p {
@@ -220,10 +236,6 @@
   width: 75%;
 }
 
-.node-type-contact #foto {
-  float: right;
-}
-
 .node-type-contact hr,
 .greenHR {
   background-color: $svg-lichtgroen;
@@ -240,36 +252,55 @@
   display: block;
 }
 
+// scss-lint:disable MergeableSelector
 .node-type-contact {
   position: relative;
-}
 
-.node-type-contact #contactgegevens span {
-  line-height: 2.5rem;
-}
+  // .node-type-contact #foto
+  #foto {
+    float: right;
+  }
 
-.node-type-contact #contactgegevens span:nth-child(1) img {
-  padding-bottom: 0;
-}
+  // .node-type-contact #contactgegevens-social
+  #contactgegevens-social {
+    bottom: 70px;
+    left: 10px;
+    position: absolute;
 
-.node-type-contact #contactgegevens span:nth-child(2) img {
-  padding-bottom: .2rem;
-}
+    // .node-type-contact #contactgegevens-social img
+    img {
+      margin-right: 3px;
+      position: relative;
+      top: 3px;
+    }
+  }
 
-.node-type-contact #contactgegevens span:nth-child(3) img {
-  padding-bottom: .4rem;
-}
+  // .node-type-contact #contactgegevens img
+  #contactgegevens img {
+    display: inline-block;
+    margin-right: .5rem;
+    max-width: 1.6rem;
+  }
 
-.node-type-contact #contactgegevens img {
-  display: inline-block;
-  margin-right: .5rem;
-  max-width: 1.6rem;
-}
+  // .node-type-contact #contactgegevens span
+  #contactgegevens span {
+    line-height: 2.5rem;
 
-.node-type-contact #contactgegevens-social {
-  bottom: 70px;
-  left: 10px;
-  position: absolute;
+    // .node-type-contact #contactgegevens span:nth-child(1) img
+    &:nth-child(1) img {
+      padding-bottom: 0;
+    }
+
+    // .node-type-contact #contactgegevens span:nth-child(2) img
+    &:nth-child(2) img {
+      padding-bottom: .2rem;
+    }
+
+    // .node-type-contact #contactgegevens span:nth-child(3) img
+    &:nth-child(3) img {
+      padding-bottom: .4rem;
+    }
+  }
 }
 
 .node-type-contact #contactgegevens-social #totem,
@@ -277,10 +308,4 @@
 .node-type-contact #contactgegevens-social #twitter {
   float: left;
   margin-right: 15px;
-}
-
-.node-type-contact #contactgegevens-social img {
-  margin-right: 3px;
-  position: relative;
-  top: 3px;
 }
