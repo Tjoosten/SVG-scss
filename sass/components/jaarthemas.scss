@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 767px) {
   .view-jaarthemas td {
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
   }
 }
 
@@ -73,8 +73,8 @@
 
   .view-jaarthemas table:nth-last-child(1) {
     float: left;
-    width: 37.4%;
     margin-left: 12.6%;
+    width: 37.4%;
   }
 
   .view-jaarthemas table:nth-last-child(-2n+3) .views-field-field-jaarthema-brochure-url,
