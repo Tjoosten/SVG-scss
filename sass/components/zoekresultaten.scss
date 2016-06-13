@@ -30,17 +30,18 @@ dl.search-results.node-results {
 
 #search-form fieldset.search-advanced .criterion:nth-child(3) {
   float: none;
-}
 
-#search-form fieldset.search-advanced .criterion:nth-child(3) .form-checkboxes {
-  -webkit-column-count: 3; // Chrome, Safari, Opera
-  -moz-column-count: 3;    // Firefox
-  column-count: 3;
+  // #search-form fieldset.search-advanced .criterion:nth-child(3) .form-checkboxes
+  .form-checkboxes {
+    -moz-column-count: 3;    // Firefox
+    -webkit-column-count: 3; // Chrome, Safari, Opera
+    column-count: 3;
+  }
 }
 
 dl.search-results dt {
-  margin-top: 2rem;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 dl.search-results dd {
@@ -53,9 +54,9 @@ dl.search-results a {
 
 // Zoekresultaten
 .search-results dt a {
-  width: 100%;
   height: 100%;
   text-decoration: none;
+  width: 100%;
 }
 
 .search-results dd > a:first-child {
@@ -63,8 +64,8 @@ dl.search-results a {
 }
 
 .description h3 {
-  font-size: 1.5rem;
   font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
@@ -86,21 +87,23 @@ div.vertical-tabs ul.vertical-tabs-list {
 
 div.vertical-tabs ul.vertical-tabs-list {
   margin: 0 -100% 0 0 !important;
-}
 
-div.vertical-tabs ul.vertical-tabs-list li {
-  border: none !important;
-  border-bottom: 1px solid #E7E0DE !important;
-  background-color: rgba(231, 224, 222, .5) !important;
-  overflow: hidden;
-}
+  // div.vertical-tabs ul.vertical-tabs-list li
+  li {
+    background-color: $grijs-2 !important;
+    border: none !important;
+    border-bottom: 1px solid $ebb !important;
+    overflow: hidden;
 
-div.vertical-tabs ul.vertical-tabs-list li:last-child {
-  border-bottom: none !important;
-}
-
-div.vertical-tabs ul.vertical-tabs-list li.selected {
-  background-color: #E7E0DE !important;
+    // div.vertical-tabs ul.vertical-tabs-list li:last-child
+    &:last-child {
+      border-bottom: none !important;
+    }
+    // div.vertical-tabs ul.vertical-tabs-list li.selected
+    &.selected {
+      background-color: $ebb !important;
+    }
+  }
 }
 
 div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
