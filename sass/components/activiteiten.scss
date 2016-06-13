@@ -1,45 +1,45 @@
 // Activiteiten
 #block-views-evenementen_home-block_1 .title::before,
 .floating-title .title::before {
-  width: 240px;
   height: 53px;
+  width: 240px;
 }
 
 #block-views-evenementen_home-block_1 .content,
 .floating-title .content {
-  position: relative;
   margin-top: 5px;
+  position: relative;
 }
 
 #block-views-evenementen_home-block_1 .content::before,
 .floating-title .content::before {
+  background: $ebb;
   content: '';
-  position: absolute;
-  top: -21px;
-  right: 0;
   height: 45px;
-  width: 97%;
-  background: #E7E0DE;
+  position: absolute;
+  right: 0;
+  top: -21px;
   -webkit-transform: skew(0deg, -1deg);
   transform: skew(0deg, -1deg);
+  width: 97%;
   z-index: 0;
 }
 
 #block-views-evenementen_home-block_1 .content::after,
 .floating-title .content::after {
+  border: 10px solid transparent;
+  border-bottom: 17px solid $ebb;
   content: '';
+  height: 0;
+  left: 0;
   position: absolute;
   top: -27px;
   width: 20%;
-  height: 0;
-  border: 10px solid transparent;
-  border-bottom: 17px solid #E7E0DE;
-  left: 0;
 }
 
 #block-views-evenementen_home-block_1 .view-content,
 .floating-title .view-content {
-  background-color: #E7E0DE;
+  background-color: $ebb;
   padding-bottom: 2em;
 }
 
@@ -64,8 +64,8 @@
 .floating-title .view-footer {
   margin-top: -17px;
   position: relative;
-  z-index: 1;
   text-align: center;
+  z-index: 1;
 }
 
 #block-views-evenementen_home-block_1 .view-footer p,
