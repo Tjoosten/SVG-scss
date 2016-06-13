@@ -2,52 +2,62 @@
 // Hopper blocks
 // -------------------------------------------------
 #block-block-14 {
-  margin-top: 0em;
+  margin-top: 0;
+
+  // #block-block-14 a.hopper-winkel
+  a.hopper-winkel {
+    background: url('../img/logo-hopper_winkel-alt.png') no-repeat center / 75%;
+  }
+
+  // #block-block-14 a.hopper-jeugdverblijf
+  a.hopper-jeugdverblijf {
+    background: url('../img/logo-hopper_jeugdverblijven-alt.png') no-repeat center / 75%;
+  }
 
   // #block-block-14 ul
   ul {
+    height: 11rem;
     margin: 0;
     overflow: hidden;
-    height: 11rem;
   }
 
   // #block-block-14 li
   li {
+    background-color: $svg-lichtgroen;
+    box-sizing: border-box;
     display: block;
     float: left;
-    width: 50%;
-    position: relative;
     margin-top: 5px;
-    background-color: #BDD732;
+    position: relative;
     text-align: center;
-    box-sizing: border-box;
+    width: 50%;
 
     // #block-block-14 li::before
     &::before {
+      background: $svg-lichtgroen;
       content: '';
-      position: absolute;
-      top: -3px;
-      right: 0;
       height: 5px;
-      width: 100%;
-      background: #BDD732;
+      position: absolute;
+      right: 0;
+      top: -3px;
       -webkit-transform: skew(0deg, -1deg);
       transform: skew(0deg, -1deg);
+      width: 100%;
       z-index: -1;
     }
 
     // #block-block-14 li::after
     &::after {
-      content: '';
-      position: absolute;
+      background: $svg-lichtgroen;
       bottom: -4px;
-      width: 100%;
+      content: '';
       height: 15px;
-      background: #BDD732;
+      left: 0;
+      position: absolute;
       -webkit-transform: skew(0deg, 1deg);
       transform: skew(0deg, 1deg);
+      width: 100%;
       z-index: -1;
-      left: 0;
     }
 
     // #block-block-14 li:first-child
@@ -76,16 +86,8 @@
 
 #block-block-14 a.hopper-winkel,
 #block-block-14 a.hopper-jeugdverblijf {
-  width: 9rem;
-  height: 9.9rem;
   background-size: 100%;
+  height: 9.9rem;
   text-indent: -9999px;
-}
-
-#block-block-14 a.hopper-winkel {
-  background: url('../img/logo-hopper_winkel-alt.png') no-repeat center / 75%;
-}
-
-#block-block-14 a.hopper-jeugdverblijf {
-  background: url('../img/logo-hopper_jeugdverblijven-alt.png') no-repeat center / 75%;
+  width: 9rem;
 }
