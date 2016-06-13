@@ -31,9 +31,9 @@
   }
 
   #node-10128 #contactinfo .panel #col2 {
+    display: inline-block;
     margin-left: 5%;
     width: 45%;
-    display: inline-block;
   }
 
   #contactinfo .noodnummer {
@@ -44,15 +44,15 @@
 @media screen and (max-width: 939px) {
   // Contactpagina
   #qr-code {
-    float: none;
     clear: left;
+    float: none;
     margin-left: 0;
     width: 100%;
   }
 
   #qr-code img {
     float: left;
-    margin-right: 2rem
+    margin-right: 2rem;
   }
 
   h2.faq {
