@@ -5,14 +5,14 @@
 
 // Werkwinkels
 .view-werkwinkels .item-list li.views-row {
-  background-color: #E7E0DE;
+  background-color: $ebb;
   margin-bottom: 2rem;
   padding: 2rem;
 }
 
 // Overzicht verzekeringen en acties aanbevelingen
 tr.yellow_bg_on_hover:hover {
-  background-color: #DBE68E;
+  background-color: $licht-geel;
 }
 
 .node-type-techniek img.field-icon-application-pdf {
@@ -25,7 +25,7 @@ tr.yellow_bg_on_hover:hover {
 
 // Vacature pagina
 .node-type-vacature .nd-region-header .field-vacature-intro {
-  margin: 10px 0 30px 0;
+  margin: 10px 0 30px;
 }
 
 .node-type-vacature .nd-region-header .field-title h1 {
@@ -34,7 +34,7 @@ tr.yellow_bg_on_hover:hover {
 
 // Facebook like box
 #block-block-11 {
-  background-color: #E7E0DE;
+  background-color: $ebb;
   margin: 4em 0 3.5em;
   position: relative;
 
@@ -42,22 +42,25 @@ tr.yellow_bg_on_hover:hover {
   p {
     text-align: center;
   }
-}
 
-#block-block-11 iframe {
-  display: inline-block;
-}
+  // #block-block-11 iframe
+  iframe {
+    display: inline-block;
+  }
 
-#block-block-11 .title::before {
-  display: none;
-}
+  // #block-block-11 .title::before
+  .title::before {
+    display: none;
+  }
 
-#block-block-11 ul {
-  margin: 0;
+  // #block-block-11 ul
+  ul {
+    margin: 0;
+  }
 }
 
 #block-block-11::before {
-  background: url(../img/sprite.png) no-repeat center -143px #E7E0DE;
+  background: url('../img/sprite.png') no-repeat center -143px $ebb;
   content: '';
   height: 50px;
   position: absolute;
@@ -70,7 +73,7 @@ tr.yellow_bg_on_hover:hover {
 }
 
 #block-block-11::after {
-  background: url(../img/sprite.png) no-repeat center -136px #E7E0DE;
+  background: url('../img/sprite.png') no-repeat center -136px $ebb;
   bottom: -35px;
   content: '';
   height: 60px;
@@ -85,7 +88,7 @@ tr.yellow_bg_on_hover:hover {
 #block-block-11::after::after {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 100px solid red;
+  border-top: 100px solid $rood;
   content: '';
   height: 0;
   width: 0;
@@ -114,53 +117,55 @@ main.has-children #node-form {
 
 .tags {
   margin-bottom: 2rem;
-}
 
-.tags ul.links li {
-  padding: 0;
-}
+  // .tags ul.links li
+  ul.links li {
+    padding: 0;
+  }
 
-.tags span {
-  background: #e7e0de;
-  color: #572600;
-  display: inline-block;
-  font-weight: bold;
-  height: 3rem;
-  line-height: 3rem;
-  margin: 1rem 1rem 0 1.5rem;
-  padding: 0 1rem 0 1.2rem;
-  position: relative;
-  text-decoration: none;
-  text-transform: lowercase;
-}
+  // .tags span
+  span {
+    background: $ebb;
+    color: $svg-bruin;
+    display: inline-block;
+    font-weight: bold;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 1rem 1rem 0 1.5rem;
+    padding: 0 1rem 0 1.2rem;
+    position: relative;
+    text-decoration: none;
+    text-transform: lowercase;
 
-.tags span::before {
-  border-color: transparent #E7E0DE transparent transparent;
-  border-style: solid;
-  border-width: 1.5rem 1.5rem 1.5rem 0;
-  content: "";
-  float: left;
-  height: 0;
-  left: -1.5rem;
-  position: absolute;
-  top: 0;
-  width: 0;
+    // .tags span::before
+    &::before {
+      border-color: transparent $ebb transparent transparent;
+      border-style: solid;
+      border-width: 1.5rem 1.5rem 1.5rem 0;
+      content: '';
+      float: left;
+      height: 0;
+      left: -1.5rem;
+      position: absolute;
+      top: 0;
+      width: 0;
+    }
 
-}
-
-.tags span::after {
-  background: $wit;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  content: '';
-  float: left;
-  height: .5rem;
-  left: 0;
-  position: absolute;
-  top: 1.3rem;
-  width: .5rem;
-  background: $wit;
+    // .tags span::after
+    &::after {
+      background: $wit;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      content: '';
+      float: left;
+      height: .5rem;
+      left: 0;
+      position: absolute;
+      top: 1.3rem;
+      width: .5rem;
+    }
+  }
 }
 
 
@@ -178,8 +183,8 @@ td {
 // De achtergrond wordt meer wit op alle pagina's waar er content niet in
 // ondoorzichtige blokken staat, zoals nodes zonder children en custom modules.
 .not-front:not(.page-home) main:not(.has-children) {
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 4rem 4rem rgba(255, 255, 255, 0.5);
+  background-color: $grijs;
+  box-shadow: 0 0 4rem 4rem $grijs;
 }
 
 #messages {
