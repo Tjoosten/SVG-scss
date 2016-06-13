@@ -7,6 +7,199 @@ main.region {
   margin: 10px 0 60px;
   overflow: hidden;
 
+  // main.region #children
+  #children {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+
+    // main.region #children .field-content.field-content-field-afbeelding-fid + .field-content-body
+    // scss-lint:disable MergeableSelector
+    .field-content.field-content-field-afbeelding-fid + .field-content-body {
+      height: 8em;
+      overflow: hidden;
+    }
+
+    // main.region #children [class*="field-content-field-verwijzing-omschr"]
+    [class*="field-content-field-verwijzing-omschr"] a {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    // main.region #children [class*="field-content-field-verwijzing-link"] a
+    [class*="field-content-field-verwijzing-link"] a {
+      color: $svg-bruin;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin: .4em 0 .2em;
+    }
+
+    // main.region #children .field-content-body h3
+    .field-content-body h3 {
+      font-size: 1.4rem;
+    }
+
+    // main.region #children .field-content-body h4
+    .field-content-body h4 {
+      font-size: 1.3rem;
+    }
+
+    // main.region #children .field-content.field-content-field-afbeelding-fid
+    .field-content.field-content-field-afbeelding-fid {
+      height: 120px;
+    }
+
+    // main.region #children .item-list > ul
+    .item-list > ul {
+      margin: 0;
+      overflow: hidden;
+
+      // main.region #children .item-list > ul li.views-row
+      li.views-row {
+        background-color: $ebb;
+        box-sizing: border-box;
+        height: 340px;
+        margin-bottom: 15px;
+        overflow: visible;
+        padding: 0;
+        position: relative;
+        width: 100%;
+
+        // main.region #children .item-list > ul li.views-row h1
+        h1 {
+          color: $svg-donkergroen;
+          font-family: 'Fjalla One', sans-serif;
+          font-size: 2.1rem;
+          font-weight: normal;
+          margin-bottom: 0;
+          overflow: hidden;
+          padding-bottom: .5em;
+        }
+
+        // main.region #children .item-list > ul li.views-row > a
+        > a {
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: 2;
+        }
+
+        // main.region #children .item-list > ul li.views-row::after
+        &::after {
+          background: url('../img/sprite.png') no-repeat right -55px top -243px transparent;
+          bottom: -7px;
+          content: '';
+          display: block;
+          height: 15px;
+          left: 25px;
+          pointer-events: none;
+          position: absolute;
+          width: 100%;
+        }
+
+        // main.region #children .item-list > ul li.views-row .child-block-wrapper
+        .child-block-wrapper {
+          height: 100%;
+          overflow: hidden;
+          padding: 10px 25px 30px;
+
+          // main.region #children .item-list > ul li.views-row .child-block-wrapper *
+          * {
+            text-decoration: none !important;
+          }
+        }
+      }
+    }
+
+    // main.region #children h1
+    h1 {
+      margin-top: 1rem;
+    }
+
+    // main.region #children .title
+    .title {
+      box-sizing: border-box;
+      margin: 0 0 .5em;
+      padding: 0 15px;
+      text-align: left;
+
+      // main.region #children .title::before
+      // scss-lint:disable DuplicateProperty
+      &::before {
+        left: -15px;
+        margin: 0 0 -34px;
+        position: relative;
+        top: 8px;
+        -webkit-transform: skew(0deg, 2deg);
+        transform: skew(0deg, 2deg);
+        width: auto;
+        width: 220px;
+      }
+    }
+
+    // main.region #children .field-content-body::after
+    .field-content-body::after {
+      background-image: -webkit-linear-gradient(bottom, $wit-01, $wit-02);
+      background-image: linear-gradient(to bottom, $wit-01, $wit-02 27.5%, $wit-01);
+      bottom: 0;    // tov. het blok
+      content: '';
+      height: 80px; // 22 fade + 58 volledig - gelijk met de onderrand van afbeeldingen
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  // main.region .field-content-nothing
+  .field-content-nothing {
+    color: $svg-donkergroen;
+    font-family: DCCAsh, sans-serif;
+    font-size: 1.4rem;
+    height: 2.2em;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-top: 1em;
+    overflow: hidden;
+    padding-right: 1.6em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 8.4em;
+    z-index: 1;
+
+    // main.region #children .field-content-nothing::before
+    &::before {
+      content: '\f002';
+      font-family: scouts;
+      font-size: 1.4em;
+      padding-right: .3em;
+      position: relative;
+      top: .1em;
+    }
+
+    // main.region #children .field-content-nothing::after
+    &::after {
+      border-bottom: .4em solid transparent;
+      border-left: 7em solid $svg-lichtgroen;
+      border-top: .2em solid transparent;
+      content: ' ';
+      display: block;
+      height: 1.5em;
+      margin-left: -.15em;
+      position: absolute;
+      top: .15em;
+      -webkit-transform: skew(-8deg, 0deg);
+      transform: skew(-8deg, 0deg);
+      z-index: -1;
+    }
+  }
+
   // main.region .field-field-ondertitel
   .field-field-ondertitel {
     color: $svg-bruin;
@@ -32,108 +225,15 @@ main .content {
   font-size: 1.4rem;
 }
 
-main.region #children {
-  clear: both;
-  overflow: hidden;
-}
-
-main.region #children .title {
-  text-align: left;
-  margin: 0 0 .5em;
-  box-sizing: border-box;
-  padding: 0 15px;
-}
-
-main.region #children .title::before {
-  width: auto;
-  -webkit-transform: skew(0deg, 2deg);
-  transform: skew(0deg, 2deg);
-  top: 8px;
-  left: -15px;
-  position: relative;
-  width: 220px;
-  margin: 0 0 -34px;
-}
-
-main.region #children {
-  width: 100%;
-
-  // main.region #children h1
-  h1 {
-    margin-top: 1rem;
-  }
-}
-
 main.region #children .field-content-body p,
 main.region #children .field-content-body li {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-main.region #children .item-list > ul {
-  margin: 0;
-  overflow: hidden;
-}
-
-main.region #children .item-list > ul li.views-row {
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #E7E0DE;
-  position: relative;
-  padding: 0;
-  margin-bottom: 15px;
-  overflow: visible;
-  height: 340px;
-}
-
-main.region #children .item-list > ul li.views-row .child-block-wrapper {
-  height: 100%;
-  overflow: hidden;
-  padding: 10px 25px 30px;
-}
-
-main.region #children .item-list > ul li.views-row .child-block-wrapper * {
-  text-decoration: none !important;
-}
-
-main.region #children .item-list > ul li.views-row::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 15px;
-  background: url('../img/sprite.png') no-repeat right -55px top -243px transparent;
-  position: absolute;
-  bottom: -7px;
-  left: 25px;
-  pointer-events: none;
-}
-
-main.region #children .item-list > ul li.views-row > a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-main.region #children .item-list > ul li.views-row h1 {
-  font-size: 2.1rem;
-  color: #748D26;
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-  margin-bottom: 0;
-  padding-bottom: .5em;
-  overflow: hidden;
-}
-
 main.region #children .field-content-field-menu-link-afbeelding-fid,
 main.region #children .field-content.field-content-field-afbeelding-fid-1 {
   height: 234px;
-}
-
-main.region #children .field-content.field-content-field-afbeelding-fid {
-  height: 120px;
 }
 
 main.region #children .field-content-field-menu-link-afbeelding-fid,
@@ -144,101 +244,20 @@ main.region #children [class*="field-content-field-afbeelding-fid"] {
 
 main.region #children .field-content-field-menu-link-afbeelding-fid img,
 main.region #children [class*="field-content-field-afbeelding-fid"] img {
+  height: auto;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
   position: relative;
   top: 50%;                              // halverwege de parent
   -webkit-transform: translateY(-50%);   // safari, android
   transform: translateY(-50%);           // halverwege de afbeelding
-  max-width: 100%;
-  max-height: 100%;
   width: auto;
-  height: auto;
-  margin: auto;
-}
-
-main.region #children [class*="field-content-field-verwijzing-link"] a {
-  font-family: 'Fjalla One', sans-serif;
-  color: #572600;
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 1.1;
-  margin: .4em 0 .2em;
-}
-
-main.region #children [class*="field-content-field-verwijzing-omschr"] a {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-main.region #children .field-content.field-content-field-afbeelding-fid + .field-content-body {
-  height: 8em;
-  overflow: hidden;
-}
-
-main.region #children .field-content-body h3 {
-  font-size: 1.4rem;
-}
-
-main.region #children .field-content-body h4 {
-  font-size: 1.3rem;
 }
 
 main.region #children .field-content-body h5,
 main.region #children .field-content-body h6 {
   font-size: 1.2rem;
-}
-
-main.region #children .field-content-body::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 80px; // 22 fade + 58 volledig - gelijk met de onderrand van afbeeldingen
-  bottom: 0;    // tov. het blok
-  left: 0;
-  background-image: -webkit-linear-gradient(bottom, rgba(231, 224, 222, 1), rgba(231, 224, 222, 0));
-  background-image: linear-gradient(to bottom, rgba(231, 224, 222, 0), rgba(231, 224, 222, 1) 27.5%, rgba(231, 224, 222, 1));
-}
-
-main.region #children .field-content-nothing {
-  font-family: DCCAsh, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  color: #748D26;
-  text-decoration: none;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  width: 8.4em;
-  padding-right: 1.6em;
-  text-align: center;
-  height: 2.2em;
-  line-height: 1.3;
-  margin-top: 1em;
-}
-
-main.region #children .field-content-nothing::before {
-  font-family: scouts;
-  content: '\f002';
-  font-size: 1.4em;
-  padding-right: .3em;
-  position: relative;
-  top: .1em;
-}
-
-main.region #children .field-content-nothing::after {
-  content: ' ';
-  display: block;
-  border-left: 7em solid $svg-lichtgroen;
-  border-top: .2em solid transparent;
-  border-bottom: .4em solid transparent;
-  height: 1.5em;
-  top: .15em;
-  margin-left: -.15em;
-  position: absolute;
-  z-index: -1;
-  -webkit-transform: skew(-8deg, 0deg);
-  transform: skew(-8deg, 0deg);
 }
 
 main.has-children #children .field-content-nothing {
