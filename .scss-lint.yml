@@ -1,25 +1,48 @@
 linters:
 
+  # Avoid using ID selectors.
   IdSelector:
     enabled: false
 
+  # Don't write selectors with a depth of applicability greater than 3.
   SelectorDepth:
     enabled: false
 
+  # Avoid qualifying elements in selectors (also known as "tag-qualifying").
   QualifyingElement:
     enabled: false
 
+  # It is good practice to choose a convention for naming selectors.
   SelectorFormat:
     enabled: false
 
+  # Avoid using !important in properties.
+  # It is usually indicative of a misunderstanding of CSS specificity and can lead to brittle code.
   ImportantRule:
     enabled: false
 
+  # Avoid vendor prefixes. That is, don't write them yourself.
+  #
+  # Instead, you can use Autoprefixer or mixins -- such as Compass or Bourbon -- to add vendor prefixes to your code. `
+  # (If using your own mixins, make sure to exempt their source from this linter.)
+  #
+  # At-rules, selectors, properties, and values are all checked. (See the examples below.)
+  #
+  # The default identifier_list, base, should include everything that Autoprefixer addresses.
+  # You could also use a list covering Bourbon's CSS3 mixins: bourbon.
+  # If neither of those suit you, you can write your own identifier list.
+  #
+  # Additionally, you can manually include or exclude identifiers from the identifier list -- if, for example,
+  # you want to use pretty much all of the base list but also want to allow yourself to use vendor prefixed transform properties,
+  # for one reason or another.
   VendorPrefix:
     enabled: false
 
+  # Pseudo-elements, like ::before, and ::first-letter, should be declared with two colons. Pseudo-classes,
+  # like :hover and :first-child, should be declared with one colon.
   PseudoElement:
     enabled: false
 
+  # Avoid nesting selectors too deeply.
   NestingDepth:
     enabled: false
