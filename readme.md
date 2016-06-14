@@ -1,4 +1,4 @@
-![My image](https://github.com/Tjoosten/SVG-scss/repo-assets/logo.jpg)
+![logo](https://github.com/Tjoosten/SVG-scss/repo-assets/logo.jpg)
 
 # SvG - SCSS port (.be website)
 
