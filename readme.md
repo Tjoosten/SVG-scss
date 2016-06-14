@@ -2,6 +2,7 @@
 
 # SvG - SCSS port (.be website)
 ![davidDm](https://david-dm.org/Tjoosten/SVG-scss.svg)
+[![GitHub release](https://img.shields.io/github/release/Tjoosten/SVG-scss.svg)](https://github.com/Tjoosten/SVG-scss/tree/master)
 
 Aangezien de [.be](http://www.scoutsengidsenvlaanderen.be) website qua css een redelijk grote website is. 
 Voorzie ik op basis van een phabricator ticket een `SCSS` port. Zodat de css overzichtelijker word. En er meer structuur heerst.
