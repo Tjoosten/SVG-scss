@@ -1,3 +1,5 @@
+![My image](https://github.com/Tjoosten/SVG-scss/repo-assets/logo.jpg)
+
 # SvG - SCSS port (.be website)
 
 Aangezien de [.be](http://www.scoutsengidsenvlaanderen.be) website qua css een redelijk grote website is. 
