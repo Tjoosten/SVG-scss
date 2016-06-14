@@ -1,21 +1,28 @@
 .view-evenementen-kalender .views-view-grid .views-field-title,
 .view-evenementen-kalender .views-view-grid .views-field-locatienaam {
   font-size: 1.1rem;
-  text-transform: uppercase;
   height: 16px;
+  text-transform: uppercase;
 }
 
 .view-evenementen-kalender .views-view-grid .views-field-evenement-van {
-  text-shadow: 1px 1px 3px #F3FF94, -1px -1px 1px #48454B;
+  text-shadow: 1px 1px 3px $geel, -1px -1px 1px $grijs-zwart;
+}
+
+// scss-lint:disable MergeableSelector
+.view-evenementen-kalender .views-view-grid {
+  margin-bottom: 0;
+  margin-top: 10px;
+  width: 940px;
 }
 
 .view-evenementen-kalender .views-view-grid .views-field-evenement-van-1 {
-  text-shadow: 1px 1px 1px #F3FF94, -.5px -.5px 1px #48454B;
+  text-shadow: 1px 1px 1px $geel, -.5px -.5px 1px $grijs-zwart;
 }
 
 .view-evenementen-kalender .views-view-grid .views-field-title,
 .view-evenementen-kalender .views-view-grid  .views-field-locatienaam {
-  text-shadow:  1px 1px 1px #F3FF94;
+  text-shadow: 1px 1px 1px $geel;
 }
 
 .view-evenementen-kalender .views-view-grid .views-field-title {
@@ -26,10 +33,10 @@
   margin-top: -3px;
 }
 
-/* Evenementen: Tabel */
+// Evenementen: Tabel
 .view-evenementen-kalender .views-table .views-field-evenement-van a:hover,
 .view-evenementen-kalender .views-table .views-field-evenement-van a {
-  color: #48454B;
+  color: $grijs-zwart;
 }
 
 .view-evenementen-kalender .views-table h1 {
@@ -48,7 +55,7 @@
 
 .view-evenementen-kalender .views-table td,
 .view-evenementen-kalender .views-table th {
-  padding-top: 1.5rem
+  padding-top: 1.5rem;
 }
 
 .view-evenementen-kalender .views-table a {
@@ -64,44 +71,52 @@
 }
 
 .view-evenementen-kalender .views-table .views-field-evenement-van {
-  width: 200px;
-  text-align: center;
-  vertical-align: middle;
   font-size: 1.3rem;
   font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
 }
 
 .view-evenementen-kalender .views-table .views-field-title {
-  vertical-align: middle;
-  border-left-style: solid;
   border-left-color: $wit;
+  border-left-style: solid;
   border-left-width: .3rem;
-  border-right-style: solid;
   border-right-color: $wit;
+  border-right-style: solid;
   border-right-width: 3px;
-}
+  vertical-align: middle;
 
-.view-evenementen-kalender .views-table .views-field-title p {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 0.3rem;
-  width: 100%;
+  // .view-evenementen-kalender .views-table .views-field-title p
+  p {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    padding-bottom: .3rem;
+    width: 100%;
+  }
+
+  // .view-evenementen-kalender .views-table .views-field-title a
+  a {
+    font-size: initial;
+    width: 100%;
+  }
 }
 
 .view-evenementen-kalender .evenementen-evenementtitel {
-  font-family: DCCAsh, sans-serif;
-  letter-spacing: 1px;
-  font-size: 2.3rem;
   display: inline;
+  font-family: DCCAsh, sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .view-evenementen-kalender .evenement-locatie,
 .view-evenementen-kalender .evenement-groep {
-  background-repeat: no-repeat;
   background-position: left center;
-  padding-left: 1.5rem;
+  background-repeat: no-repeat;
   font-size: 1.1rem;
+  padding-left: 1.5rem;
 }
 
 .view-evenementen-kalender .evenement-groep {
@@ -117,13 +132,13 @@
 }
 
 .view-evenementen-kalender .views-table tr,
-.view-evenementen-kalender .views-table td.active{
-  background-color: #E7E0DE;
+.view-evenementen-kalender .views-table td.active {
+  background-color: $ebb;
 }
 
 .view-evenementen-kalender .views-table td.views-field-evenement-van {
-  width: 18%;
   clear: both;
+  width: 18%;
 }
 
 .view-evenementen-kalender .views-table td.views-field-title {
@@ -131,52 +146,37 @@
 }
 
 .views-table .views-field-evenement-van::before {
-  content: "";
-}
-
-.view-evenementen-kalender .views-table .views-field-title p {
-  font-size: 1.3rem;
-}
-
-.view-evenementen-kalender .views-table .views-field-title a {
-  width: 100%;
-  font-size: initial;
+  content: '';
 }
 
 .view-evenementen-kalender .views-table .views-field-title .evenementen-type {
+  color: $grijs-zwart;
   float: right;
-  margin: 0.6rem 0 0 0.6rem;
   font-size: 1.5rem;
   line-height: 1.7rem;
-  color: #48454B;
+  margin: .6rem 0 0 .6rem;
 }
 
 .view-evenementen-kalender .views-table .views-field-evenement-van .sgvid {
+  color: $svg-donkergroen;
   display: block;
-  color: #748D26;
   font-weight: normal;
 }
 
 // Evenemenenten Kalender
 .view-evenementen-kalender .views-view-grid tr {
-  height:170px;
+  height: 170px;
 }
 
 .view-evenementen-kalender .views-view-grid td {
-  width: 155px;
-  color: #48454B;
-  text-align: center;
+  color: $grijs-zwart;
   font-weight: bold;
+  text-align: center;
+  width: 155px;
 }
 
 .view-evenementen-kalender .views-view-grid a {
-  color: #48454B;
-}
-
-.view-evenementen-kalender .views-view-grid {
-  margin-bottom: 0;
-  margin-top: 10px;
-  width: 940px;
+  color: $grijs-zwart;
 }
 
 .views-view-grid .views-field-evenement-van-1 {

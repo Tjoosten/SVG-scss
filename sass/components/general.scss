@@ -1,35 +1,35 @@
-/* -------------------------------------------------------------------------
- General
----------------------------------------------------------------------------- */
+// -------------------------------------------------------------------------
+// General
+// -------------------------------------------------------------------------
 body,
 body.mceContentBody /* wysiwyg */ {
-  background: url(../img/grunge-tile-beige.png) repeat center top $wit;
+  background: url('../img/grunge-tile-beige.png') repeat center top $wit;
 }
 
 .media-query {
   display: none;
-  width: 0px;
+  width: 0;
 }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
   box-sizing: border-box;
+  margin: 0 auto;
   padding: 0 16px;
+  width: 100%;
 }
 
 html {
   font-size: 62.5%;
-  /* Sets up the Base 10 stuff */
+  // Sets up the Base 10 stuff
 }
 
 body {
+  color: $grijs-zwart;
   font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  font-style: normal;
   font-size: 1.2rem;
-  line-height: 1.5;
-  color: #48454B;
+  font-style: normal;
+  font-weight: normal;
   height: 100%;
+  line-height: 1.5;
   position: relative;
 }

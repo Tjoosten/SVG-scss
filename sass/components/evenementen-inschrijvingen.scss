@@ -6,8 +6,8 @@
 }
 
 .view-inschrijvingen legend {
-  top: 1.25rem;
   left: 0;
+  top: 1.25rem;
 }
 
 .view-inschrijvingen label {
@@ -31,9 +31,9 @@
 }
 
 .view-inschrijvingen #views-bulk-operations-select input {
-  margin: 0rem !important;
-  margin-top: 1rem !important;
+  margin: 0 !important;
   margin-left: 1rem !important;
+  margin-top: 1rem !important;
 }
 
 .view-inschrijvingen #views-bulk-operations-select input:nth-child(2) {
@@ -42,12 +42,12 @@
 
 @media screen and (min-width: 480px) {
   .view-inschrijvingen #views-bulk-operations-select input:nth-child(2) {
-    margin-top: 1rem !important;
     margin-left: 22rem !important;
+    margin-top: 1rem !important;
   }
 }
 
-.view-inschrijvingen .views-field-created{
+.view-inschrijvingen .views-field-created {
   float: initial;
 }
 
@@ -58,17 +58,18 @@
 
 thead th {
   font-weight: bold;
+
+  // thead th a
+  a {
+    text-decoration: none;
+  }
 }
 
-thead th a {
-  text-decoration: none;
-}
-
-.view-inschrijvingen tr{
+.view-inschrijvingen tr {
   background-color: $wit;
 }
 
-.view-inschrijvingen input[type='checkbox']{
+.view-inschrijvingen input[type='checkbox'] {
   position: relative;
   top: 3px;
 }

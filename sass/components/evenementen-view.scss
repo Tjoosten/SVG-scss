@@ -6,72 +6,131 @@
 }
 
 .evenementen-background-paper-ingeschreven {
-  width: 97px;
-  height: 57px;
-  display: block;
   background: url('../img/view-kalender-item-background-ingeschreven.png') no-repeat left top;
-  text-indent: -99999px;
-  z-index: 99;
-  position: absolute;
+  display: block;
+  height: 57px;
   left: 3px;
+  position: absolute;
+  text-indent: -99999px;
   top: -20px;
+  width: 97px;
+  z-index: 99;
 }
 
 .evenementen-background-paper-organisator {
-  width: 9.1rem;
-  height: 5.3rem;
-  display: block;
   background: url('../img/view-kalender-item-background-organisator.png') no-repeat left top;
-  text-indent: -99999px;
-  z-index: 99;
-  position: absolute;
+  display: block;
+  height: 5.3rem;
   left: -.7rem;
+  position: absolute;
+  text-indent: -99999px;
   top: 8.5rem;
+  width: 9.1rem;
+  z-index: 99;
 }
 
 .evenementen-background-paper-onzichtbaar {
-  width: 21px;
-  height: 16px;
-  display: block;
   background: url('../img/view-kalender-item-background-onzichtbaar.png') no-repeat left top;
-  text-indent: -99999px;
-  z-index: 99;
-  position: absolute;
-  top: 99px;
-  left: 8px;
   cursor: help;
+  display: block;
+  height: 16px;
+  left: 8px;
+  position: absolute;
+  text-indent: -99999px;
+  top: 99px;
+  width: 21px;
+  z-index: 99;
 }
 
 .evenementen-type,
 .evenementen-ingeschreven,
 .evenementen-organisator {
   display: inline;
-  text-transform: uppercase;
   margin-top: -2.5rem;
+  text-transform: uppercase;
 }
 
 .evenementen-ingeschreven {
-  color: #F5821F;
+  color: $svg-oranje;
 }
 
 .evenementen-organisator {
-  color: #256F91;
+  color: $svg-blauw;
 }
 
 .evenementen-onzichtbaar {
-  width: 13px;
-  height: 10px;
-  display: block;
   background: url('../img/view-kalender-item-background-onzichtbaar-small.png') no-repeat left center;
-  text-indent: -99999px;
-  float: left;
-  margin: .6rem .6rem 0 0;
   cursor: help;
+  display: block;
+  float: left;
+  height: 10px;
+  margin: .6rem .6rem 0 0;
+  text-indent: -99999px;
+  width: 13px;
 }
 
 .view-evenementen .item-list {
   margin-top: 2rem;
   text-align: justify;
+
+  // .view-evenementen .item-list li .views-field-title a
+  li .views-field-title a {
+    font-family: DCCAsh, sans-serif;
+    font-size: 1.9rem;
+    line-height: 2rem;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  // .view-evenementen .item-list li .views-field-locatienaam
+  li .views-field-locatienaam {
+    font-size: 1.2rem;
+    line-height: 100%;
+  }
+
+  // .view-evenementen .item-list li .views-field-evenement-van h1
+  li .views-field-evenement-van h1 {
+    font-size: 5.5rem;
+    line-height: 3rem;
+    margin-left: 40px;
+    text-align: center;
+    width: 55px;
+  }
+
+  // .view-evenementen .item-list li .views-field-evenement-van-1
+  li .views-field-evenement-van-1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+
+  // .view-evenementen .item-list li .views-field-nothing
+  li .views-field-nothing {
+    display: none;
+  }
+
+  // .view-evenementen .item-list li.filler
+  li.filler {
+    display: none;
+    overflow: hidden;
+    position: relative;
+  }
+
+  // .view-evenementen .item-list li.views-row
+  li.views-row {
+    background-color: $ebb;
+    display: inline-block;
+    height: 17rem;
+    margin-bottom: 1.8rem;
+    padding: .75rem;
+    width: 15.6rem;
+  }
+
+  // .view-evenementen .item-list li > *
+  li > * {
+    float: left;
+  }
 
   // .view-evenementen .item-list ul
   ul {
@@ -87,55 +146,11 @@
   }
 }
 
-.view-evenementen .item-list li.filler {
-  display: none;
-  position: relative;
-  overflow: hidden;
-}
-
-.view-evenementen .item-list li.views-row {
-  width: 15.6rem;
-  height: 17rem;
-  margin-bottom: 1.8rem;
-  padding: .75rem;
-
-  background-color: #E7E0DE;
-  display: inline-block;
-}
-
-.view-evenementen .item-list li > * {
-  float: left;
-}
-
 .view-evenementen .item-list li .views-field-evenement-van-1,
 .view-evenementen .item-list li .views-field-title,
 .view-evenementen .item-list li .views-field-locatienaam {
+  text-align: center;
   width: 100%;
-  text-align: center;
-}
-
-.view-evenementen .item-list li .views-field-evenement-van-1 {
-  font-size: 2rem;
-  line-height: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.view-evenementen .item-list li .views-field-evenement-van h1{
-  font-size: 5.5rem;
-  line-height: 3rem;
-  margin-left: 40px;
-  width: 55px;
-  text-align: center;
-}
-
-.view-evenementen .item-list li .views-field-title a{
-  font-size: 1.9rem;
-  font-family: DCCAsh, sans-serif;
-
-  line-height: 2rem;
-  margin: 0;
-  margin-top:5px;
 }
 
 .view-evenementen .item-list li .views-field-evenement-van::before,
@@ -143,13 +158,4 @@
   font-size: 11rem;
   left: 30px;
   top: 5px;
-}
-
-.view-evenementen .item-list li .views-field-locatienaam{
-  line-height: 100%;
-  font-size: 1.2rem;
-}
-
-.view-evenementen .item-list li .views-field-nothing {
-  display: none;
 }
