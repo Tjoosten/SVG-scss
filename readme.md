@@ -4,7 +4,7 @@
 ![davidDm](https://david-dm.org/Tjoosten/SVG-scss.svg)
 [![GitHub release](https://img.shields.io/github/release/Tjoosten/SVG-scss.svg)](https://github.com/Tjoosten/SVG-scss/tree/master)
 [![Build Status](https://travis-ci.org/Tjoosten/SVG-scss.svg?branch=master)](https://travis-ci.org/Tjoosten/SVG-scss)
-[![GitHub issues](https://img.shields.io/github/issues/Tjoosten/SVG-theme.svg?style=flat-square)](https://github.com/Tjoosten/SVG-theme/issues)
+[![GitHub issues](https://img.shields.io/github/issues/Tjoosten/SVG-scss.svg?style=flat-square)](https://github.com/Tjoosten/SVG-scss/issues)
 
 Aangezien de [.be](http://www.scoutsengidsenvlaanderen.be) website qua css een redelijk grote website is. 
 Voorzie ik op basis van een phabricator ticket een `SCSS` port. Zodat de css overzichtelijker word. En er meer structuur heerst.
