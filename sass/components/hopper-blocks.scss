@@ -6,12 +6,12 @@
 
   // #block-block-14 a.hopper-winkel
   a.hopper-winkel {
-    background: url('../img/logo-hopper_winkel-alt.png') no-repeat center / 75%;
+    background: url($path-img + 'logo-hopper_winkel-alt.png') no-repeat center / 75%;
   }
 
   // #block-block-14 a.hopper-jeugdverblijf
   a.hopper-jeugdverblijf {
-    background: url('../img/logo-hopper_jeugdverblijven-alt.png') no-repeat center / 75%;
+    background: url($path-img + 'logo-hopper_jeugdverblijven-alt.png') no-repeat center / 75%;
   }
 
   // #block-block-14 ul

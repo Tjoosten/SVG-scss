@@ -6,7 +6,7 @@
 }
 
 .evenementen-background-paper-ingeschreven {
-  background: url('../img/view-kalender-item-background-ingeschreven.png') no-repeat left top;
+  background: url($path-img + 'view-kalender-item-background-ingeschreven.png') no-repeat left top;
   display: block;
   height: 57px;
   left: 3px;
@@ -18,7 +18,7 @@
 }
 
 .evenementen-background-paper-organisator {
-  background: url('../img/view-kalender-item-background-organisator.png') no-repeat left top;
+  background: url($path-img + 'view-kalender-item-background-organisator.png') no-repeat left top;
   display: block;
   height: 5.3rem;
   left: -.7rem;
@@ -30,7 +30,7 @@
 }
 
 .evenementen-background-paper-onzichtbaar {
-  background: url('../img/view-kalender-item-background-onzichtbaar.png') no-repeat left top;
+  background: url($path-img + 'view-kalender-item-background-onzichtbaar.png') no-repeat left top;
   cursor: help;
   display: block;
   height: 16px;
@@ -59,7 +59,7 @@
 }
 
 .evenementen-onzichtbaar {
-  background: url('../img/view-kalender-item-background-onzichtbaar-small.png') no-repeat left center;
+  background: url($path-img + 'view-kalender-item-background-onzichtbaar-small.png') no-repeat left center;
   cursor: help;
   display: block;
   float: left;

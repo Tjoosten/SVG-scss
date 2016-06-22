@@ -3,7 +3,7 @@
 // -------------------------------------------------------------------------
 body,
 body.mceContentBody /* wysiwyg */ {
-  background: url('../img/grunge-tile-beige.png') repeat center top $wit;
+  background: url($path-img + 'grunge-tile-beige.png') repeat center top $wit;
 }
 
 .media-query {

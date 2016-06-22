@@ -84,7 +84,7 @@ a.long-shape-link,
 
 // Bvb. 'Lees meer'
 a.shape-link {
-  background: url('../img/btn-green.png') no-repeat 0 3px;
+  background: url($path-img + 'btn-green.png') no-repeat 0 3px;
 }
 
 a.long-shape-link,
@@ -100,11 +100,11 @@ a.long-grey-link {
 }
 
 a.long-shape-link {
-  background: url('../img/btn-green.png') no-repeat 0 0 / calc(100% + 2em) auto;
+  background: url($path-img + 'btn-green.png') no-repeat 0 0 / calc(100% + 2em) auto;
 }
 
 a.long-grey-link {
-  background: url('../img/btn-70.png') no-repeat 0 -1px / calc(100% + 2em) auto;
+  background: url($path-img + 'btn-70.png') no-repeat 0 -1px / calc(100% + 2em) auto;
   color: $svg-bruin;
 }
 
@@ -129,7 +129,7 @@ a.arrow-link {
 }
 
 .views-field-nothing a {
-  background: url('../img/btn-70.png') no-repeat 0 3px;
+  background: url($path-img + 'btn-70.png') no-repeat 0 3px;
 }
 
 .view-dom-id-5 .views-field-nothing a {
