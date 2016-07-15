@@ -19,7 +19,7 @@
 
 .page-node #sidebar [id^="block-"]::after,
 .page-admin #sidebar [id^="block-"]::after {
-  background: url('../img/sprite.png') no-repeat right -100px top -243px transparent;
+  background: url($path-img + 'sprite.png') no-repeat right -100px top -243px transparent;
   content: '';
   display: block;
   height: 15px;
@@ -52,7 +52,7 @@
 
 .page-node #sidebar [id^="block-"] .content .field-content-title,
 .page-admin #sidebar [id^="block-"] .content .field-content-title {
-  background: url('../img/btn-70.png') no-repeat transparent 0 3px;
+  background: url($path-img + 'btn-70.png') no-repeat transparent 0 3px;
   background-size: 100% 100%;
 }
 

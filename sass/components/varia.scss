@@ -60,7 +60,7 @@ tr.yellow_bg_on_hover:hover {
 }
 
 #block-block-11::before {
-  background: url('../img/sprite.png') no-repeat center -143px $ebb;
+  background: url($path-img + 'sprite.png') no-repeat center -143px $ebb;
   content: '';
   height: 50px;
   position: absolute;
@@ -73,7 +73,7 @@ tr.yellow_bg_on_hover:hover {
 }
 
 #block-block-11::after {
-  background: url('../img/sprite.png') no-repeat center -136px $ebb;
+  background: url($path-img + 'sprite.png') no-repeat center -136px $ebb;
   bottom: -35px;
   content: '';
   height: 60px;

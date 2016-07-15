@@ -4,7 +4,7 @@
 // TODO: Implement better nesting.
 
 header.region {
-  background: url('../img/header_ribbon.png') no-repeat center top transparent;
+  background: url($path-img + 'header_ribbon.png') no-repeat center top transparent;
   height: 140px;
   position: relative;
   width: 100%;

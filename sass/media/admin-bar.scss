@@ -1,0 +1,12 @@
+@media screen and (max-width:479px) {
+  #login-form {
+    height: 170px;
+    width: 160px;
+  }
+
+  #login-form form input[type=submit] {
+    height: 30px;
+    margin-top: 10px;
+    width: 154px;
+  }
+}

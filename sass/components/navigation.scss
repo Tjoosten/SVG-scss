@@ -109,7 +109,7 @@ div[id*="block-menu"] {
 }
 
 #block-menu_block-2 {
-  background: url('../img/grunge-tile-beige.png') repeat center top $ebb;
+  background: url($path-img + 'grunge-tile-beige.png') repeat center top $ebb;
   margin-top: 36px;
   overflow: hidden;
   padding: 15px;

@@ -90,7 +90,7 @@ main.region {
 
         // main.region #children .item-list > ul li.views-row::after
         &::after {
-          background: url('../img/sprite.png') no-repeat right -55px top -243px transparent;
+          background: url($path-img + 'sprite.png') no-repeat right -55px top -243px transparent;
           bottom: -7px;
           content: '';
           display: block;
